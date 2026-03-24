@@ -242,6 +242,12 @@ const routes = [
     meta: { requiresAuth: true, title: '考试计划', roles: ['admin', 'manager', 'examiner'] }
   },
   {
+    path: '/organization/list',
+    name: 'OrganizationList',
+    component: () => import('../views/Organization.vue'),
+    meta: { requiresAuth: true, title: '机构管理' }
+  },
+  {
     path: '/enterprise/list',
     name: 'EnterpriseList',
     component: () => import('../views/enterprise/List.vue'),
@@ -258,6 +264,12 @@ const routes = [
     name: 'FileList',
     component: () => import('../views/file/List.vue'),
     meta: { requiresAuth: true, title: '文件管理' }
+  },
+  {
+    path: '/qualification/list',
+    name: 'QualificationList',
+    component: () => import('../views/Qualification.vue'),
+    meta: { requiresAuth: true, title: '资格管理' }
   },
   {
     path: '/import-export',
