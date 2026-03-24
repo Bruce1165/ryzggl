@@ -342,6 +342,12 @@ const routes = [
     meta: { requiresAuth: true, title: '岗位信息管理' }
   },
   {
+    path: '/worker-lock/list',
+    name: 'WorkerLockList',
+    component: () => import('../views/WorkerLock.vue'),
+    meta: { requiresAuth: true, title: '人员锁定管理' }
+  },
+  {
     // 404 redirect
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
