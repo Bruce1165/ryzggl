@@ -324,6 +324,12 @@ const routes = [
     meta: { requiresAuth: true, title: '业务申请单抽任务详情' }
   },
   {
+    path: '/certificate-lock/list',
+    name: 'CertificateLockList',
+    component: () => import('../views/CertificateLock.vue'),
+    meta: { requiresAuth: true, title: '证书锁定管理' }
+  },
+  {
     // 404 redirect
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
