@@ -336,6 +336,12 @@ const routes = [
     meta: { requiresAuth: true, title: '数据字典管理' }
   },
   {
+    path: '/post-info/list',
+    name: 'PostInfoList',
+    component: () => import('../views/PostInfo.vue'),
+    meta: { requiresAuth: true, title: '岗位信息管理' }
+  },
+  {
     // 404 redirect
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
