@@ -28,12 +28,6 @@ public interface OperateLogRepository extends BaseMapper<OperateLog> {
     List<OperateLog> getByPersonId(@Param("personId") String personId);
 
     /**
-     * Get logs by user ID
-     */
-    @Select("SELECT * FROM OperateLog WHERE PersonID = #{personId} ORDER BY LogTime DESC")
-    List<OperateLog> getByPersonId(@Param("personId") String personId);
-
-    /**
      * Get logs by operation name
      */
     @Select("SELECT * FROM OperateLog WHERE OperateName = #{operateName} ORDER BY LogTime DESC")

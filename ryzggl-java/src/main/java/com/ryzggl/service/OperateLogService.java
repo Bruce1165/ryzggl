@@ -37,13 +37,6 @@ public class OperateLogService implements IService<OperateLog> {
     }
 
     /**
-     * Get logs by user ID
-     */
-    public List<OperateLog> getByPersonId(String personId) {
-        return operateLogRepository.getByPersonId(personId);
-    }
-
-    /**
      * Get logs by operation name
      */
     public List<OperateLog> getByOperateName(String operateName) {
