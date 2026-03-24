@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="UploadFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="iServiceId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileFullName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="buffer" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadFileResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteFileInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="iServiceId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WriteFileInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WriteFileInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIServiceStruct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="iServiceId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIServiceStructResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIServiceStructResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFileWithInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="iServiceId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="buffer" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFileWithInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadFileWithInfoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownloadFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="iServiceId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DownloadFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DownloadFileResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileContent" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileUrl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="iServiceId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileUrlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFileUrlResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileUrl" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="iServiceId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="condition" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFileInfoResult" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="resultCount" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="UploadFileSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadFile" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="WriteFileInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:WriteFileInfo" />
+  </wsdl:message>
+  <wsdl:message name="WriteFileInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:WriteFileInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIServiceStructSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIServiceStruct" />
+  </wsdl:message>
+  <wsdl:message name="GetIServiceStructSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIServiceStructResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileWithInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadFileWithInfo" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileWithInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadFileWithInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="DownloadFileSoapIn">
+    <wsdl:part name="parameters" element="tns:DownloadFile" />
+  </wsdl:message>
+  <wsdl:message name="DownloadFileSoapOut">
+    <wsdl:part name="parameters" element="tns:DownloadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFileUrlSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFileUrl" />
+  </wsdl:message>
+  <wsdl:message name="GetFileUrlSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFileUrlResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFileInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFileInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetFileInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFileInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FileServiceSoap">
+    <wsdl:operation name="UploadFile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+        [summary]
+        上传文件（重名覆盖），可与接口WriteFileInfo配合使用
+        [/summary]&lt;br /&gt;
+        [param name="userName"]用户名（加密）[/param]&lt;br /&gt;
+        [param name="passWord"]密码（加密）[/param]&lt;br /&gt;
+        [param name="iServiceId"]服务ID[/param]&lt;br /&gt;
+        [param name="fileFullName"]上传文件物理名全称（带扩展名，例：123.doc）[/param]&lt;br /&gt;
+        [param name="buffer"]文件内容（字节数组）[/param]&lt;br /&gt;
+        [returns]成功返回“成功”，失败返回错误描述[/returns]&lt;br /&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UploadFileSoapIn" />
+      <wsdl:output message="tns:UploadFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WriteFileInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+        [summary]
+        写入文件属性信息（前提：已经上传了文件），可与接口UploadFile配合使用
+        [/summary]&lt;br /&gt;
+        [param name="userName"]用户名（加密）[/param]&lt;br /&gt;
+        [param name="passWord"]密码（加密）[/param]&lt;br /&gt;
+        [param name="iServiceId"]服务ID[/param]&lt;br /&gt;
+        [param name="ds"]文件属性集合，其中每行的“FileFullName”字段值必须为上传文件物理名全称[/param]&lt;br /&gt;
+        [returns]成功返回“成功”，失败返回错误描述[/returns]&lt;br /&gt;</wsdl:documentation>
+      <wsdl:input message="tns:WriteFileInfoSoapIn" />
+      <wsdl:output message="tns:WriteFileInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIServiceStruct">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+        [summary]
+        获取写入文件属性接口数据架构
+        [/summary]&lt;br /&gt;
+        [param name="userName"]用户名[/param]&lt;br /&gt;
+        [param name="passWord"]密码[/param]&lt;br /&gt;
+        [param name="iServiceId"]接口ID[/param]&lt;br /&gt;
+        [param name="ds"]数据结构[/param]&lt;br /&gt;
+        [returns]成功返回“成功”，失败返回错误描述[/returns]&lt;br /&gt;</wsdl:documentation>
+      <wsdl:input message="tns:GetIServiceStructSoapIn" />
+      <wsdl:output message="tns:GetIServiceStructSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileWithInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+        [summary]
+        上传文件并写入文件属性信息（重名覆盖）
+        [/summary]&lt;br /&gt;
+        [param name="userName"]用户名（加密）[/param]&lt;br /&gt;
+        [param name="passWord"]密码（加密）[/param]&lt;br /&gt;
+        [param name="iServiceId"]服务ID[/param]&lt;br /&gt;
+        [param name="ds"]文件属性集合[/param]&lt;br /&gt;
+        [param name="buffer"]文件内容（字节数组）[/param]&lt;br /&gt;
+        [returns]成功返回“成功”，失败返回错误描述[/returns]&lt;br /&gt;</wsdl:documentation>
+      <wsdl:input message="tns:UploadFileWithInfoSoapIn" />
+      <wsdl:output message="tns:UploadFileWithInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadFile">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+        [summary]
+        下载文件
+        [/summary]&lt;br /&gt;
+        [param name="userName"]用户名（加密）[/param]&lt;br /&gt;
+        [param name="passWord"]密码（加密）[/param]&lt;br /&gt;
+        [param name="iServiceId"]服务ID[/param]&lt;br /&gt;
+        [param name="fileID"]文件ID（可调用接口GetFileInfo查询需要下载文件的ID）[/param]&lt;br /&gt;
+        [param name="fileContent"]文件内容（字节数组）[/param]&lt;br /&gt;
+        [returns]成功返回“成功”，失败返回错误描述[/returns]&lt;br /&gt;</wsdl:documentation>
+      <wsdl:input message="tns:DownloadFileSoapIn" />
+      <wsdl:output message="tns:DownloadFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFileUrl">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+        [summary]
+        获取下载文件地址（临时，定期清除）
+        [/summary]&lt;br /&gt;
+        [param name="userName"]用户名（加密）[/param]&lt;br /&gt;
+        [param name="passWord"]密码（加密）[/param]&lt;br /&gt;
+        [param name="iServiceId"]服务ID[/param]&lt;br /&gt;
+        [param name="fileID"]文件ID（可调用接口GetFileInfo查询需要下载文件的ID）[/param]&lt;br /&gt;
+        [param name="fileUrl"]文件下载Url[/param]&lt;br /&gt;
+        [returns]成功返回“成功”，失败返回错误描述[/returns]&lt;br /&gt;</wsdl:documentation>
+      <wsdl:input message="tns:GetFileUrlSoapIn" />
+      <wsdl:output message="tns:GetFileUrlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFileInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+        [summary]
+        分页查询获取文件属性信息
+        [/summary]
+        [param name="userName"]用户名[/param]&lt;br /&gt;
+        [param name="passWord"]密码[/param]&lt;br /&gt;
+        [param name="iServiceId"]服务ID[/param]&lt;br /&gt;
+        [param name="pageIndex"]查询第几页[/param]&lt;br /&gt;
+        [param name="pageSize"]每页行数[/param]&lt;br /&gt;
+        [param name="condition"]过滤条件（例：FileFullName='123.doc' and ......）[/param]&lt;br /&gt;
+        [param name="sortText"]排序条件(可选)[/param]&lt;br /&gt;
+        [param name="resultCount"]满足条件总记录数[/param]&lt;br /&gt;
+        [param name="result"]第pageIndex页结果集[/param]&lt;br /&gt;
+        [returns]成功返回“成功”，失败返回错误描述[/returns]</wsdl:documentation>
+      <wsdl:input message="tns:GetFileInfoSoapIn" />
+      <wsdl:output message="tns:GetFileInfoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FileServiceSoap" type="tns:FileServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UploadFile">
+      <soap:operation soapAction="http://tempuri.org/UploadFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteFileInfo">
+      <soap:operation soapAction="http://tempuri.org/WriteFileInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIServiceStruct">
+      <soap:operation soapAction="http://tempuri.org/GetIServiceStruct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileWithInfo">
+      <soap:operation soapAction="http://tempuri.org/UploadFileWithInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadFile">
+      <soap:operation soapAction="http://tempuri.org/DownloadFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileUrl">
+      <soap:operation soapAction="http://tempuri.org/GetFileUrl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileInfo">
+      <soap:operation soapAction="http://tempuri.org/GetFileInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FileServiceSoap12" type="tns:FileServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UploadFile">
+      <soap12:operation soapAction="http://tempuri.org/UploadFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WriteFileInfo">
+      <soap12:operation soapAction="http://tempuri.org/WriteFileInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIServiceStruct">
+      <soap12:operation soapAction="http://tempuri.org/GetIServiceStruct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFileWithInfo">
+      <soap12:operation soapAction="http://tempuri.org/UploadFileWithInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadFile">
+      <soap12:operation soapAction="http://tempuri.org/DownloadFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileUrl">
+      <soap12:operation soapAction="http://tempuri.org/GetFileUrl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetFileInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FileService">
+    <wsdl:port name="FileServiceSoap" binding="tns:FileServiceSoap">
+      <soap:address location="http://192.168.1.211/fileservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FileServiceSoap12" binding="tns:FileServiceSoap12">
+      <soap12:address location="http://192.168.1.211/fileservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

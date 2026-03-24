@@ -1,0 +1,584 @@
+﻿.link {
+    cursor: pointer;
+    color: blue;
+    font-size: 16px;
+    float: left;
+}
+
+.p1 {
+}
+
+.jsname {
+    color: #333;
+    padding-left: 16px;
+}
+
+.jsimg {
+    background: url('../img/man2.png') 24px center no-repeat;
+    padding-left: 40px !important;
+}
+
+.s1 {
+    line-height: 200%;
+}
+
+.s4 {
+    line-height: 200%;
+    background-color: #f0f0f0;
+    min-width: 600px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 20px 12px;
+    text-align: center;
+    padding-left: 216px;
+    position: relative;
+}
+
+.jpg0 {
+    background: url('../img/0.jpg') 16px center no-repeat;
+    background-size: 200px;
+}
+
+.jpg1 {
+    background: url('../img/1.jpg') 16px center no-repeat;
+    background-size: 200px;
+}
+
+.jpg2 {
+    background: url('../img/2.jpg') 16px center no-repeat;
+    background-size: 200px;
+}
+
+.jpg3 {
+    background: url('../img/3.jpg') 16px center no-repeat;
+    background-size: 200px;
+}
+
+.s44 {
+    line-height: 200%;
+    background-color: #f0f0f0;
+    width: 400px;
+    border: 0px solid #eee;
+    border-radius: 12px 12px;
+    padding: 0 0 20px 0;
+    text-align: center;
+}
+
+.m2 {
+    font-size: 10px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    line-height: 200%;
+    padding: 40px 2px 20px 20px;
+    width: 180px;
+    float: left;
+    position: absolute;
+    left: 0px;
+}
+
+.s22 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    line-height: 300%;
+    padding: 0 0;
+    padding-left: 40px;
+}
+
+.s5 {
+    background-color: #ccc;
+    font-size: 16px;
+    color: #000;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 24px;
+    line-height: 250%;
+    border: 0px solid #eee;
+    border-radius: 12px 12px 0 0;
+    font-weight: bold;
+}
+
+.kj {
+    font-size: 18px;
+    color: #333;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 30px;
+    line-height: 200%;
+    margin: 20px 20px;
+}
+
+.fl1 {
+    background: url('../img/digest.gif') left center no-repeat;
+    padding-left: 25px;
+}
+
+.m11 {
+    background: url('../img/type.png') 5px center no-repeat;
+    padding-left: 25px;
+}
+
+.time1 {
+    background: url('../img/time.gif') 5px center no-repeat;
+    padding-left: 25px;
+}
+
+.k1 {
+    font-size: 16px;
+    padding-left: 20px;
+    vertical-align: middle;
+}
+
+.d1 {
+    font-size: 16px;
+    text-align: left;
+    vertical-align: middle;
+    width: 60%;
+    margin: 2px auto;
+}
+
+.jdh {
+    margin-left: 28px;
+    float: left;
+    width: 50px;
+    text-align: left;
+}
+
+.jd {
+    color: #333;
+    width: 140px;
+    background-color: #ddd;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 8px 4px;
+    float: left;
+    border: 0px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 2px;
+}
+
+.fl {
+    float: left;
+    line-height: 18px;
+    margin: 8px 4px;
+    padding-right: 12px;
+}
+
+.jdok {
+    background-color: #61C631;
+    font-size: 16px;
+    line-height: 19px;
+    border: 0px solid #61C631;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.kjlen {
+    color: #333;
+    float: left;
+    font-size: 16px;
+    padding: 0 1px;
+    margin: 8px 4px;
+    width: 60px;
+}
+
+.kjfinish {
+    color: #61C631;
+    float: left;
+    font-size: 16px;
+    padding: 0 1px;
+    margin: 8px 4px;
+}
+
+.clear {
+    clear: both;
+}
+
+.option {
+    background-color: #f6f6f6;
+    border: 1px solid #f0f0f0;
+    border-radius: 0 0 12px 12px;
+    padding: 20px 0;
+    vertical-align: middle;
+    min-height: 250px;
+    max-height: 250px;
+}
+
+    .option option {
+        font-size: 16px;
+        color: #444;
+        padding: 4px 0 4px 24px;
+        background: url('../img/mbi_017.gif') 4px center no-repeat;
+        text-align: left;
+    }
+
+.pbar {
+    text-align: left;
+    padding-left: 44px;
+    line-height: 250%;
+    color: #000;
+    font-weight: bolder;
+    background-color: #aaa;
+    border: 0px solid #ddd;
+    border-radius: 12px 12px 0 0;
+    background: url('../img/ml.png') 20px center no-repeat #ddd;
+}
+
+.packge {
+    text-align: left;
+    position: fixed;
+    left: 20px;
+    top: 400px;
+    min-height: 150px;
+    background-color: #f2f2f2;
+    width: 360px;
+    border: 1px solid #f0f0f0;
+    border-radius: 12px 12px;
+    clear: right;
+}
+
+.btnCur, .btnNo {
+    height: 28px;
+    line-height: 28px;
+    vertical-align: middle;
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Microsoft YaHei',SimHei,simsun, Arial, Helvetica, sans-serif, Lucida Grande;
+    border: 0px solid #cd1a2d;
+    border-radius: 14px 14px;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.btnCur {
+    color: #fefefe;
+    background: #0e72bd;
+}
+
+.btnNo {
+    background-color: transparent;
+    color: #000;
+}
+
+ul .list-item {
+    position: relative;
+    float: left;
+    width: calc(400px);
+    margin-top: 25px;
+    margin-right: 25px;
+    box-shadow: 0 0 10px 2px rgb(0 0 0 / 15%);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+
+ul .list-item2 {
+    position: relative;
+    float: none;
+    width: 80%;
+    margin: 25px auto;
+    box-shadow: 0 0 10px 2px rgb(0 0 0 / 15%);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.content-box {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.relative {
+    position: relative;
+}
+
+.weight-text {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.center {
+    text-align: center;
+}
+
+.s2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    line-height: 200%;
+    padding: 0 20px;
+    width: 370px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+.s3 {
+    font-size: 16px;
+    color: #666;
+    font-weight: normal;
+    text-align: left;
+    padding-left: 24px;
+    line-height: 220%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 340px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+    .s3 span {
+        padding-right: 20px;
+    }
+
+.d2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    line-height: 200%;
+    padding: 0 20px;
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+.d3 {
+    font-size: 16px;
+    color: #666;
+    font-weight: normal;
+    text-align: center;
+    padding-left: 24px;
+    line-height: 220%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+.f2 {
+    font-family: STHupo, STXingkai, 'Microsoft YaHei UI', 'Microsoft YaHei',SimHei,simsun, Arial, Helvetica, sans-serif, Lucida Grande;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #bb1e1e;
+    text-align: center;
+    line-height: 150%;
+    padding: 30px 24px 0px 24px;
+    text-stroke: 1px #f0f0f0;
+    -webkit-text-stroke: 1px #f0f0f0;
+}
+
+.gjjt_f2 {
+    font-family: STHupo, STXingkai, 'Microsoft YaHei UI', 'Microsoft YaHei',SimHei,simsun, Arial, Helvetica, sans-serif, Lucida Grande;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #bb1e1e;
+    text-align: center;
+    line-height: 150%;
+    padding: 60px 24px 0px 24px;
+    text-stroke: 1px #f0f0f0;
+    -webkit-text-stroke: 1px #f0f0f0;
+}
+
+.ff2 {
+    font-family: STHupo, STXingkai, 'Microsoft YaHei UI', 'Microsoft YaHei',SimHei,simsun, Arial, Helvetica, sans-serif, Lucida Grande;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #bb1e1e;
+    text-align: center;
+    line-height: 150%;
+    padding: 30px 24px 0px 24px;
+    text-stroke: 1px #f0f0f0;
+    -webkit-text-stroke: 1px #f0f0f0;
+}
+
+.gjjt_ff2 {
+    font-family: STHupo, STXingkai, 'Microsoft YaHei UI', 'Microsoft YaHei',SimHei,simsun, Arial, Helvetica, sans-serif, Lucida Grande;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #bb1e1e;
+    text-align: center;
+    line-height: 150%;
+    padding: 60px 24px 0px 24px;
+    text-stroke: 1px #f0f0f0;
+    -webkit-text-stroke: 1px #f0f0f0;
+}
+
+.gjjt_ff22 {
+    font-family: STHupo, STXingkai, 'Microsoft YaHei UI', 'Microsoft YaHei',SimHei,simsun, Arial, Helvetica, sans-serif, Lucida Grande;
+    font-size: 48px;
+    font-weight: bolder;
+    color: #bb1e1e;
+    text-align: center;
+    line-height: 250%;
+    padding: 100px 24px 0px 24px;
+    text-stroke: 1px #f0f0f0;
+    -webkit-text-stroke: 1px #f0f0f0;
+}
+
+[data-content]::before {
+    content: attr(data-content);
+    position: absolute;
+    -webkit-text-stroke: 0;
+}
+
+.f3 {
+    font-family: 'Microsoft YaHei UI', 'Microsoft YaHei',SimHei,simsun, Arial, Helvetica, sans-serif, Lucida Grande;
+    font-size: 14px;
+    font-weight: bold;
+    color: orangered;
+    line-height: 150%;
+    background-color: #FFF3B9;
+    padding: 2px 12px;
+    border: 1px solid #EEF3B9;
+    border-radius: 16px 16px;
+    width: 120px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.ff3 {
+    font-family: 'Microsoft YaHei UI', 'Microsoft YaHei',SimHei,simsun, Arial, Helvetica, sans-serif, Lucida Grande;
+    font-size: 18px;
+    font-weight: bold;
+    color: orangered;
+    line-height: 150%;
+    background: rgba(255, 244, 185,0.9);
+    padding: 2px 12px;
+    border: 1px solid #EEF3B9;
+    border-radius: 16px 16px;
+    width: 200px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.ff4 {
+    font-family: simsun,Arial, Helvetica,'Microsoft YaHei UI', 'Microsoft YaHei',SimHei, sans-serif, Lucida Grande;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    line-height: 150%;
+    background: rgba(250, 250, 250,0.7);
+    padding: 20px 20px;
+    border: 1px solid #efefef;
+    border-radius: 8px 8px;
+    width: 80%;
+    text-align: left;
+    margin: 30px auto;
+}
+
+.ff5 {
+    font-family: 'Microsoft YaHei UI', 'Microsoft YaHei',SimHei,simsun, Arial, Helvetica, sans-serif, Lucida Grande;
+    font-size: 18px;
+    font-weight: bold;
+    color: orangered;
+    line-height: 150%;
+    padding: 4px 20px;
+    width: 80%;
+    text-align: left;
+    margin: 4px auto;
+}
+
+.bar {
+    padding-bottom: 20px;
+    height: 150px;
+}
+
+.bar2 {
+    padding-bottom: 20px;
+    height: 350px;
+}
+
+a {
+    cursor: pointer;
+}
+
+    a:hover, a:hover .s2 {
+        color: #0000ff;
+        text-decoration: none;
+    }
+
+    a:active {
+        color: #0000ff;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: #0000ff;
+        text-decoration: none;
+    }
+
+.margin2 {
+    margin: 8px 4px;
+}
+
+a:link {
+    color: #0000ff;
+    text-decoration: none;
+}
+
+.lab {
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.btlab {
+    background-color: #f9f9f9;
+    border: 1px solid #c9c9c9;
+    border-radius: 10px 10px;
+    padding: 4px 20px;
+    margin: 0 5px;
+}
+
+.btlabcur {
+    border: 1px solid #c9c9c9;
+    border-radius: 10px 10px;
+    padding: 4px 20px;
+    margin: 0 5px;
+    color: #fefefe;
+    background: #0e72bd;
+}
+
+.div_save {
+    text-align: right;
+    padding-right: 40px;
+    clear: both;
+    width: 99%;
+}
+
+.save {
+    background: url('../img/save.gif') left center no-repeat;
+    width: 70px;
+    cursor: pointer;
+    padding-left: 20px;
+    font-size: 14px;
+    text-align: left;
+    float: left;
+    line-height: 18px;
+    margin: 8px 4px;
+}
+
+.delsave {
+    background: url('../img/savenot.gif') left center no-repeat;
+    width: 70px;
+    cursor: pointer;
+    padding-left: 20px;
+    font-size: 14px;
+    text-align: left;
+    float: left;
+    line-height: 18px;
+    margin: 8px 4px;
+}

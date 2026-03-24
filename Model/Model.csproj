@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{73D0136F-BDB6-48A6-B512-197EF5619147}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Model</RootNamespace>
+    <AssemblyName>Model</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ZYRYJG\dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplyAddItemMDL.cs" />
+    <Compile Include="ApplyCancelMDL.cs" />
+    <Compile Include="ApplyChangeMDL.cs" />
+    <Compile Include="ApplyCheckTaskItemMDL.cs" />
+    <Compile Include="ApplyCheckTaskMDL.cs" />
+    <Compile Include="ApplyContinueMDL.cs" />
+    <Compile Include="ApplyFileMDL.cs" />
+    <Compile Include="ApplyFirstMDL.cs" />
+    <Compile Include="ApplyMDL.cs" />
+    <Compile Include="ApplyNewsMDL.cs" />
+    <Compile Include="ApplyRenewMDL.cs" />
+    <Compile Include="ApplyReplaceMDL.cs" />
+    <Compile Include="AppraiseMDL.cs" />
+    <Compile Include="BackDate.cs" />
+    <Compile Include="BlackListOB.cs" />
+    <Compile Include="CertificateAddItemOB.cs" />
+    <Compile Include="CertificateCAHistoryMDL.cs" />
+    <Compile Include="CertificateChangeOB.cs" />
+    <Compile Include="CertificateContinueOB.cs" />
+    <Compile Include="CertificateEnterApplyOB.cs" />
+    <Compile Include="CertificateHistoryOB.cs" />
+    <Compile Include="CertificateLockOB.cs" />
+    <Compile Include="CertificateMergeMDL.cs" />
+    <Compile Include="CertificateMoreMDL.cs" />
+    <Compile Include="CertificateOB.cs" />
+    <Compile Include="CertificateOutApplyMDL.cs" />
+    <Compile Include="CertificateOutMDL.cs" />
+    <Compile Include="CertificatePauseMDL.cs" />
+    <Compile Include="Certificate_LockHisMDL.cs" />
+    <Compile Include="Certificate_LockMDL.cs" />
+    <Compile Include="CheckFeedBackMDL.cs" />
+    <Compile Include="CheckObjectMDL.cs" />
+    <Compile Include="CheckTaskMDL.cs" />
+    <Compile Include="COC_ONE_Person_BaseInfoMDL.cs" />
+    <Compile Include="COC_ONE_Temporary_Person_BaseInfoMDL.cs" />
+    <Compile Include="COC_TOW_Person_BaseInfoMDL.cs" />
+    <Compile Include="COC_TOW_Person_BaseInfo_DeclareMDL.cs" />
+    <Compile Include="COC_TOW_Person_BaseInfo_HisMDL.cs" />
+    <Compile Include="COC_TOW_Person_FileMDL.cs" />
+    <Compile Include="COC_TOW_Register_ProfessionMDL.cs" />
+    <Compile Include="COC_TOW_Register_Profession_HisMDL.cs" />
+    <Compile Include="CYRYData.cs" />
+    <Compile Include="DepartmentMDL.cs" />
+    <Compile Include="DepartmentOB.cs" />
+    <Compile Include="DictionaryMDL.cs" />
+    <Compile Include="EJCertUseMDL.cs" />
+    <Compile Include="EnumManager.cs" />
+    <Compile Include="EnumShowName.cs" />
+    <Compile Include="ExamOutlineOB.cs" />
+    <Compile Include="ExamPageOB.cs" />
+    <Compile Include="ExamPageQuestionTypeOB.cs" />
+    <Compile Include="ExamPlaceAllot_OperationOB.cs" />
+    <Compile Include="ExamPlaceAllotOB.cs" />
+    <Compile Include="ExamPlaceOB.cs" />
+    <Compile Include="ExamPlanForUserOB.cs" />
+    <Compile Include="ExamPlanOB.cs" />
+    <Compile Include="ExamPlanSubjectOB.cs" />
+    <Compile Include="ExamRangeOB.cs" />
+    <Compile Include="ExamRangeSubOB.cs" />
+    <Compile Include="ExamResult_OperationOB.cs" />
+    <Compile Include="ExamResultOB.cs" />
+    <Compile Include="ExamRoomAllot_OperationOB.cs" />
+    <Compile Include="ExamRoomAllotOB.cs" />
+    <Compile Include="ExamSignUpOB.cs" />
+    <Compile Include="ExamSignUpPlaceOB.cs" />
+    <Compile Include="ExamSignupTrainMDL.cs" />
+    <Compile Include="ExamSignUp_DelOB.cs" />
+    <Compile Include="ExamSubjectResultOB.cs" />
+    <Compile Include="FileDownLogMDL.cs" />
+    <Compile Include="FileInfoMDL.cs" />
+    <Compile Include="FinishCertMDL.cs" />
+    <Compile Include="FinishSourceWareMDL.cs" />
+    <Compile Include="ForeignCertificateApplyOB.cs" />
+    <Compile Include="ForeignCertificateHistoryOB.cs" />
+    <Compile Include="ForeignCertificateOB.cs" />
+    <Compile Include="ForeignPostInfoOB.cs" />
+    <Compile Include="GSJ_QY_GSDJXXMDL.cs" />
+    <Compile Include="GYPXWhiteMDL.cs" />
+    <Compile Include="InfoTagOB.cs" />
+    <Compile Include="InterFaceLogOB.cs" />
+    <Compile Include="jcsjk_QY_ZHXXMDL.cs" />
+    <Compile Include="jcsjk_QY_ZHXX_CITY_ERRORMDL.cs" />
+    <Compile Include="jcsjk_RY_JZS_ZSSDMDL.cs" />
+    <Compile Include="JxjyBaseMDL.cs" />
+    <Compile Include="JxjyDetailMDL.cs" />
+    <Compile Include="LearnRecordOB.cs" />
+    <Compile Include="LockJZSMDL.cs" />
+    <Compile Include="LockZJSMDL.cs" />
+    <Compile Include="NewSetUpMDL.cs" />
+    <Compile Include="OperateLogOB.cs" />
+    <Compile Include="OrganizationMDL.cs" />
+    <Compile Include="OrganizationOB.cs" />
+    <Compile Include="Out_CheckCFZCMDL.cs" />
+    <Compile Include="Out_CheckShebaoMDL.cs" />
+    <Compile Include="PackageMDL.cs" />
+    <Compile Include="PackageSourceMDL.cs" />
+    <Compile Include="PageQuestionOB.cs" />
+    <Compile Include="PolicyNewsMDL.cs" />
+    <Compile Include="PostInfoOB.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QualificationMDL.cs" />
+    <Compile Include="QueryParamOB.cs" />
+    <Compile Include="QuestionManageOB.cs" />
+    <Compile Include="QuestionOB.cs" />
+    <Compile Include="QY_HYLSGXOB.cs" />
+    <Compile Include="ReEducateCertificateMDL.cs" />
+    <Compile Include="RefColumnOB.cs" />
+    <Compile Include="genseeMDL.cs" />
+    <Compile Include="ResultUrl.cs" />
+    <Compile Include="RoleMDL.cs" />
+    <Compile Include="RoleOB.cs" />
+    <Compile Include="SendDate.cs" />
+    <Compile Include="SheBaoMDL.cs" />
+    <Compile Include="SignUpPlaceOB.cs" />
+    <Compile Include="SourceMDL.cs" />
+    <Compile Include="StudyPlanMDL.cs" />
+    <Compile Include="TJ_MissExamLockMDL.cs" />
+    <Compile Include="TJ_VisitMDL.cs" />
+    <Compile Include="TrainQuestionMDL.cs" />
+    <Compile Include="TrainQuestOptionMDL.cs" />
+    <Compile Include="TrainUnitMDL.cs" />
+    <Compile Include="TypesOB.cs" />
+    <Compile Include="UnitCodeSetOB.cs" />
+    <Compile Include="UnitMDL.cs" />
+    <Compile Include="UnitWatchMDL.cs" />
+    <Compile Include="Unit_AQSCXKZMDL.cs" />
+    <Compile Include="userInfoOperate.cs" />
+    <Compile Include="UserOB.cs" />
+    <Compile Include="UserRoleMDL.cs" />
+    <Compile Include="WorkerLockOB.cs" />
+    <Compile Include="WorkerOB.cs" />
+    <Compile Include="WorkerSetMDL.cs" />
+    <Compile Include="WorkResultMDL.cs" />
+    <Compile Include="zjs_ApplyCancelMDL.cs" />
+    <Compile Include="zjs_ApplyChangeMDL.cs" />
+    <Compile Include="zjs_ApplyContinueMDL.cs" />
+    <Compile Include="zjs_ApplyFirstMDL.cs" />
+    <Compile Include="zjs_ApplyMDL.cs" />
+    <Compile Include="zjs_CertificateMDL.cs" />
+    <Compile Include="zjs_QualificationMDL.cs" />
+    <Compile Include="ZYRYCheck.cs" />
+    <Compile Include="ZYRYData.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

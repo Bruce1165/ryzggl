@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>调试页面</title>
+    <style>
+        body {
+            padding: 20px;
+            font-family: sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: rgba(255,255,255,0.95);
+            padding: 30px;
+            border-radius: 12px;
+            color: #333;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #409eff;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        .status {
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        .success {
+            background: #f0f9ff;
+            border-left: 4px solid #67c23a;
+        }
+        .warning {
+            background: #fff7e6;
+            border-left: 4px solid #faad14;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #409eff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px 5px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background: #66b1ff;
+        }
+        .button:active {
+            background: #337ecc;
+        }
+        #console-output {
+            background: #1e1e1e;
+            color: #00ff00;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: monospace;
+            max-height: 200px;
+            overflow-y: auto;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 RYZGGL 调试页面</h1>
+
+        <div class="status success">
+            <h3>✅ 页面加载成功</h3>
+            <p>如果你能看到这个页面，说明HTML/CSS正常工作！</p>
+        </div>
+
+        <div class="status warning">
+            <h3>🔍 调试信息</h3>
+            <p>当前时间: <span id="current-time"></span></p>
+            <p>浏览器: <span id="browser-info"></span></p>
+            <p>JavaScript状态: <span id="js-status"></span></p>
+        </div>
+
+        <div style="margin: 20px 0;">
+            <h3>🧪 测试链接</h3>
+            <p>点击下面的链接测试不同的页面：</p>
+            <a href="/simple-test" class="button">简单Vue测试</a>
+            <a href="/test.html" class="button">基础Vue测试</a>
+            <a href="/migration-dashboard" class="button">原始仪表板</a>
+        </div>
+
+        <div class="status warning">
+            <h3>📋 浏览器控制台日志</h3>
+            <div id="console-output">控制台日志将显示在这里...</div>
+        </div>
+
+        <div class="status success">
+            <h3>📞 需要帮助？</h3>
+            <p>如果所有页面都是白色，请：</p>
+            <ol style="line-height: 1.6;">
+                <li>打开浏览器开发者工具 (F12)</li>
+                <li>查看Console标签页是否有错误</li>
+                <li>查看Network标签页是否有红色错误</li>
+                <li>尝试清除浏览器缓存和Cookie</li>
+                <li>尝试使用不同的浏览器 (Chrome/Safari/Firefox)</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        // 基础JavaScript测试
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('调试页面已加载');
+            console.log('当前时间:', new Date().toLocaleString('zh-CN'));
+            console.log('浏览器信息:', navigator.userAgent);
+
+            // 更新页面信息
+            document.getElementById('current-time').textContent = new Date().toLocaleString('zh-CN');
+            document.getElementById('browser-info').textContent = navigator.userAgent.substring(0, 50) + '...';
+            document.getElementById('js-status').textContent = '✅ 正常工作';
+
+            // 捕获控制台输出
+            const consoleOutput = document.getElementById('console-output');
+            const originalLog = console.log;
+
+            console.log = function(...args) {
+                originalLog.apply(console, args);
+                const logLine = args.map(arg =>
+                    typeof arg === 'object' ? JSON.stringify(arg) : String(arg)
+                ).join(' ');
+                consoleOutput.innerHTML += '<div>' + logLine + '</div>';
+                consoleOutput.scrollTop = consoleOutput.scrollHeight;
+            };
+
+            console.log('✅ 调试页面初始化完成');
+            console.log('✅ JavaScript正常工作');
+            console.log('✅ 时间显示正常');
+        });
+    </script>
+</body>
+</html>

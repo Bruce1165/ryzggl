@@ -1,0 +1,16 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="PSMSweb.StAnManage._default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+       <title>北京市住房和城乡建设领域人员资格管理信息系统</title>
+</head>
+<frameset cols="160,6,*" frameborder="no" border="0" framespacing="0" id="frameset1">
+    <frame src="../Left.aspx?o=Analysis" name="leftFrame" scrolling="No" noresize="noresize" id="leftFrame" title="leftFrame" />
+    <frame src="../ExamManage/Split.aspx" name="split" scrolling="No" noresize="noresize" id="split" />
+    <frame src="about:blank" name="rightFrame" id="rightFrame"  scrolling="auto" title="rightFrame" marginheight="0" marginwidth="0" />
+  </frameset>
+<body>   
+</body>
+</html>

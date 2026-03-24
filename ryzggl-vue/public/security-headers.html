@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RYZGGL - 人员资格管理系统</title>
+
+    <!-- Security Headers Configuration -->
+    <!-- Note: These meta tags provide client-side security, but production deployments
+         should implement these as HTTP headers on the web server for maximum effectiveness -->
+
+    <!-- Content Security Policy (CSP) -->
+    <!-- Restricts what resources can be loaded and prevents XSS attacks -->
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      script-src 'self' 'unsafe-inline' 'unsafe-eval';
+      style-src 'self' 'unsafe-inline';
+      img-src 'self' data: https:;
+      font-src 'self' data:;
+      connect-src 'self' http://localhost:8080 https:;
+      media-src 'self';
+      object-src 'none';
+      frame-src 'none';
+      base-uri 'self';
+      form-action 'self';
+      frame-ancestors 'none';
+      upgrade-insecure-requests
+    ">
+
+    <!-- X-XSS-Protection -->
+    <!-- Enables browser's XSS filtering (legacy browsers) -->
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+
+    <!-- X-Frame-Options -->
+    <!-- Prevents clickjacking attacks -->
+    <meta http-equiv="X-Frame-Options" content="DENY">
+
+    <!-- X-Content-Type-Options -->
+    <!-- Prevents MIME type sniffing -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+
+    <!-- Referrer Policy -->
+    <!-- Controls how much referrer information is sent -->
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+
+    <!-- Permissions Policy -->
+    <!-- Controls which browser features can be used -->
+    <meta http-equiv="Permissions-Policy" content="
+      camera=(),
+      microphone=(),
+      geolocation=(),
+      payment=(),
+      usb=(),
+      bluetooth=(),
+      magnetometer=(),
+      gyroscope=(),
+      accelerometer=()
+    ">
+
+    <!-- Strict-Transport-Security (HSTS) -->
+    <!-- Forces HTTPS connections (only works when served over HTTPS) -->
+    <!-- Note: This meta tag is ignored by browsers, HSTS must be set as HTTP header -->
+    <!-- <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains; preload"> -->
+
+    <!-- Cache Control for Sensitive Pages -->
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, private">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+
+    <!-- Additional Security Meta Tags -->
+    <meta name="description" content="人员资格管理系统 - Personnel Qualification Management System">
+    <meta name="robots" content="noindex, nofollow">
+
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

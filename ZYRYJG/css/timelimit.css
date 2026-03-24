@@ -1,0 +1,17 @@
+﻿.divhelp{
+    margin:4px 20px;
+    padding:12px 20px;
+}
+.tbhelp{
+    background-color:#ccc;
+    border:1px solid #999;
+    width:90%;
+    margin:auto auto;
+    text-align:center
+}
+.tbhelp td{
+    background-color:#fefefe;
+    padding:4px;
+    line-height:120%;
+    width:25%;
+}

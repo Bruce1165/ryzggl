@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: RYZGGL Personnel Qualification Management System
+    datasource:
+      driver-class: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      url: jdbc:sqlserver://101.200.193.13:1433;databaseName=RYZG;encrypt=false;trustServerCertificate=true
+      username: synergydatauser
+      password: synergy_password
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 20
+      connection-timeout: 30000
+    mybatis-plus:
+      mapper-locations: classpath:mapper/*.xml
+      type-aliases-package: com.ryzggl.entity
+      configuration:
+        log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    jwt:
+      secret: RYZGGL_JWT_SECRET_KEY_2024_SECRET_REPLACE_IN_PRODUCTION_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      expiration: 86400000
+    logging:
+      level:
+        root: INFO
+        com.ryzggl: DEBUG
+        com.baomidou.mybatisplus: DEBUG

@@ -1,0 +1,250 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="RadControls.master.cs" Inherits="ZYRYJG.RadControls" %>
+
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link href="Css/styleRed.css?v=1.0.12" rel="stylesheet" type="text/css" />
+    <link href="Skins/Hot/PanelBar.hot.css" rel="stylesheet" type="text/css" />
+    <link href="Skins/Hot/Upload.hot.css?v=1.001" rel="stylesheet" type="text/css" />
+    <link href="Skins/Blue/Grid.Blue.css?v=1.007" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../Scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../Scripts/Public.js?v=1.007"></script>
+     <script type="text/javascript" src="../layer/layer.js"></script>
+       <link href="layer/skin/layer.css" rel="stylesheet" type="text/css" />
+    <title>北京市住房和城乡建设领域人员资格管理信息系统</title>
+    <telerik:RadCodeBlock ID="RadCodeBlock2" runat="server">
+        <script type="text/javascript">
+            //客户端提示
+            function OpenAlert(tip) {
+                radalert("<table width='400px' style='table-layout:fixed; '><tr><td style='word-break:break-all;padding10px 0px;background-color:#ffffff;'>" + tip + "</td></tr></table>", 550, 300, '提示信息');
+                return false;
+            }
+
+            //客户端确认
+            function OpenConfrim(tip, mozEvent) {
+                return blockConfirm(tip, mozEvent, 450, 100, '', '系统提示');
+            }
+            window.blockConfirm = function (text, mozEvent, oWidth, oHeight, callerObj, oTitle) {
+                var ev = mozEvent ? mozEvent : window.event; //Moz support requires passing the event argument manually 
+                //Cancel the event 
+                ev.cancelBubble = true;
+                ev.returnValue = false;
+                if (ev.stopPropagation) ev.stopPropagation();
+                if (ev.preventDefault) ev.preventDefault();
+
+                //Determine who is the caller 
+                var callerObj = ev.srcElement ? ev.srcElement : ev.target;
+
+                //Call the original radconfirm and pass it all necessary parameters 
+                if (callerObj) {
+                    //Show the confirm, then when it is closing, if returned value was true, automatically call the caller's click method again. 
+                    var callBackFn = function (arg) {
+                        if (arg) {
+
+                            callerObj["onclick"] = "";
+                            if (callerObj.click) callerObj.click(); //Works fine every time in IE, but does not work for links in Moz 
+                            else if (callerObj.tagName == "A") //We assume it is a link button! 
+                            {
+                                try {
+                                    eval(callerObj.href)
+                                }
+                                catch (e) { }
+                            }
+                        }
+                    }
+
+                    radconfirm(text, callBackFn, oWidth, oHeight, callerObj, oTitle);
+                }
+                return false;
+            }
+
+            //检验浏览器ActiveX权限
+            function checkActiveXEnable() {
+                var canActiveX = false;
+                try {
+                    var WshShell = new ActiveXObject("WScript.Shell");
+                    canActiveX = true;
+                } catch (e) { }
+                if (canActiveX == false) {
+                    alert("您目前的IE设置不能打印，请将本网站加入可信任站点，并修改可信任站点的自定义级别，勾选“对没有标记为安全的ActiveX控件进行初始化和运行”,然后重新启动浏览器。（详细设置方法请阅读系统帮助）");
+                    location.href = location.href;
+                }
+                return canActiveX;
+            }
+
+            //打印word
+            var word = null;
+            function Print(url) {
+                if (checkActiveXEnable() == false) {
+                    return;
+                }
+                try {
+                    word = new ActiveXObject("Word.Application");
+                    word.visible = false;
+
+                    var oWB = word.Documents.Open(url)
+                    //                 word.Application.Activate();
+
+
+                    oWB.Application.DisplayAlerts = false;
+                    oWB.PrintOut();
+                    oWB.Saved = true
+                    //                 word.Application.Quit();
+                    //                 word.Application.DisplayAlerts = false;
+                    //                 word = null;
+                    idTmr = window.setInterval("Cleanup();", 1500); //1秒后关闭word
+
+                }
+                catch (e) {
+                    try {
+                        word.Application.Quit();
+                        word = null;
+                    }
+                    catch (ex)
+                    { }
+                    idTmr = window.setTimeout("Cleanup();", 1000); //1秒后关闭word
+                    location.href = location.href;
+                    alert("无法打印，可能原因是您目前的IE设置不能打印，请将本网站加入可信任站点，并修改可信任站点的自定义级别，勾选“对没有标记为安全的ActiveX控件进行初始化和运行”！");
+
+                }
+            }
+
+            var idTmr = "";
+
+            function Cleanup() {
+                word.Application.Quit();
+                word = null;
+                window.clearTimeout(idTmr);
+                CollectGarbage();
+            }
+
+            //grid行选择
+            function checkBoxClick(checked) {
+                if (checked == true) return;
+                var ckall = document.getElementById(CheckBoxAllClientID);
+                if (ckall == null) return;
+                if (ckall.checked == true) ckall.checked = false;
+            }
+
+            //
+            function checkAllTip(checkBoxAllClientID) {
+                var ckall = document.getElementById(checkBoxAllClientID);
+                if (ckall == null) return;
+                if (ckall.checked == true) {
+                    alert("注意：您全选了所有页数据（不仅仅是当前页），您接下来的操作将对所有数据进行处理！");
+                }
+            }
+
+            //grid全选
+            function checkBoxAllClick(checkBoxAllClientID) {
+                if (checkBoxAllClientID == undefined) return;
+                var hideSelectAllRefreshCount = document.getElementById(checkBoxAllClientID.replace("CheckBoxAll", "HiddenFieldSelectAllRefreshCount"));
+                var hideSelectAll = document.getElementById(checkBoxAllClientID.replace("CheckBoxAll", "HiddenFieldSelectAll"));
+                var ckall = document.getElementById(checkBoxAllClientID);
+                if (ckall == null) return;
+                hideSelectAll.value = ckall.checked;
+                hideSelectAllRefreshCount.value = "0";
+                var grid = ckall.parentNode;
+                while (grid != null && grid != undefined && grid.nodeName != "TABLE") {
+                    grid = grid.parentNode;
+                }
+                var ifSelect = ckall.checked;
+                var Chks;
+                if (grid == undefined)
+                    Chks = document.getElementsByTagName("input");
+                else
+                    Chks = grid.getElementsByTagName("input");
+
+                if (Chks.length) {
+                    for (i = 0; i < Chks.length; i++) {
+                        if (Chks[i].type == "checkbox") {
+                            Chks[i].checked = ifSelect;
+                        }
+                    }
+                }
+                else if (Chks) {
+                    if (Chks.type == "checkbox") {
+                        Chks.checked = ifSelect;
+                    }
+                }
+            }
+            //** Div折叠效果 需要样式表DIV.DivTitleOn支持*********
+            //<div class="PageRoad" style="padding: 0 0 50px 0">
+            //    当前位置：一般列表查询模板
+            //</div>
+            //<div class="DivTitleOn" onclick="DivOnOff('Td3',event);" >种植信息</div>
+            //<div class="DivContent" id="Td3">
+            // 内容......
+            //</div>
+            //*****************************************************
+            function DivOnOff(send, objId, eventObj) {
+                var e = eventObj || window.event;
+                var srcElement = e.srcElement || e.target;
+                var objDesc = document.getElementById(objId);
+                if (objDesc.style.display == "none") {
+                    srcElement.className = "DivTitleOn";
+                    objDesc.style.display = "";
+                    send.setAttribute("title", "折叠");
+                }
+                else {
+                    srcElement.className = "DivTitleOff";
+                    objDesc.style.display = "none";
+                    send.setAttribute("title", "展开");
+                }
+            }
+            //判断GridView是否选择一个checkBox，适用于Button控件
+            //参数：【alt：提示信息，如请勾选一条记录，可选项，默认为“请勾选需要操作的记录”】【divID：控件容器ID，可选项，默认为document】
+            function isSelectRow(alt, divID) {
+                var chks;
+                if (divID == undefined)
+                    chks = document.getElementsByTagName("input");
+                else
+                    chks = document.getElementById(divID).getElementsByTagName("input");
+
+                if (chks == null) return false;
+
+                if (chks.length) {
+                    for (i = 0; i < chks.length; i++) {
+                        if (chks[i].type == "checkbox") {
+                            if (chks[i].checked == true) {
+                                //alert(chks[i].value);
+                                return true;
+                            }
+                        }
+                    }
+                }
+                if (alt != undefined)
+                    alert(alt);
+                else
+                    alert("至少选择一条记录");
+                return false;
+            }
+            //回车执行查询
+            function ButtonSearchClick(e) {
+                e = e || getEventObject(e);
+                if (e.keyCode == 13) {
+                    e.keyCode = 9;
+                    e.returnValue = false;
+                    var btn = document.getElementById("ctl00_ContentPlaceHolder1_ButtonSearch");
+                    if (btn != null) btn.click();
+                }
+            }
+
+
+        </script>
+    </telerik:RadCodeBlock>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+    </telerik:RadScriptManager>
+    <center>        
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+             
+        </asp:ContentPlaceHolder>     
+    </center>
+       
+    </form>
+</body>
+</html>

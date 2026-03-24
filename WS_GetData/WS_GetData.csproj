@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5B440715-2A5F-400D-B69D-7E2F4DCC242F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WS_GetData</RootNamespace>
+    <AssemblyName>WS_GetData</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>D:\Work\执业人员注册监管信息系统\publish\WS_GetDate\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\WS_GetData.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>46FF77BFC02F5697098DB80896F5C67B92BAE355</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WS_GetData_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AtgBusSdk">
+      <HintPath>dll\AtgBusSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="iTextAsian">
+      <HintPath>dll\iTextAsian.dll</HintPath>
+    </Reference>
+    <Reference Include="iTextAsianCmaps">
+      <HintPath>dll\iTextAsianCmaps.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>dll\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\ZYRYJG\dll\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.1.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ZYRYJG\dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Synergy.Common">
+      <HintPath>..\ZYRYJG\dll\Synergy.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Web.UI, Version=2010.2.713.20, Culture=neutral, PublicKeyToken=121fae78165ba3d4, processorArchitecture=MSIL" />
+    <Reference Include="zxja.Interface.Buisness">
+      <HintPath>..\ZYRYJG\dll\zxja.Interface.Buisness.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Api\Common.cs" />
+    <Compile Include="Api\Core.cs" />
+    <Compile Include="Api\Execute.cs" />
+    <Compile Include="Api\IniHelper.cs" />
+    <Compile Include="Api\JSON.cs" />
+    <Compile Include="Api\Log.cs" />
+    <Compile Include="Api\Model\AbolishRequestMdl.cs" />
+    <Compile Include="Api\Model\BaseRequestMdl.cs" />
+    <Compile Include="Api\Model\CreateRequestGBMdl.cs" />
+    <Compile Include="Api\Model\CreateRequestMdl.cs" />
+    <Compile Include="Api\Model\DownResponseMdl.cs" />
+    <Compile Include="Api\Model\CreateResponseMdl.cs" />
+    <Compile Include="Api\Model\Error.cs" />
+    <Compile Include="Api\Model\LoginMDL.cs" />
+    <Compile Include="Api\Model\ResponseResult.cs" />
+    <Compile Include="Api\Model\SignRequestMdl.cs" />
+    <Compile Include="Api\Model\UserInfoMdl.cs" />
+    <Compile Include="Api\Model\Zm\BaseLicence.cs" />
+    <Compile Include="Api\Model\Zm\EJZJGCS.cs" />
+    <Compile Include="Api\Model\Zm\EXAM_AQSC_GB.cs" />
+    <Compile Include="Api\Model\Zm\EXAM_AQSC.cs" />
+    <Compile Include="Api\Model\Zm\EXAM_TZZY_GB.cs" />
+    <Compile Include="Api\Model\Zm\EXAM_TZZY.cs" />
+    <Compile Include="Api\Model\Zm\EXAM_ZYJN.cs" />
+    <Compile Include="Api\Model\Zm\EJJZS.cs" />
+    <Compile Include="Api\Model\Zm\EXAM_ZYJS.cs" />
+    <Compile Include="Api\Utils\ConnectionHelper.cs" />
+    <Compile Include="Api\Utils\Constants.cs" />
+    <Compile Include="FileLog.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gb\Change\Aqscglry\AcceptData.cs" />
+    <Compile Include="gb\Change\Core.cs" />
+    <Compile Include="gb\Change\ErrorData.cs" />
+    <Compile Include="gb\Change\Request.cs" />
+    <Compile Include="gb\Change\ResponseResult.cs" />
+    <Compile Include="gb\Change\ReturnData.cs" />
+    <Compile Include="gb\Change\SuccessData.cs" />
+    <Compile Include="gb\Change\Tzzy\AcceptData.cs" />
+    <Compile Include="gb\HttpCore.cs" />
+    <Compile Include="gb\Imputation\Aqscglry\AcceptData.cs" />
+    <Compile Include="gb\Imputation\BusinessInformation.cs" />
+    <Compile Include="gb\Imputation\Core.cs" />
+    <Compile Include="gb\Imputation\ErrorData.cs" />
+    <Compile Include="gb\Imputation\Request.cs" />
+    <Compile Include="gb\Imputation\ResponseResult.cs" />
+    <Compile Include="gb\Imputation\ReturnData.cs" />
+    <Compile Include="gb\Imputation\SuccessData.cs" />
+    <Compile Include="gb\Imputation\Tzzy\AcceptData.cs" />
+    <Compile Include="gb\Imputation\WarnData.cs" />
+    <Compile Include="gb\InCheck\AcceptData.cs" />
+    <Compile Include="gb\InCheck\Core.cs" />
+    <Compile Include="gb\InCheck\ErrorData.cs" />
+    <Compile Include="gb\InCheck\Request.cs" />
+    <Compile Include="gb\InCheck\ResponseResult.cs" />
+    <Compile Include="gb\InCheck\ReturnData.cs" />
+    <Compile Include="gb\InCheck\SuccessData.cs" />
+    <Compile Include="gb\Login\Core.cs" />
+    <Compile Include="gb\Login\Custom.cs" />
+    <Compile Include="gb\Login\ResponseResult.cs" />
+    <Compile Include="gb\Login\Status.cs" />
+    <Compile Include="gb\OutCheck\Core.cs" />
+    <Compile Include="gb\OutCheck\ErrorData.cs" />
+    <Compile Include="gb\OutCheck\Request.cs" />
+    <Compile Include="gb\OutCheck\ResponseResult.cs" />
+    <Compile Include="gb\OutCheck\ReturnData.cs" />
+    <Compile Include="gb\OutCheck\SuccessData.cs" />
+    <Compile Include="gb\Upcert\AcceptData.cs" />
+    <Compile Include="gb\Upcert\Core.cs" />
+    <Compile Include="gb\Upcert\ErrorData.cs" />
+    <Compile Include="gb\Upcert\Request.cs" />
+    <Compile Include="gb\Upcert\ResponseResult.cs" />
+    <Compile Include="gb\Upcert\ReturnData.cs" />
+    <Compile Include="gb\Update\Aqscglry\AcceptData.cs" />
+    <Compile Include="gb\Update\Core.cs" />
+    <Compile Include="gb\Update\ErrorData.cs" />
+    <Compile Include="gb\Update\Request.cs" />
+    <Compile Include="gb\Update\ResponseResult.cs" />
+    <Compile Include="gb\Update\ReturnData.cs" />
+    <Compile Include="gb\Update\SuccessData.cs" />
+    <Compile Include="gb\Update\Tzzy\AcceptData.cs" />
+    <Compile Include="gb\OutCheck\AcceptData.cs" />
+    <Compile Include="gb\Verification\Aqscglry\AcceptData.cs" />
+    <Compile Include="gb\Verification\Core.cs" />
+    <Compile Include="gb\Verification\WarnData.cs" />
+    <Compile Include="gb\Verification\ErrorData.cs" />
+    <Compile Include="gb\Verification\Request.cs" />
+    <Compile Include="gb\Verification\ResponseResult.cs" />
+    <Compile Include="gb\Verification\ReturnData.cs" />
+    <Compile Include="gb\Verification\Tzzy\AcceptData.cs" />
+    <Compile Include="ProjectInstaller.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProjectInstaller.Designer.cs">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\BDYService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\FileService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\JCSJKService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RYKWXT\Reference.cs">
+      <SubType>code</SubType>
+    </Compile>
+    <Compile Include="Service References\RYKWXT\Reference1.cs">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Service References\zxjaUpdater\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ZYRYJGWinService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ZYRYJGWinService.Designer.cs">
+      <DependentUpon>ZYRYJGWinService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="install.bat" />
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\BDYService\zhujianservice.wsdl" />
+    <None Include="Service References\FileService\fileservice.wsdl" />
+    <None Include="Service References\JCSJKService\InterFaceService.wsdl" />
+    <None Include="Service References\JCSJKService\WS_GetData.JCSJKService.Sys_User.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\RYKWXT\InterFaceService.wsdl" />
+    <None Include="Service References\RYKWXT\WS_GetData.RYKWXT.Sys_User.datasource" />
+    <None Include="Service References\zxjaUpdater\DBUploader.wsdl" />
+    <None Include="Uninstall.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{A328589D-BA4C-42C1-B671-49FF4E1F694A}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{E7C7F256-5F06-4A50-9094-62F48120389F}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.csproj">
+      <Project>{15B628AD-038C-49AD-93EC-64366951EF09}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ProjectInstaller.resx">
+      <DependentUpon>ProjectInstaller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZYRYJGWinService.resx">
+      <DependentUpon>ZYRYJGWinService.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="WS_GetData_TemporaryKey.pfx" />
+    <None Include="工程说明.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\BDYService\" />
+    <WCFMetadataStorage Include="Service References\FileService\" />
+    <WCFMetadataStorage Include="Service References\JCSJKService\" />
+    <WCFMetadataStorage Include="Service References\zxjaUpdater\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\JCSJKService\InterFaceService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\JCSJKService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\JCSJKService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\JCSJKService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\zxjaUpdater\DBUploader.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\zxjaUpdater\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\zxjaUpdater\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\zxjaUpdater\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BDYService\zhujianservice.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BDYService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BDYService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\BDYService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FileService\fileservice.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FileService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FileService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FileService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="dll\iTextAsian.dll" />
+    <Content Include="dll\iTextAsianCmaps.dll" />
+    <Content Include="dll\itextsharp.dll" />
+    <Content Include="Service References\RYKWXT\configuration.svcinfo" />
+    <Content Include="Service References\RYKWXT\configuration91.svcinfo" />
+    <Content Include="Service References\RYKWXT\InterFaceService.disco" />
+    <Content Include="Service References\RYKWXT\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

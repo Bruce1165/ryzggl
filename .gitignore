@@ -1,0 +1,53 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Vue/Node.js
+ryzggl-vue/node_modules/
+ryzggl-vue/dist/
+ryzggl-vue/.vite/
+ryzggl-vue/npm-debug.log*
+ryzggl-vue/yarn-debug.log*
+ryzggl-vue/yarn-error.log*
+ryzggl-vue/pnpm-debug.log*
+
+# Java/Maven
+ryzggl-java/target/
+ryzggl-java/.mvn/
+ryzggl-java/mvnw
+ryzggl-java/mvnw.cmd
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+
+# Logs
+*.log
+app.log
+
+# Claude AI
+.claude/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Build artifacts
+target/
+build/
+dist/

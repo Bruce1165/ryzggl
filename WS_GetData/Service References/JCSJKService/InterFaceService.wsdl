@@ -1,0 +1,1367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="AddData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="iServiceId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddDataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="iServiceId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateDataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PartUpdateData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="iServiceId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="0" maxOccurs="1" name="aryColumns" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PartUpdateDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PartUpdateDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="iServiceId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ds">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleDataResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="iServiceId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tableName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="condition" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="resultCount" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PageQueryData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="iServiceId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tableName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="condition" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PageQueryDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PageQueryDataResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="resultCount" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryTable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="systemId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="serviceId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tableName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="condition" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryTableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryTableResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="recordCount" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tableName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="condition" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryServiceResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+            <s:element minOccurs="1" maxOccurs="1" name="recordCount" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestService">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestServiceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestServiceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSystemId">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSystemIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSystemIdResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDataSourceServiceHttp">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDataSourceServiceHttpResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDataSourceServiceHttpResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIServiceStruct">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="iServiceId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIServiceStructResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIServiceStructResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIServiceFieldsCollection">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="iServiceId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetIServiceFieldsCollectionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetIServiceFieldsCollectionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceFieldsCollection">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="serviceId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tableName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceFieldsCollectionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetServiceFieldsCollectionResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExchTask">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="exeTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddExchTaskResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddExchTaskResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpDateExchServiceNextExeTime">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="exeTime" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpDateExchServiceNextExeTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpDateExchServiceNextExeTimeResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExchServiceLogByIsRunNo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="exeTime" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="tableName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExchServiceLogByIsRunNoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExchServiceLogByIsRunNoResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExchServiceLogByIsSucessIsCompare">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="exeTime" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="tableName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExchServiceLogByIsSucessIsCompareResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExchServiceLogByIsSucessIsCompareResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateServiceLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="eServiceLogId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="isSuccess" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="isRun" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorInfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateServiceLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateServiceLogResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateServiceLogCompare">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="eServiceLogId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="compareIsRun" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="compareSuccess" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorInfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateServiceLogCompareResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateServiceLogCompareResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertServiceTask">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="eServiceTaskId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="eServiceId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="eServiceLogId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="endIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="getSuccess" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="insertSuccess" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="errorInfo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertServiceTaskResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertServiceTaskResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExchServiceCompareFields">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EServiceId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExchServiceCompareFieldsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExchServiceCompareFieldsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryDataToHtml">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="passWord" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="iServiceId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tableName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="startIndex" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="pageSize" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="condition" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sortText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QueryDataToHtmlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="QueryDataToHtmlResult" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="resultCount" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckAvail">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckAvailResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckAvailResult" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="stateCollection" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetUserInfoResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:Sys_User" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Sys_User">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AllCServieRight" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AllMenuRight" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AllReportRight" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AllServiceRight" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CServiceRight" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeptArray" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DeptId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DutyArray" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndTime" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Flag" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MenuRight" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Mobile" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Pwd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReportArray" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReportDeptArray" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ServiceRight" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sfz" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BusinessName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetServiceCategoryTable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceCategoryTableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetServiceCategoryTableResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceListByServiceCategoryId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="serviceCategoryId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceListByServiceCategoryIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetServiceListByServiceCategoryIdResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AddDataSoapIn">
+    <wsdl:part name="parameters" element="tns:AddData" />
+  </wsdl:message>
+  <wsdl:message name="AddDataSoapOut">
+    <wsdl:part name="parameters" element="tns:AddDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDataSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateData" />
+  </wsdl:message>
+  <wsdl:message name="UpdateDataSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="PartUpdateDataSoapIn">
+    <wsdl:part name="parameters" element="tns:PartUpdateData" />
+  </wsdl:message>
+  <wsdl:message name="PartUpdateDataSoapOut">
+    <wsdl:part name="parameters" element="tns:PartUpdateDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleDataSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleData" />
+  </wsdl:message>
+  <wsdl:message name="DeleDataSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryDataSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryData" />
+  </wsdl:message>
+  <wsdl:message name="QueryDataSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="PageQueryDataSoapIn">
+    <wsdl:part name="parameters" element="tns:PageQueryData" />
+  </wsdl:message>
+  <wsdl:message name="PageQueryDataSoapOut">
+    <wsdl:part name="parameters" element="tns:PageQueryDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryTableSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryTable" />
+  </wsdl:message>
+  <wsdl:message name="QueryTableSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryService" />
+  </wsdl:message>
+  <wsdl:message name="QueryServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestServiceSoapIn">
+    <wsdl:part name="parameters" element="tns:TestService" />
+  </wsdl:message>
+  <wsdl:message name="TestServiceSoapOut">
+    <wsdl:part name="parameters" element="tns:TestServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSystemIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSystemId" />
+  </wsdl:message>
+  <wsdl:message name="GetSystemIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSystemIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDataSourceServiceHttpSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDataSourceServiceHttp" />
+  </wsdl:message>
+  <wsdl:message name="GetDataSourceServiceHttpSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDataSourceServiceHttpResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIServiceStructSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIServiceStruct" />
+  </wsdl:message>
+  <wsdl:message name="GetIServiceStructSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIServiceStructResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetIServiceFieldsCollectionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetIServiceFieldsCollection" />
+  </wsdl:message>
+  <wsdl:message name="GetIServiceFieldsCollectionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetIServiceFieldsCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceFieldsCollectionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServiceFieldsCollection" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceFieldsCollectionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServiceFieldsCollectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddExchTaskSoapIn">
+    <wsdl:part name="parameters" element="tns:AddExchTask" />
+  </wsdl:message>
+  <wsdl:message name="AddExchTaskSoapOut">
+    <wsdl:part name="parameters" element="tns:AddExchTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpDateExchServiceNextExeTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:UpDateExchServiceNextExeTime" />
+  </wsdl:message>
+  <wsdl:message name="UpDateExchServiceNextExeTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:UpDateExchServiceNextExeTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExchServiceLogByIsRunNoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExchServiceLogByIsRunNo" />
+  </wsdl:message>
+  <wsdl:message name="GetExchServiceLogByIsRunNoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExchServiceLogByIsRunNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExchServiceLogByIsSucessIsCompareSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExchServiceLogByIsSucessIsCompare" />
+  </wsdl:message>
+  <wsdl:message name="GetExchServiceLogByIsSucessIsCompareSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExchServiceLogByIsSucessIsCompareResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateServiceLogSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateServiceLog" />
+  </wsdl:message>
+  <wsdl:message name="UpdateServiceLogSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateServiceLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateServiceLogCompareSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateServiceLogCompare" />
+  </wsdl:message>
+  <wsdl:message name="UpdateServiceLogCompareSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateServiceLogCompareResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertServiceTaskSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertServiceTask" />
+  </wsdl:message>
+  <wsdl:message name="InsertServiceTaskSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertServiceTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExchServiceCompareFieldsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExchServiceCompareFields" />
+  </wsdl:message>
+  <wsdl:message name="GetExchServiceCompareFieldsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExchServiceCompareFieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="QueryDataToHtmlSoapIn">
+    <wsdl:part name="parameters" element="tns:QueryDataToHtml" />
+  </wsdl:message>
+  <wsdl:message name="QueryDataToHtmlSoapOut">
+    <wsdl:part name="parameters" element="tns:QueryDataToHtmlResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckAvailSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckAvail" />
+  </wsdl:message>
+  <wsdl:message name="CheckAvailSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckAvailResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetUserInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceCategoryTableSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServiceCategoryTable" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceCategoryTableSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServiceCategoryTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceListByServiceCategoryIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServiceListByServiceCategoryId" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceListByServiceCategoryIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServiceListByServiceCategoryIdResponse" />
+  </wsdl:message>
+  <wsdl:portType name="InterFaceServiceSoap">
+    <wsdl:operation name="AddData">
+      <wsdl:input message="tns:AddDataSoapIn" />
+      <wsdl:output message="tns:AddDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateData">
+      <wsdl:input message="tns:UpdateDataSoapIn" />
+      <wsdl:output message="tns:UpdateDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PartUpdateData">
+      <wsdl:input message="tns:PartUpdateDataSoapIn" />
+      <wsdl:output message="tns:PartUpdateDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleData">
+      <wsdl:input message="tns:DeleDataSoapIn" />
+      <wsdl:output message="tns:DeleDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryData">
+      <wsdl:input message="tns:QueryDataSoapIn" />
+      <wsdl:output message="tns:QueryDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PageQueryData">
+      <wsdl:input message="tns:PageQueryDataSoapIn" />
+      <wsdl:output message="tns:PageQueryDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryTable">
+      <wsdl:input message="tns:QueryTableSoapIn" />
+      <wsdl:output message="tns:QueryTableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryService">
+      <wsdl:input message="tns:QueryServiceSoapIn" />
+      <wsdl:output message="tns:QueryServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestService">
+      <wsdl:input message="tns:TestServiceSoapIn" />
+      <wsdl:output message="tns:TestServiceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemId">
+      <wsdl:input message="tns:GetSystemIdSoapIn" />
+      <wsdl:output message="tns:GetSystemIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataSourceServiceHttp">
+      <wsdl:input message="tns:GetDataSourceServiceHttpSoapIn" />
+      <wsdl:output message="tns:GetDataSourceServiceHttpSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIServiceStruct">
+      <wsdl:input message="tns:GetIServiceStructSoapIn" />
+      <wsdl:output message="tns:GetIServiceStructSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIServiceFieldsCollection">
+      <wsdl:input message="tns:GetIServiceFieldsCollectionSoapIn" />
+      <wsdl:output message="tns:GetIServiceFieldsCollectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceFieldsCollection">
+      <wsdl:input message="tns:GetServiceFieldsCollectionSoapIn" />
+      <wsdl:output message="tns:GetServiceFieldsCollectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddExchTask">
+      <wsdl:input message="tns:AddExchTaskSoapIn" />
+      <wsdl:output message="tns:AddExchTaskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpDateExchServiceNextExeTime">
+      <wsdl:input message="tns:UpDateExchServiceNextExeTimeSoapIn" />
+      <wsdl:output message="tns:UpDateExchServiceNextExeTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExchServiceLogByIsRunNo">
+      <wsdl:input message="tns:GetExchServiceLogByIsRunNoSoapIn" />
+      <wsdl:output message="tns:GetExchServiceLogByIsRunNoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExchServiceLogByIsSucessIsCompare">
+      <wsdl:input message="tns:GetExchServiceLogByIsSucessIsCompareSoapIn" />
+      <wsdl:output message="tns:GetExchServiceLogByIsSucessIsCompareSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateServiceLog">
+      <wsdl:input message="tns:UpdateServiceLogSoapIn" />
+      <wsdl:output message="tns:UpdateServiceLogSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateServiceLogCompare">
+      <wsdl:input message="tns:UpdateServiceLogCompareSoapIn" />
+      <wsdl:output message="tns:UpdateServiceLogCompareSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertServiceTask">
+      <wsdl:input message="tns:InsertServiceTaskSoapIn" />
+      <wsdl:output message="tns:InsertServiceTaskSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExchServiceCompareFields">
+      <wsdl:input message="tns:GetExchServiceCompareFieldsSoapIn" />
+      <wsdl:output message="tns:GetExchServiceCompareFieldsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryDataToHtml">
+      <wsdl:input message="tns:QueryDataToHtmlSoapIn" />
+      <wsdl:output message="tns:QueryDataToHtmlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckAvail">
+      <wsdl:input message="tns:CheckAvailSoapIn" />
+      <wsdl:output message="tns:CheckAvailSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfo">
+      <wsdl:input message="tns:GetUserInfoSoapIn" />
+      <wsdl:output message="tns:GetUserInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceCategoryTable">
+      <wsdl:input message="tns:GetServiceCategoryTableSoapIn" />
+      <wsdl:output message="tns:GetServiceCategoryTableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceListByServiceCategoryId">
+      <wsdl:input message="tns:GetServiceListByServiceCategoryIdSoapIn" />
+      <wsdl:output message="tns:GetServiceListByServiceCategoryIdSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="InterFaceServiceSoap" type="tns:InterFaceServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddData">
+      <soap:operation soapAction="http://tempuri.org/AddData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateData">
+      <soap:operation soapAction="http://tempuri.org/UpdateData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PartUpdateData">
+      <soap:operation soapAction="http://tempuri.org/PartUpdateData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleData">
+      <soap:operation soapAction="http://tempuri.org/DeleData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryData">
+      <soap:operation soapAction="http://tempuri.org/QueryData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PageQueryData">
+      <soap:operation soapAction="http://tempuri.org/PageQueryData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryTable">
+      <soap:operation soapAction="http://tempuri.org/QueryTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryService">
+      <soap:operation soapAction="http://tempuri.org/QueryService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestService">
+      <soap:operation soapAction="http://tempuri.org/TestService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemId">
+      <soap:operation soapAction="http://tempuri.org/GetSystemId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataSourceServiceHttp">
+      <soap:operation soapAction="http://tempuri.org/GetDataSourceServiceHttp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIServiceStruct">
+      <soap:operation soapAction="http://tempuri.org/GetIServiceStruct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIServiceFieldsCollection">
+      <soap:operation soapAction="http://tempuri.org/GetIServiceFieldsCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceFieldsCollection">
+      <soap:operation soapAction="http://tempuri.org/GetServiceFieldsCollection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExchTask">
+      <soap:operation soapAction="http://tempuri.org/AddExchTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpDateExchServiceNextExeTime">
+      <soap:operation soapAction="http://tempuri.org/UpDateExchServiceNextExeTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExchServiceLogByIsRunNo">
+      <soap:operation soapAction="http://tempuri.org/GetExchServiceLogByIsRunNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExchServiceLogByIsSucessIsCompare">
+      <soap:operation soapAction="http://tempuri.org/GetExchServiceLogByIsSucessIsCompare" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateServiceLog">
+      <soap:operation soapAction="http://tempuri.org/UpdateServiceLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateServiceLogCompare">
+      <soap:operation soapAction="http://tempuri.org/UpdateServiceLogCompare" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertServiceTask">
+      <soap:operation soapAction="http://tempuri.org/InsertServiceTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExchServiceCompareFields">
+      <soap:operation soapAction="http://tempuri.org/GetExchServiceCompareFields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryDataToHtml">
+      <soap:operation soapAction="http://tempuri.org/QueryDataToHtml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckAvail">
+      <soap:operation soapAction="http://tempuri.org/CheckAvail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfo">
+      <soap:operation soapAction="http://tempuri.org/GetUserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceCategoryTable">
+      <soap:operation soapAction="http://tempuri.org/GetServiceCategoryTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceListByServiceCategoryId">
+      <soap:operation soapAction="http://tempuri.org/GetServiceListByServiceCategoryId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="InterFaceServiceSoap12" type="tns:InterFaceServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddData">
+      <soap12:operation soapAction="http://tempuri.org/AddData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateData">
+      <soap12:operation soapAction="http://tempuri.org/UpdateData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PartUpdateData">
+      <soap12:operation soapAction="http://tempuri.org/PartUpdateData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleData">
+      <soap12:operation soapAction="http://tempuri.org/DeleData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryData">
+      <soap12:operation soapAction="http://tempuri.org/QueryData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PageQueryData">
+      <soap12:operation soapAction="http://tempuri.org/PageQueryData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryTable">
+      <soap12:operation soapAction="http://tempuri.org/QueryTable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryService">
+      <soap12:operation soapAction="http://tempuri.org/QueryService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestService">
+      <soap12:operation soapAction="http://tempuri.org/TestService" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSystemId">
+      <soap12:operation soapAction="http://tempuri.org/GetSystemId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataSourceServiceHttp">
+      <soap12:operation soapAction="http://tempuri.org/GetDataSourceServiceHttp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIServiceStruct">
+      <soap12:operation soapAction="http://tempuri.org/GetIServiceStruct" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIServiceFieldsCollection">
+      <soap12:operation soapAction="http://tempuri.org/GetIServiceFieldsCollection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceFieldsCollection">
+      <soap12:operation soapAction="http://tempuri.org/GetServiceFieldsCollection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddExchTask">
+      <soap12:operation soapAction="http://tempuri.org/AddExchTask" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpDateExchServiceNextExeTime">
+      <soap12:operation soapAction="http://tempuri.org/UpDateExchServiceNextExeTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExchServiceLogByIsRunNo">
+      <soap12:operation soapAction="http://tempuri.org/GetExchServiceLogByIsRunNo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExchServiceLogByIsSucessIsCompare">
+      <soap12:operation soapAction="http://tempuri.org/GetExchServiceLogByIsSucessIsCompare" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateServiceLog">
+      <soap12:operation soapAction="http://tempuri.org/UpdateServiceLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateServiceLogCompare">
+      <soap12:operation soapAction="http://tempuri.org/UpdateServiceLogCompare" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertServiceTask">
+      <soap12:operation soapAction="http://tempuri.org/InsertServiceTask" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExchServiceCompareFields">
+      <soap12:operation soapAction="http://tempuri.org/GetExchServiceCompareFields" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryDataToHtml">
+      <soap12:operation soapAction="http://tempuri.org/QueryDataToHtml" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckAvail">
+      <soap12:operation soapAction="http://tempuri.org/CheckAvail" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetUserInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceCategoryTable">
+      <soap12:operation soapAction="http://tempuri.org/GetServiceCategoryTable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceListByServiceCategoryId">
+      <soap12:operation soapAction="http://tempuri.org/GetServiceListByServiceCategoryId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="InterFaceService">
+    <wsdl:port name="InterFaceServiceSoap" binding="tns:InterFaceServiceSoap">
+      <soap:address location="http://192.168.5.98/SQSWeb_Silverlight/Exchage/InterFaceService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="InterFaceServiceSoap12" binding="tns:InterFaceServiceSoap12">
+      <soap12:address location="http://192.168.5.98/SQSWeb_Silverlight/Exchage/InterFaceService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

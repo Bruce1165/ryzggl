@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="RadControls.master.cs" Inherits="RadControls" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="Content/styleRed.css?v=1.0.6" rel="stylesheet" type="text/css" />
+    <link href="Skins/Blue/Grid.Blue.css?v=1.007" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../Scripts/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../Scripts/Public.js?v=1.012"></script>
+    <script type="text/javascript" src="../layer/layer.js"></script>
+    <link type="text/css" rel="stylesheet" href="layer/skin/layer.css" />
+</head>
+<body style="background: #FFF4F4;">
+    <form id="form1" runat="server">
+        <telerik:RadScriptManager ID="RadScriptManager1" runat="server">
+        </telerik:RadScriptManager>     
+        <div style="background: #fff; border-width: 1px; border-style: solid; border-color: #fff; border-radius: 10px 10px;padding: 20px 12px;min-height:600px; margin: 0px 12px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+                <div style="clear: both"></div>
+                <div id="winpop">
+                </div>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

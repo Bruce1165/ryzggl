@@ -1,0 +1,22 @@
+SCC = This is a Source Code Control file.
+
+[DTJGHC.sln]
+SCC_Aux_Path = 116.213.192.69:8877:建筑业企业动态监管
+SCC_Project_Name = $/建筑业企业资质及人员资格动态监督管理系统/code/DTJGHC
+
+[Utility.csproj]
+SCC_Aux_Path = 116.213.192.69:8877:建筑业企业动态监管
+SCC_Project_Name = $/建筑业企业资质及人员资格动态监督管理系统/code/DTJGHC
+
+[Business.csproj]
+SCC_Aux_Path = 116.213.192.69:8877:建筑业企业动态监管
+SCC_Project_Name = $/建筑业企业资质及人员资格动态监督管理系统/code/DTJGHC/Business
+
+[DataAccess.csproj]
+SCC_Aux_Path = 116.213.192.69:8877:建筑业企业动态监管
+SCC_Project_Name = $/建筑业企业资质及人员资格动态监督管理系统/code/DTJGHC/DataAccess
+
+[DTJGHCWeb.csproj]
+SCC_Aux_Path = 116.213.192.69:8877:建筑业企业动态监管
+SCC_Project_Name = $/建筑业企业资质及人员资格动态监督管理系统/code/DTJGHC/DTJGHCWeb
+

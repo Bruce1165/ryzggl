@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{39657A10-B654-4F59-AE44-665EC6831FB5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccess</RootNamespace>
+    <AssemblyName>DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\DataAccess.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocX">
+      <HintPath>..\ZYRYJG\dll\DocX.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ZYRYJG\dll\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplyAddItemDAL.cs" />
+    <Compile Include="ApplyCancelDAL.cs" />
+    <Compile Include="ApplyChangeDAL.cs" />
+    <Compile Include="ApplyCheckTaskDAL.cs" />
+    <Compile Include="ApplyCheckTaskItemDAL.cs" />
+    <Compile Include="ApplyContinueDAL.cs" />
+    <Compile Include="ApplyNewsDAL.cs" />
+    <Compile Include="BlackListDAL.cs" />
+    <Compile Include="CertificateOutApplyDAL.cs" />
+    <Compile Include="CertificateOutDAL.cs" />
+    <Compile Include="CertificatePauseDAL.cs" />
+    <Compile Include="CheckFeedBackDAL.cs" />
+    <Compile Include="CheckObjectDAL.cs" />
+    <Compile Include="CheckTaskDAL.cs" />
+    <Compile Include="EJCertUseDAL.cs" />
+    <Compile Include="ExamSignupTrainDAL.cs" />
+    <Compile Include="FinishCertDAL.cs" />
+    <Compile Include="FinishSourceWareDAL.cs" />
+    <Compile Include="Gx_Task_ToZczxDAL.cs" />
+    <Compile Include="CertificateAddItemDAL.cs" />
+    <Compile Include="CertificateCAHistoryDAL.cs" />
+    <Compile Include="CertificateChangeDAL.cs" />
+    <Compile Include="CertificateContinueDAL.cs" />
+    <Compile Include="CertificateDAL.cs" />
+    <Compile Include="CertificateEnterApplyDAL.cs" />
+    <Compile Include="CertificateHistoryDAL.cs" />
+    <Compile Include="CertificateLockDAL.cs" />
+    <Compile Include="CertificateMergeDAL.cs" />
+    <Compile Include="CertificateMoreDAL.cs" />
+    <Compile Include="Certificate_LockDAL.cs" />
+    <Compile Include="COC_ONE_Temporary_Person_BaseInfoDAL.cs" />
+    <Compile Include="COC_TOW_Person_BaseInfo_DeclareDAL.cs" />
+    <Compile Include="COC_TOW_Person_BaseInfo_HisDAL.cs" />
+    <Compile Include="COC_TOW_Register_Profession_HisDAL.cs" />
+    <Compile Include="CopyFile.cs" />
+    <Compile Include="ExamOutlineDAL.cs" />
+    <Compile Include="ExamPageDAL.cs" />
+    <Compile Include="ExamPageQuestionTypeDAL.cs" />
+    <Compile Include="ExamPlaceAllot_OperationDAL.cs" />
+    <Compile Include="ExamPlaceAllotDAL.cs" />
+    <Compile Include="ExamPlaceDAL.cs" />
+    <Compile Include="ExamPlanDAL.cs" />
+    <Compile Include="ExamPlanForUserDAL.cs" />
+    <Compile Include="ExamPlanSubjectDAL.cs" />
+    <Compile Include="ExamRangeDAL.cs" />
+    <Compile Include="ExamRangeSubDAL.cs" />
+    <Compile Include="ExamResult_OperationDAL.cs" />
+    <Compile Include="ExamResultDAL.cs" />
+    <Compile Include="ExamRoomAllot_OperationDAL.cs" />
+    <Compile Include="ExamRoomAllotDAL.cs" />
+    <Compile Include="ExamSignUpDAL.cs" />
+    <Compile Include="ExamSignUpPlaceDAL.cs" />
+    <Compile Include="ExamSignUp_DelDAL.cs" />
+    <Compile Include="ExamSubjectResultDAL.cs" />
+    <Compile Include="FileDownLogDAL.cs" />
+    <Compile Include="ForeignCertificateApplyDAL.cs" />
+    <Compile Include="ForeignCertificateDAL.cs" />
+    <Compile Include="ForeignCertificateHistoryDAL.cs" />
+    <Compile Include="ForeignPostInfoDAL.cs" />
+    <Compile Include="GYPXWhiteDAL.cs" />
+    <Compile Include="InfoTagDAL.cs" />
+    <Compile Include="InterFaceLogDAL.cs" />
+    <Compile Include="jcsjk_QY_ZHXXDAL.cs" />
+    <Compile Include="jcsjk_QY_ZHXX_CITY_ERRORDAL.cs" />
+    <Compile Include="jcsjk_RY_JZS_ZSSDDAL.cs" />
+    <Compile Include="jcsjk_jzsDAL.cs" />
+    <Compile Include="jcsjk_zjsDAL.cs" />
+    <Compile Include="jcsjk_tj_qy_jzsDAL.cs" />
+    <Compile Include="jcsjk_tj_qy_aqxkwdbDAL.cs" />
+    <Compile Include="jcsjk_jlsDAL.cs" />
+    <Compile Include="jcsjk_tj_qy_zzwdbDAL.cs" />
+    <Compile Include="ApplyDAL.cs" />
+    <Compile Include="ApplyFileDAL.cs" />
+    <Compile Include="ApplyFirstDAL.cs" />
+    <Compile Include="ApplyRenewDAL.cs" />
+    <Compile Include="ApplyReplaceDAL.cs" />
+    <Compile Include="COC_ONE_Person_BaseInfoDAL.cs" />
+    <Compile Include="COC_TOW_Person_BaseInfoDAL.cs" />
+    <Compile Include="COC_TOW_Person_FileDAL.cs" />
+    <Compile Include="COC_TOW_Register_ProfessionDAL.cs" />
+    <Compile Include="CommonDAL.cs" />
+    <Compile Include="DBHelper.cs" />
+    <Compile Include="DbTransaction.cs" />
+    <Compile Include="DepartmentDAL.cs" />
+    <Compile Include="DictionaryDAL.cs" />
+    <Compile Include="FileInfoDAL.cs" />
+    <Compile Include="JxjyBaseDAL.cs" />
+    <Compile Include="JxjyDetailDAL.cs" />
+    <Compile Include="LearnRecordDAL.cs" />
+    <Compile Include="LockJZSDAL.cs" />
+    <Compile Include="LockZJSDAL.cs" />
+    <Compile Include="MyWebConfig.cs" />
+    <Compile Include="NewSetUpDAL.cs.cs" />
+    <Compile Include="OperateLogDAL.cs" />
+    <Compile Include="OrganizationDAL.cs" />
+    <Compile Include="Out_CheckCFZCDAL.cs" />
+    <Compile Include="Out_CheckShebaoDAL.cs" />
+    <Compile Include="PackageDAL.cs" />
+    <Compile Include="PackageSourceDAL.cs" />
+    <Compile Include="PageQuestionDAL.cs" />
+    <Compile Include="PolicyNewsDAL.cs" />
+    <Compile Include="PostInfoDAL.cs" />
+    <Compile Include="PrintDocument.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QualificationDAL.cs" />
+    <Compile Include="QuestionDAL.cs" />
+    <Compile Include="QuestionManageDAL.cs" />
+    <Compile Include="QY_LSGXDAL.cs" />
+    <Compile Include="ReEducateCertificateDAL.cs" />
+    <Compile Include="ResourceDAL.cs" />
+    <Compile Include="RoleDAL.cs" />
+    <Compile Include="RoleResourceDAL.cs" />
+    <Compile Include="RY_ZCJZSDAL.cs" />
+    <Compile Include="SheBaoDAL.cs" />
+    <Compile Include="SignUpPlaceDAL.cs" />
+    <Compile Include="SourceDAL.cs" />
+    <Compile Include="StudyPlanDAL.cs" />
+    <Compile Include="TJ_MissExamLockDAL.cs" />
+    <Compile Include="TJ_VisitDAL.cs" />
+    <Compile Include="TrainQuestionDAL.cs" />
+    <Compile Include="TrainQuestOptionDAL.cs" />
+    <Compile Include="TrainUnitDAL.cs" />
+    <Compile Include="TypesDAL.cs" />
+    <Compile Include="UnitCodeSetDAL.cs" />
+    <Compile Include="UnitDAL.cs" />
+    <Compile Include="UnitWatchDAL.cs" />
+    <Compile Include="Unit_AQSCXKZDAL.cs" />
+    <Compile Include="UserDAL.cs" />
+    <Compile Include="UserRoleDAL.cs" />
+    <Compile Include="View_FRDAL.cs" />
+    <Compile Include="WorkerDAL.cs" />
+    <Compile Include="WorkerLockDAL.cs" />
+    <Compile Include="WorkerSetDAL.cs" />
+    <Compile Include="WorkResultDAL.cs" />
+    <Compile Include="ZHJY_userInfoDAL.cs" />
+    <Compile Include="zjs_ApplyCancelDAL.cs" />
+    <Compile Include="zjs_ApplyChangeDAL.cs" />
+    <Compile Include="zjs_ApplyContinueDAL.cs" />
+    <Compile Include="zjs_ApplyDAL.cs" />
+    <Compile Include="zjs_ApplyFirstDAL.cs" />
+    <Compile Include="zjs_CertificateDAL.cs" />
+    <Compile Include="zjs_QualificationDAL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{73d0136f-bdb6-48a6-b512-197ef5619147}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utility\Utility.csproj">
+      <Project>{8e4b7f4d-ea3d-4f01-a7d8-3ae69a48b800}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

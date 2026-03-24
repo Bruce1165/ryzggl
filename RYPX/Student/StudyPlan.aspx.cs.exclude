@@ -1,0 +1,154 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using Telerik.Web.UI;
+using DataAccess;
+using Model;
+using System.Data;
+
+public partial class Student_StudyPlan : BasePage
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            BindRadGridPackage();
+            BindRadGridMyPackage();
+        }
+    }
+
+    /// <summary>
+    /// 绑定待选课程包
+    /// </summary>
+    protected void BindRadGridPackage()
+    {
+        try
+        {
+            ObjectDataSource1.SelectParameters.Clear();
+            QueryParamOB q = new QueryParamOB();
+            q.Add(string.Format("Status='{0}'", EnumManager.PackageStatus.Published));//已发布
+
+
+            //符合自己证书专业和有效期的
+            string sql = @"
+SELECT [POSTTYPENAME],[POSTNAME],[VALIDENDDATE]
+FROM [dbo].[CERTIFICATE] where WORKERCERTIFICATECODE='{0}' and Status <>'待审批' and Status <>'进京待审批' and Status <>'离京变更' and Status <>'注销'
+union all
+    SELECT '二级建造师',[PSN_RegisteProfession],[PSN_CertificateValidity]
+    FROM [dbo].[COC_TOW_Person_BaseInfo] 
+    where PSN_CertificateNO='{0}' 
+union all
+    SELECT '二级造价工程师',[PSN_RegisteProfession],[PSN_CertificateValidity]
+    FROM [dbo].[zjs_Certificate]
+    where PSN_CertificateNO='{0}' 
+";
+            DataTable dt = CommonDAL.GetDataTable(string.Format(sql, WorkerCertificateCode));
+
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            foreach (DataRow r in dt.Rows)
+            {
+                sb.AppendFormat(" or (('{0}' between ValidDateStart and ValidDateEnd) and ([PostName]='{1}' or ([PostTypeName]='{2}' and [PostName] is null)))"
+                    , Convert.ToDateTime((r["VALIDENDDATE"])).ToString("yyyy-MM-dd"), r["POSTNAME"], r["POSTTYPENAME"]);
+            }
+            if (sb.Length > 0)
+            {
+                sb.Remove(0, 3);
+                q.Add(string.Format("({0})", sb));
+            }
+
+            //尚未加入我的学习计划的
+            q.Add(string.Format("[PackageID] not in(SELECT [PackageID]  FROM [dbo].[StudyPlan]  where [WorkerCertificateCode]='{0}')", WorkerCertificateCode));
+
+            ObjectDataSource1.SelectParameters.Add("filterWhereString", q.ToWhereString());
+            RadGridPackage.CurrentPageIndex = 0;
+            RadGridPackage.DataSourceID = ObjectDataSource1.ID;
+            RadGridPackage.DataBind();
+        }
+        catch (Exception ex)
+        {
+            UIHelp.WriteErrorLog(Page, "读取公益培训课程信息失败！", ex);
+            return;
+        }
+    }
+
+
+    /// <summary>
+    /// 绑定我的学习计划
+    /// </summary>
+    protected void BindRadGridMyPackage()
+    {
+        try
+        {
+            ObjectDataSource2.SelectParameters.Clear();
+            QueryParamOB q = new QueryParamOB();
+
+            //已加入我的学习计划的
+            q.Add(string.Format("[PackageID] in(SELECT [PackageID]  FROM [dbo].[StudyPlan]  where [WorkerCertificateCode]='{0}')", WorkerCertificateCode));
+
+            ObjectDataSource2.SelectParameters.Add("filterWhereString", q.ToWhereString());
+            RadGridMyPackage.CurrentPageIndex = 0;
+            RadGridMyPackage.DataSourceID = ObjectDataSource2.ID;
+        }
+        catch (Exception ex)
+        {
+            UIHelp.WriteErrorLog(Page, "读取我的学习计划失败！", ex);
+            return;
+        }
+    }
+
+    //加入学习计划
+    protected void RadGridPackage_DeleteCommand(object source, GridCommandEventArgs e)
+    {
+        GridItem item = (GridItem)e.Item;
+        Int64 PackageID = Convert.ToInt64(item.OwnerTableView.DataKeyValues[item.ItemIndex]["PackageID"]);
+
+        try
+        {
+            StudyPlanMDL o = new StudyPlanMDL();
+            o.WorkerCertificateCode = WorkerCertificateCode;
+            o.WorkerName = PersonName;
+            o.PackageID = PackageID;
+            o.CreateTime = DateTime.Now;
+            o.Creater = PersonName;
+            o.AddType = EnumManager.StudyPlanAddType.user;
+            o.TestStatus = EnumManager.StudyTestStatus.NoPass;
+
+            StudyPlanDAL.Insert(o);
+        }
+        catch (Exception ex)
+        {
+            UIHelp.WriteErrorLog(Page, "加入课程到学习计划失败！", ex);
+            return;
+        }
+        UIHelp.WriteOperateLog(PersonName, UserID, "加入课程到学习计划", string.Format("课程包：{0}。", item.OwnerTableView.DataKeyValues[item.ItemIndex]["PackageTitle"]));
+
+
+        BindRadGridPackage();
+        BindRadGridMyPackage();
+    }
+
+    //取消学习计划
+    protected void RadGridMyPackage_DeleteCommand(object source, GridCommandEventArgs e)
+    {
+        GridItem item = (GridItem)e.Item;
+        Int64 PackageID = Convert.ToInt64(item.OwnerTableView.DataKeyValues[item.ItemIndex]["PackageID"]);
+
+        try
+        {
+            StudyPlanDAL.Delete(WorkerCertificateCode, PackageID);
+        }
+        catch (Exception ex)
+        {
+            UIHelp.WriteErrorLog(Page, "取消学习计划失败！", ex);
+            return;
+        }
+        UIHelp.WriteOperateLog(PersonName, UserID, "取消学习计划", string.Format("课程包：{0}。", item.OwnerTableView.DataKeyValues[item.ItemIndex]["PackageTitle"]));
+
+
+        BindRadGridPackage();
+        BindRadGridMyPackage();
+    }
+}

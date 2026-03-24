@@ -1,0 +1,163 @@
+﻿#roll {
+    border-radius: 30px;
+    height: 200px;
+    text-align: center;
+    width: 200px;
+    position: fixed; /*fixed实现绝对定位*/
+    cursor: pointer;
+    background-color: rgba(93,162,239,0.8);
+    z-index: 9999;
+    padding-top: 30px;
+}
+#roll p {
+    color: white;
+    text-align: center;
+}
+.bar {
+    color: #555555;
+    border: none;
+}
+.bartitle {
+    text-align: left;
+    background-color: #E6E6FA;
+    padding-left: 20px;
+    font-weight: bold;
+    color: #404040;
+    margin: 0px;
+    clear: both;
+    line-height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: 1px solid #ccc;
+}
+.barmain {
+    padding:12px 12px;
+    margin: 0px;
+    border: 1px solid #eee;
+   border-radius: 10px;
+   border-top:none!important;
+    border-top-left-radius: 0px!important;
+    border-top-right-radius: 0px!important;
+
+}
+.syscheck{
+    line-height:180%;font-size:16px;color:red;border:1px solid #f3f3f3;background-color:#f7faf7;border-radius:12px 12px;padding:12px 12px;margin-bottom: 12px
+}
+/*//消息提示框*/
+#winpop {
+    width: 200px;
+    height: 0px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    border: 1px solid #999999;
+    margin: 0;
+    padding: 1px;
+    overflow: hidden;
+    display: none;
+    border-radius: 8px 8px 0px 0px;
+}
+#winpop .title {
+    width: 100%;
+    height: 22px;
+    line-height: 20px;
+    background: #5DA2EF;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+}
+#con {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FF0000;
+    background-color: white;
+    text-align: center;
+}
+#silu {
+    font-size: 16px;
+    color: #999999;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    text-decoration: underline;
+    line-height: 16px;
+}
+.close {
+    position: absolute;
+    right: 4px;
+    top: -1px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.guize {
+    margin: 0px;
+    text-align: left;
+}
+#guize tr td ,th{
+    text-align: left;
+    line-height:28px;
+}
+.news {
+    color: #1874D2 !important;
+    cursor: pointer;
+    line-height: 16px;
+}
+.num {
+    width: 20px;
+    border-radius: 50%;
+    border: 1px solid #E95440;
+    background-color: #E95440;
+    color: #fff;
+    margin: 2px;
+    text-align: center;
+    vertical-align: middle;
+    font: normal 14px Arial;
+    padding: 1px;
+}
+ .round_div {
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+    background-color: #EFEFFE;
+    /*width: 82px;*/
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font: normal 16px '微软雅黑';
+    vertical-align: middle;
+    line-height: 30px;
+    padding: 2px 12px;
+    color: black;
+}
+.round_div sup{
+    color:red;
+     padding-left:8px;
+}
+.floadAd {
+    position: absolute;
+    z-index: 999900;
+    display: none;
+    background-color: #80CFFD;
+    padding: 5px 10px 8px 30px;
+    border-radius: 6px 6px;
+    font-size: 16px;
+    width: 600px;
+}
+.floadAd .item {
+    display: block;
+    padding-right: 40px;
+}
+.floadAd .item img {
+    vertical-align: bottom;
+}
+.barlable {
+    float: left;
+    clear: left;
+    line-height: 30px;
+    margin: 5px 4px 10px 10px;
+}

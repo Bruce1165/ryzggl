@@ -1,0 +1,2493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SaveApplySummary">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="info" type="tns:ApplySummaryInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ApplySummaryInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ToAppCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrgCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CountyCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ApplyStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApplyStatusDes" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApplyTitle" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApplyExProperty" type="tns:ArrayOfBizDataProperty" />
+          <s:element minOccurs="0" maxOccurs="1" name="ModifyUserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MessageSend" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfBizDataProperty">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="BizDataProperty" nillable="true" type="tns:BizDataProperty" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="BizDataProperty">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="PropertyName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PropertyValue" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SaveApplySummaryResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="EGovSoapHead" type="tns:EGovSoapHead" />
+      <s:complexType name="EGovSoapHead">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Result" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExchangeNo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FromAppCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LicenseCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApplyCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LicenseName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExchangeTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Version" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="SaveApplySummaryforjava">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApplySummaryInfo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ApplyExProperty" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SaveApplySummaryforjavaResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DeleteCurrentApply">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="applyCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCurrentApplyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteCurrentApplyResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCurrentApplySGXK">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="applyCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="uname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="upwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteCurrentApplySGXKResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DeleteCurrentApplySGXKResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddFeedBackInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="info" type="tns:FeedBackInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="FeedBackInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ApplyStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApplyStatusDes" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CountyCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ApplyUserType" type="tns:UserType" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="BizAction_Type" type="tns:Action_Type" />
+          <s:element minOccurs="1" maxOccurs="1" name="StandardStep" type="tns:StandardStep" />
+          <s:element minOccurs="0" maxOccurs="1" name="BureauStep" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="District" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Timestamp" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Case_Version" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeadLine" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeliverDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="EndingDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="StartingDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActorName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ActorTelephone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApplyDesc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApproverDepartment" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="XingZhengUserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="XingZhengXuKeName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="XingZhengXuKeNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CaseLevel" type="tns:Case_Level" />
+          <s:element minOccurs="1" maxOccurs="1" name="Visable" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="MessageSend" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProjectName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="UserType">
+        <s:restriction base="s:string">
+          <s:enumeration value="法人" />
+          <s:enumeration value="个人" />
+          <s:enumeration value="个人及法人" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="Action_Type">
+        <s:restriction base="s:string">
+          <s:enumeration value="申办" />
+          <s:enumeration value="变更" />
+          <s:enumeration value="延续" />
+          <s:enumeration value="中止" />
+          <s:enumeration value="恢复" />
+          <s:enumeration value="撤销" />
+          <s:enumeration value="撤回" />
+          <s:enumeration value="注销" />
+          <s:enumeration value="吊销" />
+          <s:enumeration value="转让" />
+          <s:enumeration value="补办" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="StandardStep">
+        <s:restriction base="s:string">
+          <s:enumeration value="申请" />
+          <s:enumeration value="审查" />
+          <s:enumeration value="决定" />
+          <s:enumeration value="送达" />
+          <s:enumeration value="告知" />
+          <s:enumeration value="听证" />
+          <s:enumeration value="招标" />
+          <s:enumeration value="拍卖" />
+          <s:enumeration value="检验" />
+          <s:enumeration value="检测" />
+          <s:enumeration value="检疫" />
+          <s:enumeration value="鉴定" />
+          <s:enumeration value="实地勘察" />
+          <s:enumeration value="专家评审" />
+          <s:enumeration value="其它" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="Case_Level">
+        <s:restriction base="s:string">
+          <s:enumeration value="市" />
+          <s:enumeration value="区" />
+          <s:enumeration value="市区" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="AddFeedBackInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddFeedBackInfoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddFeedBackInfoForJava">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FeedBackInfo" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddFeedBackInfoForJavaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddFeedBackInfoForJavaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PublishMessageInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="info" type="tns:SysMessageInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SysMessageInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="TimeStamp" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApplyCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Message" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FromAppCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ToAppCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PublishMessageInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PublishMessageInfoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testMesth">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xx" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testMesthResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="testMesthResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PublishDataToDataCenter">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="data" type="tns:ArrayOfDataElement" />
+            <s:element minOccurs="0" maxOccurs="1" name="SchemaID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDataElement">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DataElement" nillable="true" type="tns:DataElement" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DataElement">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="OrderID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="EnName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CnName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DataValue" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="PublishDataToDataCenterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PublishDataToDataCenterResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCorpInfoByUserID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCorpInfoByUserIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCorpInfoByUserIDResult" type="tns:CorpInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="CorpInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="IsSubAccount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Business_Scope" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Column_2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cor_Class" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Corp_Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Corp_Desc" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Corp_Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Corp_IDCard" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Corp_LinkMan" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Corp_ManageDept" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Corp_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Corp_Person" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Corp_PersonCount" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Corp_Property" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Corp_Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Corp_Tel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Corp_Type" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpGuid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Create_Date" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dept_Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ItemID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reg_Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reg_Date" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Reg_Fund" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Credit_Code" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetSubAccountInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubAccountInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSubAccountInfoResult" type="tns:SubAccountUserInfo" />
+            <s:element minOccurs="0" maxOccurs="1" name="Msg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SubAccountUserInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Userid" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ParentName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LinkMan" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Phone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="isRegUserName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="isRegUserNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="isRegUserNameResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="strUserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="strPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckLoginResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCorpInfoByCorpCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorpCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCorpInfoByCorpCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCorpInfoByCorpCodeResult" type="tns:CorpInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWaitingList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="info" type="tns:WaitingInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="WaitingInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CountyCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LicenseCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CurrentAppCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetWaitingListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWaitingListResult" type="tns:ArrayOfDataSummaryInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfDataSummaryInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DataSummaryInfo" nillable="true" type="tns:DataSummaryInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DataSummaryInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="ApplyCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OrgCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LicenseCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LicenseName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AssignToCountyCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ApplyStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApplyStatusDes" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApplyTitle" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BookingBarCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApplyUser" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastUpdateUser" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApplyDate" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpLinkMan" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpTelephone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Corp_ManageDept" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpReg_Address" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CorpLinkManID" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="xzServiceHallUpdateData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="arrApplyCode" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="xzServiceHallUpdateDataResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="xzServiceHallGetDate">
+        <s:complexType />
+      </s:element>
+      <s:element name="xzServiceHallGetDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xzServiceHallGetDateResult" type="tns:ArrayOfDataSummaryInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="xzServiceHallGetDate2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApplyCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="xzServiceHallGetDate2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xzServiceHallGetDate2Result" type="tns:ArrayOfDataSummaryInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOneWaitingData">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetOneWaitingDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOneWaitingDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOneWaitingDataForJava">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApplyCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetOneWaitingDataForJavaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetOneWaitingDataForJavaResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApplyData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="action" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetApplyDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetApplyDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="test">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="applyCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="testResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSessionID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CurrentAppCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSessionIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSessionIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEntityList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetEntityListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEntityListResult" type="tns:OHHeads" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="OHHeads">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ExchangeDataBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Heads" type="tns:ArrayOfOHHead" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ExchangeDataBase" abstract="true" />
+      <s:complexType name="OHHead">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ExchangeDataBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="EntityID" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="EntityName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="EntityType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ExchangeNo" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ExchangeTime" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfOHHead">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="OHHead" nillable="true" type="tns:OHHead" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetProjectEntity">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetProjectEntityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProjectEntityResult" type="tns:Project" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Project">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ExchangeDataBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="BJRQ" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BuildUnitName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Bz" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CJR" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DTbh" type="tns:ArrayOfString1" />
+              <s:element minOccurs="1" maxOccurs="1" name="DTS" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="Gcbm" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Gcgm" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Gcjsdd" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Gclb" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Gcxz" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Gmdw" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="HT" type="tns:Contract" />
+              <s:element minOccurs="0" maxOccurs="1" name="Investments" type="tns:Investment" />
+              <s:element minOccurs="0" maxOccurs="1" name="JDzc" type="tns:Certificate" />
+              <s:element minOccurs="0" maxOccurs="1" name="JGBA" type="tns:Certificate" />
+              <s:element minOccurs="0" maxOccurs="1" name="JLDW" type="tns:Corp" />
+              <s:element minOccurs="0" maxOccurs="1" name="JSDWS" type="tns:ArrayOfCorp" />
+              <s:element minOccurs="0" maxOccurs="1" name="JSGCGHXKZ" type="tns:Certificate" />
+              <s:element minOccurs="0" maxOccurs="1" name="JSYDGHXKZ" type="tns:Certificate" />
+              <s:element minOccurs="0" maxOccurs="1" name="KCDW" type="tns:Corp" />
+              <s:element minOccurs="0" maxOccurs="1" name="KGXKZ" type="tns:Certificate" />
+              <s:element minOccurs="0" maxOccurs="1" name="KZXX" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="LayoutPermit" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="LXSCWH" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SFAYGC" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SFLGXM" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SFSZDGC" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SFWDQY" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SGDW" type="tns:Corp" />
+              <s:element minOccurs="0" maxOccurs="1" name="SGZBBM" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SingleBuildings" type="tns:ArrayOfSingleBuilding" />
+              <s:element minOccurs="0" maxOccurs="1" name="SJDW" type="tns:Corp" />
+              <s:element minOccurs="0" maxOccurs="1" name="StructType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Valid" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="XMMC" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="XXDZ" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="XXJD" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="XZDQBM" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Ybfgck" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="YDMJ" type="s:float" />
+              <s:element minOccurs="0" maxOccurs="1" name="ZHXGR" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="UnitCount" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AirDefenseArea" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="HJYXPJH" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="HJYXSPDW" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="JNPGSCWH" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="JNPGSPDW" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TDPZWH" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TDPZSPDW" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfString1">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DTbh" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Contract">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ExchangeDataBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="ContractName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="EffectiveDate" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FBFS" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="HTBH" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="HTJG" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="HTJGRQ" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="HTKGRQ" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="JHJGRQ" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="JHKGRQ" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="RegistedDate" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Investment">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ExchangeDataBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="DKTZ" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="QTTZ" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TZZE" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WSTZ" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ZCTZ" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ZFTZ" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Certificate">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ExchangeDataBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="AwardOrg" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AwardTime" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CertificateID" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CertificateName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ExpireDate" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ValidTime" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Corp">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ExchangeDataBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CorpID" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CorpProperty" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FDDBR" type="tns:Person" />
+              <s:element minOccurs="0" maxOccurs="1" name="Governor" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Linker" type="tns:Person" />
+              <s:element minOccurs="0" maxOccurs="1" name="LXDH" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="QYBM" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="QYMC" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="QYWZ" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="RegistedCapital" type="s:decimal" />
+              <s:element minOccurs="0" maxOccurs="1" name="RegistedDate" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SF" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Staff" type="tns:ArrayOfPerson" />
+              <s:element minOccurs="1" maxOccurs="1" name="StaffNum" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="SZ" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TradeRange" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="XQ" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="XXDZ" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="XXDZYZBM" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="XZDQBM" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="YYZZZCH" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ZCDZ" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ZCDZYZBM" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ZZJGDM" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Person">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ExchangeDataBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CANO" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="CAType" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="Contacts" type="tns:Contact" />
+              <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Educations" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Resume" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Role" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Sex" type="s:int" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="Contact">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ExchangeDataBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Address" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Email" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Fax" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Mobile" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PostCode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Tel" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfPerson">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Staff" nillable="true" type="tns:Person" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCorp">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="JSDWS" nillable="true" type="tns:Corp" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfSingleBuilding">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SingleBuilding" nillable="true" type="tns:SingleBuilding" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SingleBuilding">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ExchangeDataBase">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Aqjd" type="tns:Certificate" />
+              <s:element minOccurs="0" maxOccurs="1" name="DLXX" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Dtbm" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DTbz" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="DTdscs" type="s:float" />
+              <s:element minOccurs="1" maxOccurs="1" name="DTdxcs" type="s:float" />
+              <s:element minOccurs="0" maxOccurs="1" name="DTGcbm" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DTgcxz" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Dtgd" type="s:float" />
+              <s:element minOccurs="0" maxOccurs="1" name="Dtgm" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DTgmdw" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DTjglx" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DTjsdd" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DTKD" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Dtmc" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DTXZ" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DTxzdqbm" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="HT" type="tns:Contract" />
+              <s:element minOccurs="0" maxOccurs="1" name="JDzc" type="tns:Certificate" />
+              <s:element minOccurs="0" maxOccurs="1" name="JGBA" type="tns:Certificate" />
+              <s:element minOccurs="0" maxOccurs="1" name="JGRQ" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="JLDW" type="tns:Corp" />
+              <s:element minOccurs="0" maxOccurs="1" name="JLHT" type="tns:Contract" />
+              <s:element minOccurs="0" maxOccurs="1" name="JLZB" type="tns:Contract" />
+              <s:element minOccurs="0" maxOccurs="1" name="JSDWS" type="tns:ArrayOfCorp" />
+              <s:element minOccurs="0" maxOccurs="1" name="JSGCGHXKZ" type="tns:Certificate" />
+              <s:element minOccurs="0" maxOccurs="1" name="JSYDGHXKZ" type="tns:Certificate" />
+              <s:element minOccurs="0" maxOccurs="1" name="KCDW" type="tns:Corp" />
+              <s:element minOccurs="0" maxOccurs="1" name="KGRQ" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="KGXKZ" type="tns:Certificate" />
+              <s:element minOccurs="0" maxOccurs="1" name="SGDW" type="tns:Corp" />
+              <s:element minOccurs="0" maxOccurs="1" name="SGht" type="tns:Contract" />
+              <s:element minOccurs="0" maxOccurs="1" name="_x0020_SingleBuildUnitName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SingleLayoutPermit" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SJDW" type="tns:Corp" />
+              <s:element minOccurs="0" maxOccurs="1" name="Valid" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="XXJD" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="YDMJ" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ZLjd" type="tns:Certificate" />
+              <s:element minOccurs="0" maxOccurs="1" name="SingleSiteX" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SingleSiteY" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="UnitCount" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="AirDefenseArea" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="UnitArea" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="HouseType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="JSCount" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="LZCount" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="GZCount" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="XJCount" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SPCount" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="JSArea" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="LZArea" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="GZArea" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="XJArea" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="SPArea" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DXCount" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DXArea" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="GetTime">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestSendData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ApplyCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestSendDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestSendDataResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCorpInfosByCorpName">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorpName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="isTrue" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCorpInfosByCorpNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCorpInfosByCorpNameResult" type="tns:ArrayOfCorpInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCorpInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CorpInfo" nillable="true" type="tns:CorpInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="TestJava">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sInput" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestJavaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestJavaResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCorpInfoByUserIDForJava">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCorpInfoByUserIDForJavaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCorpInfoByUserIDForJavaResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCorpInfoByUserIDForJavaHRSC">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UserID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCorpInfoByUserIDForJavaHRSCResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCorpInfoByUserIDForJavaHRSCResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPersonInfoByUserID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPersonInfoByUserIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPersonInfoByUserIDResult" type="tns:OH_PersonInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="OH_PersonInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="userID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="PerPWD" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="perQuestion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="perAnswer" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="perName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="perSEX" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="perAddress" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="perIDCard" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="perTEL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="perMobile" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="perEMAIL" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="perBAK" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CheckIsCorpOrPersonUserByUserID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckIsCorpOrPersonUserByUserIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckIsCorpOrPersonUserByUserIDResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveApplySummaryforjavatest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SoapHeader" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="ApplySummaryInfo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ApplyExProperty" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveApplySummaryforjavatestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveApplySummaryforjavatestResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveApplySummaryforjavathird">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SoapHeaderNew" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ApplySummaryInfo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ApplyExPropertyNew" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveApplySummaryforjavathirdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SaveApplySummaryforjavathirdResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddFeedBackInfoForJavatest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SoapHeader" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="FeedBackInfo" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddFeedBackInfoForJavatestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AddFeedBackInfoForJavatestResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendCaseInstance">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="instance" type="tns:OPF_Case_Instance" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="OPF_Case_Instance">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Application_Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CaseID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CaseName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Case_Level" type="tns:ItemLevel" />
+          <s:element minOccurs="0" maxOccurs="1" name="Bureau_Step" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="District" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ApplyDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Applicant" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Applicant_Telephone" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Applicant_Type" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Applicant_IDType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Applicant_ID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RegisterNO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Actor_Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Actor_Phone" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ApplyDESC" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProjectName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProjectCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="ItemLevel">
+        <s:restriction base="s:string">
+          <s:enumeration value="City" />
+          <s:enumeration value="District" />
+          <s:enumeration value="CityAndDistrict" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="SendCaseInstanceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendCaseInstanceResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendApproveProcess">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="process" type="tns:OPF_Approve_Process" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="OPF_Approve_Process">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Application_Code" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BureauStep" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Phase_ID" type="tns:StandardPhase" />
+          <s:element minOccurs="0" maxOccurs="1" name="Result" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Opinion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DT_Operate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="DeferedDay" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="District" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Deadline" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Approver" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Department" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ProjectCode" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="StandardPhase">
+        <s:restriction base="s:string">
+          <s:enumeration value="Received" />
+          <s:enumeration value="Examined" />
+          <s:enumeration value="SuspendStart" />
+          <s:enumeration value="SuspendEnd" />
+          <s:enumeration value="Determined" />
+          <s:enumeration value="Informed" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="SendApproveProcessResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendApproveProcessResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendCaseInstanceForJava">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="instance" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendCaseInstanceForJavaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendCaseInstanceForJavaResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendApproveProcessForJava">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="process" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendApproveProcessForJavaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendApproveProcessForJavaResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SaveApplySummarySoapIn">
+    <wsdl:part name="parameters" element="tns:SaveApplySummary" />
+  </wsdl:message>
+  <wsdl:message name="SaveApplySummarySoapOut">
+    <wsdl:part name="parameters" element="tns:SaveApplySummaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveApplySummaryEGovSoapHead">
+    <wsdl:part name="EGovSoapHead" element="tns:EGovSoapHead" />
+  </wsdl:message>
+  <wsdl:message name="SaveApplySummaryforjavaSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveApplySummaryforjava" />
+  </wsdl:message>
+  <wsdl:message name="SaveApplySummaryforjavaSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveApplySummaryforjavaResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveApplySummaryforjavaEGovSoapHead">
+    <wsdl:part name="EGovSoapHead" element="tns:EGovSoapHead" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCurrentApplySoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteCurrentApply" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCurrentApplySoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteCurrentApplyResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCurrentApplySGXKSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteCurrentApplySGXK" />
+  </wsdl:message>
+  <wsdl:message name="DeleteCurrentApplySGXKSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteCurrentApplySGXKResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddFeedBackInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:AddFeedBackInfo" />
+  </wsdl:message>
+  <wsdl:message name="AddFeedBackInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:AddFeedBackInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddFeedBackInfoEGovSoapHead">
+    <wsdl:part name="EGovSoapHead" element="tns:EGovSoapHead" />
+  </wsdl:message>
+  <wsdl:message name="AddFeedBackInfoForJavaSoapIn">
+    <wsdl:part name="parameters" element="tns:AddFeedBackInfoForJava" />
+  </wsdl:message>
+  <wsdl:message name="AddFeedBackInfoForJavaSoapOut">
+    <wsdl:part name="parameters" element="tns:AddFeedBackInfoForJavaResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddFeedBackInfoForJavaEGovSoapHead">
+    <wsdl:part name="EGovSoapHead" element="tns:EGovSoapHead" />
+  </wsdl:message>
+  <wsdl:message name="PublishMessageInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:PublishMessageInfo" />
+  </wsdl:message>
+  <wsdl:message name="PublishMessageInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:PublishMessageInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublishMessageInfoEGovSoapHead">
+    <wsdl:part name="EGovSoapHead" element="tns:EGovSoapHead" />
+  </wsdl:message>
+  <wsdl:message name="testMesthSoapIn">
+    <wsdl:part name="parameters" element="tns:testMesth" />
+  </wsdl:message>
+  <wsdl:message name="testMesthSoapOut">
+    <wsdl:part name="parameters" element="tns:testMesthResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublishDataToDataCenterSoapIn">
+    <wsdl:part name="parameters" element="tns:PublishDataToDataCenter" />
+  </wsdl:message>
+  <wsdl:message name="PublishDataToDataCenterSoapOut">
+    <wsdl:part name="parameters" element="tns:PublishDataToDataCenterResponse" />
+  </wsdl:message>
+  <wsdl:message name="PublishDataToDataCenterEGovSoapHead">
+    <wsdl:part name="EGovSoapHead" element="tns:EGovSoapHead" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpInfoByUserIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCorpInfoByUserID" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpInfoByUserIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCorpInfoByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpInfoByUserIDEGovSoapHead">
+    <wsdl:part name="EGovSoapHead" element="tns:EGovSoapHead" />
+  </wsdl:message>
+  <wsdl:message name="GetSubAccountInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSubAccountInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetSubAccountInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSubAccountInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSubAccountInfoEGovSoapHead">
+    <wsdl:part name="EGovSoapHead" element="tns:EGovSoapHead" />
+  </wsdl:message>
+  <wsdl:message name="isRegUserNameSoapIn">
+    <wsdl:part name="parameters" element="tns:isRegUserName" />
+  </wsdl:message>
+  <wsdl:message name="isRegUserNameSoapOut">
+    <wsdl:part name="parameters" element="tns:isRegUserNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="isRegUserNameEGovSoapHead">
+    <wsdl:part name="EGovSoapHead" element="tns:EGovSoapHead" />
+  </wsdl:message>
+  <wsdl:message name="CheckLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckLogin" />
+  </wsdl:message>
+  <wsdl:message name="CheckLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckLoginEGovSoapHead">
+    <wsdl:part name="EGovSoapHead" element="tns:EGovSoapHead" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpInfoByCorpCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCorpInfoByCorpCode" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpInfoByCorpCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCorpInfoByCorpCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpInfoByCorpCodeEGovSoapHead">
+    <wsdl:part name="EGovSoapHead" element="tns:EGovSoapHead" />
+  </wsdl:message>
+  <wsdl:message name="GetWaitingListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWaitingList" />
+  </wsdl:message>
+  <wsdl:message name="GetWaitingListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWaitingListResponse" />
+  </wsdl:message>
+  <wsdl:message name="xzServiceHallUpdateDataSoapIn">
+    <wsdl:part name="parameters" element="tns:xzServiceHallUpdateData" />
+  </wsdl:message>
+  <wsdl:message name="xzServiceHallUpdateDataSoapOut">
+    <wsdl:part name="parameters" element="tns:xzServiceHallUpdateDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="xzServiceHallGetDateSoapIn">
+    <wsdl:part name="parameters" element="tns:xzServiceHallGetDate" />
+  </wsdl:message>
+  <wsdl:message name="xzServiceHallGetDateSoapOut">
+    <wsdl:part name="parameters" element="tns:xzServiceHallGetDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="xzServiceHallGetDate2SoapIn">
+    <wsdl:part name="parameters" element="tns:xzServiceHallGetDate2" />
+  </wsdl:message>
+  <wsdl:message name="xzServiceHallGetDate2SoapOut">
+    <wsdl:part name="parameters" element="tns:xzServiceHallGetDate2Response" />
+  </wsdl:message>
+  <wsdl:message name="GetOneWaitingDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOneWaitingData" />
+  </wsdl:message>
+  <wsdl:message name="GetOneWaitingDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOneWaitingDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetOneWaitingDataEGovSoapHead">
+    <wsdl:part name="EGovSoapHead" element="tns:EGovSoapHead" />
+  </wsdl:message>
+  <wsdl:message name="GetOneWaitingDataForJavaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetOneWaitingDataForJava" />
+  </wsdl:message>
+  <wsdl:message name="GetOneWaitingDataForJavaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetOneWaitingDataForJavaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetApplyDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetApplyData" />
+  </wsdl:message>
+  <wsdl:message name="GetApplyDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetApplyDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetApplyDataEGovSoapHead">
+    <wsdl:part name="EGovSoapHead" element="tns:EGovSoapHead" />
+  </wsdl:message>
+  <wsdl:message name="testSoapIn">
+    <wsdl:part name="parameters" element="tns:test" />
+  </wsdl:message>
+  <wsdl:message name="testSoapOut">
+    <wsdl:part name="parameters" element="tns:testResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSessionIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSessionID" />
+  </wsdl:message>
+  <wsdl:message name="GetSessionIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSessionIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEntityListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEntityList" />
+  </wsdl:message>
+  <wsdl:message name="GetEntityListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEntityListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEntityListEGovSoapHead">
+    <wsdl:part name="EGovSoapHead" element="tns:EGovSoapHead" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectEntitySoapIn">
+    <wsdl:part name="parameters" element="tns:GetProjectEntity" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectEntitySoapOut">
+    <wsdl:part name="parameters" element="tns:GetProjectEntityResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProjectEntityEGovSoapHead">
+    <wsdl:part name="EGovSoapHead" element="tns:EGovSoapHead" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTime" />
+  </wsdl:message>
+  <wsdl:message name="GetTimeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestSendDataSoapIn">
+    <wsdl:part name="parameters" element="tns:TestSendData" />
+  </wsdl:message>
+  <wsdl:message name="TestSendDataSoapOut">
+    <wsdl:part name="parameters" element="tns:TestSendDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpInfosByCorpNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCorpInfosByCorpName" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpInfosByCorpNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCorpInfosByCorpNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestJavaSoapIn">
+    <wsdl:part name="parameters" element="tns:TestJava" />
+  </wsdl:message>
+  <wsdl:message name="TestJavaSoapOut">
+    <wsdl:part name="parameters" element="tns:TestJavaResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestJavaEGovSoapHead">
+    <wsdl:part name="EGovSoapHead" element="tns:EGovSoapHead" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpInfoByUserIDForJavaSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCorpInfoByUserIDForJava" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpInfoByUserIDForJavaSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCorpInfoByUserIDForJavaResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpInfoByUserIDForJavaEGovSoapHead">
+    <wsdl:part name="EGovSoapHead" element="tns:EGovSoapHead" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpInfoByUserIDForJavaHRSCSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCorpInfoByUserIDForJavaHRSC" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpInfoByUserIDForJavaHRSCSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCorpInfoByUserIDForJavaHRSCResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCorpInfoByUserIDForJavaHRSCEGovSoapHead">
+    <wsdl:part name="EGovSoapHead" element="tns:EGovSoapHead" />
+  </wsdl:message>
+  <wsdl:message name="GetPersonInfoByUserIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPersonInfoByUserID" />
+  </wsdl:message>
+  <wsdl:message name="GetPersonInfoByUserIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPersonInfoByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPersonInfoByUserIDEGovSoapHead">
+    <wsdl:part name="EGovSoapHead" element="tns:EGovSoapHead" />
+  </wsdl:message>
+  <wsdl:message name="CheckIsCorpOrPersonUserByUserIDSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckIsCorpOrPersonUserByUserID" />
+  </wsdl:message>
+  <wsdl:message name="CheckIsCorpOrPersonUserByUserIDSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckIsCorpOrPersonUserByUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="CheckIsCorpOrPersonUserByUserIDEGovSoapHead">
+    <wsdl:part name="EGovSoapHead" element="tns:EGovSoapHead" />
+  </wsdl:message>
+  <wsdl:message name="SaveApplySummaryforjavatestSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveApplySummaryforjavatest" />
+  </wsdl:message>
+  <wsdl:message name="SaveApplySummaryforjavatestSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveApplySummaryforjavatestResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveApplySummaryforjavathirdSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveApplySummaryforjavathird" />
+  </wsdl:message>
+  <wsdl:message name="SaveApplySummaryforjavathirdSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveApplySummaryforjavathirdResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddFeedBackInfoForJavatestSoapIn">
+    <wsdl:part name="parameters" element="tns:AddFeedBackInfoForJavatest" />
+  </wsdl:message>
+  <wsdl:message name="AddFeedBackInfoForJavatestSoapOut">
+    <wsdl:part name="parameters" element="tns:AddFeedBackInfoForJavatestResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendCaseInstanceSoapIn">
+    <wsdl:part name="parameters" element="tns:SendCaseInstance" />
+  </wsdl:message>
+  <wsdl:message name="SendCaseInstanceSoapOut">
+    <wsdl:part name="parameters" element="tns:SendCaseInstanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendApproveProcessSoapIn">
+    <wsdl:part name="parameters" element="tns:SendApproveProcess" />
+  </wsdl:message>
+  <wsdl:message name="SendApproveProcessSoapOut">
+    <wsdl:part name="parameters" element="tns:SendApproveProcessResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendCaseInstanceForJavaSoapIn">
+    <wsdl:part name="parameters" element="tns:SendCaseInstanceForJava" />
+  </wsdl:message>
+  <wsdl:message name="SendCaseInstanceForJavaSoapOut">
+    <wsdl:part name="parameters" element="tns:SendCaseInstanceForJavaResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendApproveProcessForJavaSoapIn">
+    <wsdl:part name="parameters" element="tns:SendApproveProcessForJava" />
+  </wsdl:message>
+  <wsdl:message name="SendApproveProcessForJavaSoapOut">
+    <wsdl:part name="parameters" element="tns:SendApproveProcessForJavaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="EGovThirdServiceSoap">
+    <wsdl:operation name="SaveApplySummary">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">增加一条企业申报数据的摘要，企业在第三方系统申报后，要调用此接口向办公大厅传入数据，此时状态一定要是9 待预约状态
+                               如果ApplyCode(监察平台交易流水号)为空的话,表示增加一条数据摘要记录，如果不为空的表示插入 返回的是 ApplyCode 监察平台交易流水号
+                                新建 0
+                                正在编辑 1
+                                编辑完成 2
+                                待预约	9
+                                窗口待递件	10
+                                不予受理	-101
+                                无效申报	-102
+                                审查中	20
+                                有时间限制审查，通过	30
+                                有时间限制审查，不通过	31
+                                有时间限制审查，其他	32
+                                无时间限制审查，通过	40
+                                办结通过 50
+                                办结不通过 51
+                                告知中	60
+                                结果公示消息 70  
+                                ApplyCode;//--监察平台的流水号
+                                CountyCode;//由办公大厅分配的 网点编号
+                                int ApplyStatus;//申报记录状态
+                                string ApplyStatusDes;//状态描述
+                                ApplyTitle;//申报的标题
+                                ApplyExProperty;//申报记录的扩展属性描述 
+                                LicenseCode;//申报事项的编码
+                                ModifyUserName;//最后修改人的名称
+                                </wsdl:documentation>
+      <wsdl:input message="tns:SaveApplySummarySoapIn" />
+      <wsdl:output message="tns:SaveApplySummarySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveApplySummaryforjava">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">增加一条企业申报数据的摘要，企业在第三方系统申报后，要调用此接口向办公大厅传入数据，此时状态一定要是9 待预约状态
+                               如果ApplyCode(监察平台交易流水号)为空的话,表示增加一条数据摘要记录，如果不为空的表示插入 返回的是 ApplyCode 监察平台交易流水号
+                                新建 0
+                                正在编辑 1
+                                编辑完成 2
+                                待预约	9
+                                窗口待递件	10
+                                不予受理	-101
+                                无效申报	-102
+                                审查中	20
+                                有时间限制审查，通过	30
+                                有时间限制审查，不通过	31
+                                有时间限制审查，其他	32
+                                无时间限制审查，通过	40
+                                办结通过 50
+                                办结不通过 51
+                                告知中	60
+                                结果公示消息 70  
+                                ApplyCode;//--监察平台的流水号
+                                CountyCode;//由办公大厅分配的 网点编号
+                                int ApplyStatus;//申报记录状态
+                                string ApplyStatusDes;//状态描述
+                                ApplyTitle;//申报的标题
+                                ApplyExProperty;//申报记录的扩展属性描述 
+                                LicenseCode;//申报事项的编码
+                                ModifyUserName;//最后修改人的名称
+                                </wsdl:documentation>
+      <wsdl:input message="tns:SaveApplySummaryforjavaSoapIn" />
+      <wsdl:output message="tns:SaveApplySummaryforjavaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCurrentApply">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"> 理正业务系统在删除自己业务数据时，调用此接口删除插入到大厅的数据,需要传入流水号applycode，该方法返回一个int类型的值，若返回1代表删除成功，返回2代表流水号为空，返回3代表该条记录在大厅数据库中不存在，返回0代表数据库操作异常，4代表流水号重复</wsdl:documentation>
+      <wsdl:input message="tns:DeleteCurrentApplySoapIn" />
+      <wsdl:output message="tns:DeleteCurrentApplySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCurrentApplySGXK">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"> 理正业务系统在删除自己业务数据时，调用此接口删除插入到大厅的数据,需要传入流水号applycode及用户名和密码，该方法返回一个int类型的值，若返回1代表删除成功，返回2代表流水号为空，返回3代表该条记录在大厅数据库中不存在，返回0代表数据库操作异常，4代表流水号重复，5代表用户名密码错误</wsdl:documentation>
+      <wsdl:input message="tns:DeleteCurrentApplySGXKSoapIn" />
+      <wsdl:output message="tns:DeleteCurrentApplySGXKSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddFeedBackInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">对企业申报数据处理的流程性信息的 </wsdl:documentation>
+      <wsdl:input message="tns:AddFeedBackInfoSoapIn" />
+      <wsdl:output message="tns:AddFeedBackInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddFeedBackInfoForJava">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">对企业申报数据处理的流程性信息的 </wsdl:documentation>
+      <wsdl:input message="tns:AddFeedBackInfoForJavaSoapIn" />
+      <wsdl:output message="tns:AddFeedBackInfoForJavaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PublishMessageInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">业务系统针对企业发布一条消息 
+                               例如公告类的信息 如果CorpCode * 表示所有的企业 发给企业消息的方案 messageType:2； 
+                               SMS 短信方式;EMAIL：电子邮件方式；SYS:在办公大厅或者其他系统显示</wsdl:documentation>
+      <wsdl:input message="tns:PublishMessageInfoSoapIn" />
+      <wsdl:output message="tns:PublishMessageInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="testMesth">
+      <wsdl:input message="tns:testMesthSoapIn" />
+      <wsdl:output message="tns:testMesthSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PublishDataToDataCenter">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">系统功能正在完善中 业务系统公示数据到数据中心</wsdl:documentation>
+      <wsdl:input message="tns:PublishDataToDataCenterSoapIn" />
+      <wsdl:output message="tns:PublishDataToDataCenterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpInfoByUserID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据用户ID获取企业的详细信息 供sso专用</wsdl:documentation>
+      <wsdl:input message="tns:GetCorpInfoByUserIDSoapIn" />
+      <wsdl:output message="tns:GetCorpInfoByUserIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubAccountInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据用户ID获取企业子账户的详细信息</wsdl:documentation>
+      <wsdl:input message="tns:GetSubAccountInfoSoapIn" />
+      <wsdl:output message="tns:GetSubAccountInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="isRegUserName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据用户名判断是否可以注册,true 为可以注册，false 为不能注册</wsdl:documentation>
+      <wsdl:input message="tns:isRegUserNameSoapIn" />
+      <wsdl:output message="tns:isRegUserNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckLogin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据用户名和密码验证账户登录信息</wsdl:documentation>
+      <wsdl:input message="tns:CheckLoginSoapIn" />
+      <wsdl:output message="tns:CheckLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpInfoByCorpCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据企业编号获取企业的详细信息 供sso专用 </wsdl:documentation>
+      <wsdl:input message="tns:GetCorpInfoByCorpCodeSoapIn" />
+      <wsdl:output message="tns:GetCorpInfoByCorpCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWaitingList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取由办公大厅申报的数据的待处理事项列表</wsdl:documentation>
+      <wsdl:input message="tns:GetWaitingListSoapIn" />
+      <wsdl:output message="tns:GetWaitingListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="xzServiceHallUpdateData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据理正返回过来的数据更新数据库中的状态</wsdl:documentation>
+      <wsdl:input message="tns:xzServiceHallUpdateDataSoapIn" />
+      <wsdl:output message="tns:xzServiceHallUpdateDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="xzServiceHallGetDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">行政服务大厅获取办事大厅所有未受理的数据</wsdl:documentation>
+      <wsdl:input message="tns:xzServiceHallGetDateSoapIn" />
+      <wsdl:output message="tns:xzServiceHallGetDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="xzServiceHallGetDate2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">行政服务大厅获取办事大厅所有未受理的数据通过流水号</wsdl:documentation>
+      <wsdl:input message="tns:xzServiceHallGetDate2SoapIn" />
+      <wsdl:output message="tns:xzServiceHallGetDate2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOneWaitingData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取由办公大厅申报的数据的单个事项处理数据</wsdl:documentation>
+      <wsdl:input message="tns:GetOneWaitingDataSoapIn" />
+      <wsdl:output message="tns:GetOneWaitingDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOneWaitingDataForJava">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取由办公大厅申报的数据的单个事项处理数据</wsdl:documentation>
+      <wsdl:input message="tns:GetOneWaitingDataForJavaSoapIn" />
+      <wsdl:output message="tns:GetOneWaitingDataForJavaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApplyData">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取由办公大厅申报的无系统的业务数据以及显示格式，
+                               参数action有view和edit两个值，分别表示调用浏览和编辑样式表</wsdl:documentation>
+      <wsdl:input message="tns:GetApplyDataSoapIn" />
+      <wsdl:output message="tns:GetApplyDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <wsdl:input message="tns:testSoapIn" />
+      <wsdl:output message="tns:testSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSessionID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">业务系统获取SessionID</wsdl:documentation>
+      <wsdl:input message="tns:GetSessionIDSoapIn" />
+      <wsdl:output message="tns:GetSessionIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEntityList">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">兼容办公大厅1.0接口  获取施工许可事项列表</wsdl:documentation>
+      <wsdl:input message="tns:GetEntityListSoapIn" />
+      <wsdl:output message="tns:GetEntityListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectEntity">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">兼容办公大厅1.0接口  获取单个工程信息</wsdl:documentation>
+      <wsdl:input message="tns:GetProjectEntitySoapIn" />
+      <wsdl:output message="tns:GetProjectEntitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTime">
+      <wsdl:input message="tns:GetTimeSoapIn" />
+      <wsdl:output message="tns:GetTimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestSendData">
+      <wsdl:input message="tns:TestSendDataSoapIn" />
+      <wsdl:output message="tns:TestSendDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpInfosByCorpName">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据企业名称获取企业信息</wsdl:documentation>
+      <wsdl:input message="tns:GetCorpInfosByCorpNameSoapIn" />
+      <wsdl:output message="tns:GetCorpInfosByCorpNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestJava">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">JAVA测试专用</wsdl:documentation>
+      <wsdl:input message="tns:TestJavaSoapIn" />
+      <wsdl:output message="tns:TestJavaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpInfoByUserIDForJava">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据用户ID获取企业的详细信息 供sso专用</wsdl:documentation>
+      <wsdl:input message="tns:GetCorpInfoByUserIDForJavaSoapIn" />
+      <wsdl:output message="tns:GetCorpInfoByUserIDForJavaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpInfoByUserIDForJavaHRSC">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据用户ID获取企业的详细信息 供sso专用</wsdl:documentation>
+      <wsdl:input message="tns:GetCorpInfoByUserIDForJavaHRSCSoapIn" />
+      <wsdl:output message="tns:GetCorpInfoByUserIDForJavaHRSCSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonInfoByUserID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据用户ID获取个人的详细信息 供sso专用</wsdl:documentation>
+      <wsdl:input message="tns:GetPersonInfoByUserIDSoapIn" />
+      <wsdl:output message="tns:GetPersonInfoByUserIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckIsCorpOrPersonUserByUserID">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">根据用户ID获取个人的详细信息 供sso专用</wsdl:documentation>
+      <wsdl:input message="tns:CheckIsCorpOrPersonUserByUserIDSoapIn" />
+      <wsdl:output message="tns:CheckIsCorpOrPersonUserByUserIDSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveApplySummaryforjavatest">
+      <wsdl:input message="tns:SaveApplySummaryforjavatestSoapIn" />
+      <wsdl:output message="tns:SaveApplySummaryforjavatestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveApplySummaryforjavathird">
+      <wsdl:input message="tns:SaveApplySummaryforjavathirdSoapIn" />
+      <wsdl:output message="tns:SaveApplySummaryforjavathirdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddFeedBackInfoForJavatest">
+      <wsdl:input message="tns:AddFeedBackInfoForJavatestSoapIn" />
+      <wsdl:output message="tns:AddFeedBackInfoForJavatestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendCaseInstance">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送申报实例监察信息(申请环节)。返回结果(发送结果编码、发送结果信息、申报流水号) </wsdl:documentation>
+      <wsdl:input message="tns:SendCaseInstanceSoapIn" />
+      <wsdl:output message="tns:SendCaseInstanceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendApproveProcess">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送审批过程监察信息(非申请,受理、审查、挂起、决定、告知环节)。返回结果(发送结果编码、发送结果信息、申报流水号) </wsdl:documentation>
+      <wsdl:input message="tns:SendApproveProcessSoapIn" />
+      <wsdl:output message="tns:SendApproveProcessSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendCaseInstanceForJava">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送申报实例监察信息(申请环节)。返回结果(发送结果编码、发送结果信息、申报流水号) </wsdl:documentation>
+      <wsdl:input message="tns:SendCaseInstanceForJavaSoapIn" />
+      <wsdl:output message="tns:SendCaseInstanceForJavaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendApproveProcessForJava">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送审批过程监察信息(非申请,受理、审查、挂起、决定、告知环节)。返回结果(发送结果编码、发送结果信息、申报流水号) </wsdl:documentation>
+      <wsdl:input message="tns:SendApproveProcessForJavaSoapIn" />
+      <wsdl:output message="tns:SendApproveProcessForJavaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EGovThirdServiceSoap" type="tns:EGovThirdServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaveApplySummary">
+      <soap:operation soapAction="http://tempuri.org/SaveApplySummary" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SaveApplySummaryEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:SaveApplySummaryEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveApplySummaryforjava">
+      <soap:operation soapAction="http://tempuri.org/SaveApplySummaryforjava" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SaveApplySummaryforjavaEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:SaveApplySummaryforjavaEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCurrentApply">
+      <soap:operation soapAction="http://tempuri.org/DeleteCurrentApply" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCurrentApplySGXK">
+      <soap:operation soapAction="http://tempuri.org/DeleteCurrentApplySGXK" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddFeedBackInfo">
+      <soap:operation soapAction="http://tempuri.org/AddFeedBackInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AddFeedBackInfoEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:AddFeedBackInfoEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddFeedBackInfoForJava">
+      <soap:operation soapAction="http://tempuri.org/AddFeedBackInfoForJava" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:AddFeedBackInfoForJavaEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:AddFeedBackInfoForJavaEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PublishMessageInfo">
+      <soap:operation soapAction="http://tempuri.org/PublishMessageInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:PublishMessageInfoEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:PublishMessageInfoEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testMesth">
+      <soap:operation soapAction="http://tempuri.org/testMesth" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PublishDataToDataCenter">
+      <soap:operation soapAction="http://tempuri.org/PublishDataToDataCenter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:PublishDataToDataCenterEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:PublishDataToDataCenterEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpInfoByUserID">
+      <soap:operation soapAction="http://tempuri.org/GetCorpInfoByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCorpInfoByUserIDEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCorpInfoByUserIDEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubAccountInfo">
+      <soap:operation soapAction="http://tempuri.org/GetSubAccountInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetSubAccountInfoEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetSubAccountInfoEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isRegUserName">
+      <soap:operation soapAction="http://tempuri.org/isRegUserName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:isRegUserNameEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:isRegUserNameEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckLogin">
+      <soap:operation soapAction="http://tempuri.org/CheckLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:CheckLoginEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:CheckLoginEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpInfoByCorpCode">
+      <soap:operation soapAction="http://tempuri.org/GetCorpInfoByCorpCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCorpInfoByCorpCodeEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCorpInfoByCorpCodeEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWaitingList">
+      <soap:operation soapAction="http://tempuri.org/GetWaitingList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="xzServiceHallUpdateData">
+      <soap:operation soapAction="http://tempuri.org/xzServiceHallUpdateData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="xzServiceHallGetDate">
+      <soap:operation soapAction="http://tempuri.org/xzServiceHallGetDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="xzServiceHallGetDate2">
+      <soap:operation soapAction="http://tempuri.org/xzServiceHallGetDate2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneWaitingData">
+      <soap:operation soapAction="http://tempuri.org/GetOneWaitingData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetOneWaitingDataEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetOneWaitingDataEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneWaitingDataForJava">
+      <soap:operation soapAction="http://tempuri.org/GetOneWaitingDataForJava" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplyData">
+      <soap:operation soapAction="http://tempuri.org/GetApplyData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetApplyDataEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetApplyDataEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <soap:operation soapAction="http://tempuri.org/test" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSessionID">
+      <soap:operation soapAction="http://tempuri.org/GetSessionID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEntityList">
+      <soap:operation soapAction="http://tempuri.org/GetEntityList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetEntityListEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetEntityListEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectEntity">
+      <soap:operation soapAction="http://tempuri.org/GetProjectEntity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetProjectEntityEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetProjectEntityEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTime">
+      <soap:operation soapAction="http://tempuri.org/GetTime" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestSendData">
+      <soap:operation soapAction="http://tempuri.org/TestSendData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpInfosByCorpName">
+      <soap:operation soapAction="http://tempuri.org/GetCorpInfosByCorpName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestJava">
+      <soap:operation soapAction="http://tempuri.org/TestJava" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:TestJavaEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:TestJavaEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpInfoByUserIDForJava">
+      <soap:operation soapAction="http://tempuri.org/GetCorpInfoByUserIDForJava" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCorpInfoByUserIDForJavaEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCorpInfoByUserIDForJavaEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpInfoByUserIDForJavaHRSC">
+      <soap:operation soapAction="http://tempuri.org/GetCorpInfoByUserIDForJavaHRSC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCorpInfoByUserIDForJavaHRSCEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCorpInfoByUserIDForJavaHRSCEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonInfoByUserID">
+      <soap:operation soapAction="http://tempuri.org/GetPersonInfoByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetPersonInfoByUserIDEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetPersonInfoByUserIDEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckIsCorpOrPersonUserByUserID">
+      <soap:operation soapAction="http://tempuri.org/CheckIsCorpOrPersonUserByUserID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:CheckIsCorpOrPersonUserByUserIDEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+        <soap:header message="tns:CheckIsCorpOrPersonUserByUserIDEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveApplySummaryforjavatest">
+      <soap:operation soapAction="http://tempuri.org/SaveApplySummaryforjavatest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveApplySummaryforjavathird">
+      <soap:operation soapAction="http://tempuri.org/SaveApplySummaryforjavathird" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddFeedBackInfoForJavatest">
+      <soap:operation soapAction="http://tempuri.org/AddFeedBackInfoForJavatest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendCaseInstance">
+      <soap:operation soapAction="http://tempuri.org/SendCaseInstance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendApproveProcess">
+      <soap:operation soapAction="http://tempuri.org/SendApproveProcess" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendCaseInstanceForJava">
+      <soap:operation soapAction="http://tempuri.org/SendCaseInstanceForJava" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendApproveProcessForJava">
+      <soap:operation soapAction="http://tempuri.org/SendApproveProcessForJava" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EGovThirdServiceSoap12" type="tns:EGovThirdServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaveApplySummary">
+      <soap12:operation soapAction="http://tempuri.org/SaveApplySummary" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SaveApplySummaryEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SaveApplySummaryEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveApplySummaryforjava">
+      <soap12:operation soapAction="http://tempuri.org/SaveApplySummaryforjava" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SaveApplySummaryforjavaEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SaveApplySummaryforjavaEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCurrentApply">
+      <soap12:operation soapAction="http://tempuri.org/DeleteCurrentApply" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteCurrentApplySGXK">
+      <soap12:operation soapAction="http://tempuri.org/DeleteCurrentApplySGXK" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddFeedBackInfo">
+      <soap12:operation soapAction="http://tempuri.org/AddFeedBackInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AddFeedBackInfoEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AddFeedBackInfoEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddFeedBackInfoForJava">
+      <soap12:operation soapAction="http://tempuri.org/AddFeedBackInfoForJava" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AddFeedBackInfoForJavaEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:AddFeedBackInfoForJavaEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PublishMessageInfo">
+      <soap12:operation soapAction="http://tempuri.org/PublishMessageInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:PublishMessageInfoEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:PublishMessageInfoEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testMesth">
+      <soap12:operation soapAction="http://tempuri.org/testMesth" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PublishDataToDataCenter">
+      <soap12:operation soapAction="http://tempuri.org/PublishDataToDataCenter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:PublishDataToDataCenterEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:PublishDataToDataCenterEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpInfoByUserID">
+      <soap12:operation soapAction="http://tempuri.org/GetCorpInfoByUserID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCorpInfoByUserIDEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCorpInfoByUserIDEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubAccountInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetSubAccountInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetSubAccountInfoEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetSubAccountInfoEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="isRegUserName">
+      <soap12:operation soapAction="http://tempuri.org/isRegUserName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:isRegUserNameEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:isRegUserNameEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckLogin">
+      <soap12:operation soapAction="http://tempuri.org/CheckLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:CheckLoginEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:CheckLoginEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpInfoByCorpCode">
+      <soap12:operation soapAction="http://tempuri.org/GetCorpInfoByCorpCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCorpInfoByCorpCodeEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCorpInfoByCorpCodeEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWaitingList">
+      <soap12:operation soapAction="http://tempuri.org/GetWaitingList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="xzServiceHallUpdateData">
+      <soap12:operation soapAction="http://tempuri.org/xzServiceHallUpdateData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="xzServiceHallGetDate">
+      <soap12:operation soapAction="http://tempuri.org/xzServiceHallGetDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="xzServiceHallGetDate2">
+      <soap12:operation soapAction="http://tempuri.org/xzServiceHallGetDate2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneWaitingData">
+      <soap12:operation soapAction="http://tempuri.org/GetOneWaitingData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetOneWaitingDataEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetOneWaitingDataEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneWaitingDataForJava">
+      <soap12:operation soapAction="http://tempuri.org/GetOneWaitingDataForJava" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplyData">
+      <soap12:operation soapAction="http://tempuri.org/GetApplyData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetApplyDataEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetApplyDataEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <soap12:operation soapAction="http://tempuri.org/test" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSessionID">
+      <soap12:operation soapAction="http://tempuri.org/GetSessionID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEntityList">
+      <soap12:operation soapAction="http://tempuri.org/GetEntityList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetEntityListEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetEntityListEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProjectEntity">
+      <soap12:operation soapAction="http://tempuri.org/GetProjectEntity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetProjectEntityEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetProjectEntityEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTime">
+      <soap12:operation soapAction="http://tempuri.org/GetTime" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestSendData">
+      <soap12:operation soapAction="http://tempuri.org/TestSendData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpInfosByCorpName">
+      <soap12:operation soapAction="http://tempuri.org/GetCorpInfosByCorpName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestJava">
+      <soap12:operation soapAction="http://tempuri.org/TestJava" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TestJavaEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:TestJavaEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpInfoByUserIDForJava">
+      <soap12:operation soapAction="http://tempuri.org/GetCorpInfoByUserIDForJava" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCorpInfoByUserIDForJavaEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCorpInfoByUserIDForJavaEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCorpInfoByUserIDForJavaHRSC">
+      <soap12:operation soapAction="http://tempuri.org/GetCorpInfoByUserIDForJavaHRSC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCorpInfoByUserIDForJavaHRSCEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCorpInfoByUserIDForJavaHRSCEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPersonInfoByUserID">
+      <soap12:operation soapAction="http://tempuri.org/GetPersonInfoByUserID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetPersonInfoByUserIDEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetPersonInfoByUserIDEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckIsCorpOrPersonUserByUserID">
+      <soap12:operation soapAction="http://tempuri.org/CheckIsCorpOrPersonUserByUserID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:CheckIsCorpOrPersonUserByUserIDEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:CheckIsCorpOrPersonUserByUserIDEGovSoapHead" part="EGovSoapHead" use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveApplySummaryforjavatest">
+      <soap12:operation soapAction="http://tempuri.org/SaveApplySummaryforjavatest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveApplySummaryforjavathird">
+      <soap12:operation soapAction="http://tempuri.org/SaveApplySummaryforjavathird" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddFeedBackInfoForJavatest">
+      <soap12:operation soapAction="http://tempuri.org/AddFeedBackInfoForJavatest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendCaseInstance">
+      <soap12:operation soapAction="http://tempuri.org/SendCaseInstance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendApproveProcess">
+      <soap12:operation soapAction="http://tempuri.org/SendApproveProcess" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendCaseInstanceForJava">
+      <soap12:operation soapAction="http://tempuri.org/SendCaseInstanceForJava" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendApproveProcessForJava">
+      <soap12:operation soapAction="http://tempuri.org/SendApproveProcessForJava" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EGovThirdService">
+    <wsdl:port name="EGovThirdServiceSoap" binding="tns:EGovThirdServiceSoap">
+      <soap:address location="http://dandiandl.bjjs.gov.cn/ExchangeServer/EGovThirdService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EGovThirdServiceSoap12" binding="tns:EGovThirdServiceSoap12">
+      <soap12:address location="http://dandiandl.bjjs.gov.cn/ExchangeServer/EGovThirdService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

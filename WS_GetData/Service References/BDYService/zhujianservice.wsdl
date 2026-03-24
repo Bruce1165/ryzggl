@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="UploadCert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CertList" type="tns:ArrayOfImportCertDTO" />
+            <s:element minOccurs="0" maxOccurs="1" name="AdminName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AdminPwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfImportCertDTO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ImportCertDTO" nillable="true" type="tns:ImportCertDTO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ImportCertDTO">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="StudentName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sex" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IDCard" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NativePlace" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="nativePlaceId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Education" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="educationId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="WorkAge" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WorkUnit" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ExamUnit" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CertificateDepartment" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="WorkName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Remark" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="workId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="WorkLevel" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="workLevelId" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CertNum" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GetCertTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="departmentName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="departmentId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TrainingStartTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TrainingEndTime" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TrainingHours" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TheoryScore" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OperateScore" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SafetyScore" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="OtherScore" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ErrorInfo" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CertTypeId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CertificateTypeId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CertTypeName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CertName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TWorkNum" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Profession" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CertState" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddJob" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EducationLog" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="JobName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreatTime" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="UploadCertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadCertResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadProfessionCert">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CertList" type="tns:ArrayOfImportCertDTO" />
+            <s:element minOccurs="0" maxOccurs="1" name="AdminName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AdminPwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadProfessionCertResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadProfessionCertResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="UploadCertSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadCert" />
+  </wsdl:message>
+  <wsdl:message name="UploadCertSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadCertResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadProfessionCertSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadProfessionCert" />
+  </wsdl:message>
+  <wsdl:message name="UploadProfessionCertSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadProfessionCertResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ZhuJianServiceSoap">
+    <wsdl:operation name="UploadCert">
+      <wsdl:input message="tns:UploadCertSoapIn" />
+      <wsdl:output message="tns:UploadCertSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadProfessionCert">
+      <wsdl:input message="tns:UploadProfessionCertSoapIn" />
+      <wsdl:output message="tns:UploadProfessionCertSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ZhuJianServiceSoap" type="tns:ZhuJianServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UploadCert">
+      <soap:operation soapAction="http://tempuri.org/UploadCert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadProfessionCert">
+      <soap:operation soapAction="http://tempuri.org/UploadProfessionCert" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ZhuJianServiceSoap12" type="tns:ZhuJianServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UploadCert">
+      <soap12:operation soapAction="http://tempuri.org/UploadCert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadProfessionCert">
+      <soap12:operation soapAction="http://tempuri.org/UploadProfessionCert" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ZhuJianService">
+    <wsdl:port name="ZhuJianServiceSoap" binding="tns:ZhuJianServiceSoap">
+      <soap:address location="http://223.203.228.135:8089/zhujianservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ZhuJianServiceSoap12" binding="tns:ZhuJianServiceSoap12">
+      <soap12:address location="http://223.203.228.135:8089/zhujianservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

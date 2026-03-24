@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="DoAction">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="para" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="Tag1" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="Tag2" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DoActionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DoActionResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="DoActionSoapIn">
+    <wsdl:part name="parameters" element="tns:DoAction" />
+  </wsdl:message>
+  <wsdl:message name="DoActionSoapOut">
+    <wsdl:part name="parameters" element="tns:DoActionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DBUploaderSoap">
+    <wsdl:operation name="DoAction">
+      <wsdl:input message="tns:DoActionSoapIn" />
+      <wsdl:output message="tns:DoActionSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DBUploaderSoap" type="tns:DBUploaderSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoAction">
+      <soap:operation soapAction="http://tempuri.org/DoAction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DBUploaderSoap12" type="tns:DBUploaderSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DoAction">
+      <soap12:operation soapAction="http://tempuri.org/DoAction" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DBUploader">
+    <wsdl:port name="DBUploaderSoap" binding="tns:DBUploaderSoap">
+      <soap:address location="http://jzsjk.coc.gov.cn/zxja.UploadInterface.Web/DBUploader.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DBUploaderSoap12" binding="tns:DBUploaderSoap12">
+      <soap12:address location="http://jzsjk.coc.gov.cn/zxja.UploadInterface.Web/DBUploader.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

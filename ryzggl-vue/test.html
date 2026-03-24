@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue基础测试</title>
+    <style>
+        body {
+            padding: 20px;
+            font-family: sans-serif;
+            background: #f0f0f0;
+        }
+        #test-app {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #409eff;
+        }
+        .success {
+            color: #67c23a;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="test-app">
+        <h1>Vue基础测试</h1>
+        <p>计数器: {{ count }}</p>
+        <p>状态: <span class="success">{{ status }}</span></p>
+        <button @click="increment">点击增加: {{ count }}</button>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "vue": "/node_modules/vue/dist/vue.esm-browser.js"
+            }
+        }
+    </script>
+    <script type="module">
+        import { createApp, ref } from 'vue'
+
+        createApp({
+            setup() {
+                const count = ref(0)
+                const status = ref('Vue正常工作！')
+
+                const increment = () => {
+                    count.value++
+                }
+
+                return {
+                    count,
+                    status,
+                    increment
+                }
+            }
+        }).mount('#test-app')
+    </script>
+</body>
+</html>

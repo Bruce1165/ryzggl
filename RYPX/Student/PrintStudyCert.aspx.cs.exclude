@@ -1,0 +1,36 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using DataAccess;
+using Model;
+
+public partial class Student_PrintStudyCert : BasePage
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if(!IsPostBack)
+        {
+            try
+            {
+                ObjectDataSource1.SelectParameters.Clear();
+                QueryParamOB q = new QueryParamOB();
+
+                //已加入我的学习计划的
+                q.Add(string.Format("[WorkerCertificateCode]='{0}'", WorkerCertificateCode));
+
+                ObjectDataSource1.SelectParameters.Add("filterWhereString", q.ToWhereString());
+                RadGridMyPackage.CurrentPageIndex = 0;
+                RadGridMyPackage.DataSourceID = ObjectDataSource1.ID;
+                RadGridMyPackage.DataBind();
+            }
+            catch (Exception ex)
+            {
+                UIHelp.WriteErrorLog(Page, "读取我的公益培训项目失败！", ex);
+                return;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+﻿function showCheckListHelp() {
+    layer.open({
+        title: '审核时限说明'
+        , type: 1
+        , closeBtn: 1
+        , content: '<div class="divhelp"><div style="width:800px;margin:12px 12px;text-align:center;"><div style="float:left;width:150px;text-align:right;">颜色提示说明：</div><div style="float:left;border-bottom:3px solid #333;color:#333;padding-bottom:4px;width:200px">进入审核时限>></div><div style="float:left;border-bottom:3px solid #F5AF02;color:#F5AF02;padding-bottom:4px;width:200px">临近审核时限>></div><div style="float:left;border-bottom:3px solid #FF0000;color:#FF0000;padding-bottom:4px;width:200px">超出审核时限>></div><div style="clear:both"></div></div><p>二级建造师：</p><div><table cellspacing="1" cellpadding="1" class="tbhelp"><tr><td>申报事项</td><td>区级时限</td><td>市级时限</td><td>办结总时限</td></tr><tr><td>初始注册</td><td>10个工作日</td><td>10个工作日</td><td>20个工作日</td></tr><tr><td>重新注册</td><td>10个工作日</td><td>10个工作日</td><td>20个工作日</td></tr><tr><td>延续注册</td><td>5个工作日</td><td>10个工作日</td><td>15个工作日</td></tr><tr><td>执业企业变更</td><td>5个工作日</td><td>无</td><td>5个工作日</td></tr><tr><td>企业信息变更</td><td>5个工作日</td><td>无</td><td>5个工作日</td></tr><tr><td>个人信息变更</td><td>5个工作日</td><td>5个工作日</td><td>10个工作日</td></tr><tr><td>注销注册</td><td>5个工作日</td><td>5个工作日</td><td>10个工作日</td></tr></table></div><p>二级造价工程师：</p><div ><table cellspacing="1" cellpadding="1" class="tbhelp"><tr><td>申报事项</td><td>区级时限</td><td>市级时限</td><td>办结总时限</td></tr><tr><td>初始注册</td><td>无</td><td>20个工作日</td><td>20个工作日</td></tr><tr><td>其他注册</td><td>无</td><td>10个工作日</td><td>10个工作日</td></tr></table></div><p>安管人员：</p><div ><table cellspacing="1" cellpadding="1" class="tbhelp"><tr><td>申报事项</td><td>区级时限</td><td>市级时限</td><td>办结总时限</td></tr><tr><td>考试报名</td><td>无</td><td>5个工作日</td><td>5个工作日</td></tr><tr><td>证书续期</td><td>5个工作日</td><td>5个工作日</td><td>10个工作日</td></tr></table></div><p>》二级建造师注册和安管人员证书续期业务审核时限：<br />&nbsp;&nbsp;&nbsp;&nbsp;申请人所在企业自提交注册申请后第二日开始计算区级工作时限；区住建委上报后第二日开始计算市级工作时限。<br /><br />》安管人员考试报名审核时限：全年考试计划规定的市住建委受理审核时间开始之日起计算。</p></div>'
+        , offset: '20px'
+        , area: ['1000px', 'auto']
+    });
+}

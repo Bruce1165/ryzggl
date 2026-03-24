@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="../css/Style3.css" rel="stylesheet" type="text/css" />
+    <script src="../Scripts/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <link href="../layer/skin/layer.css" rel="stylesheet" />
+    <script src="../layer/layer.js" type="text/javascript"></script>
+    <style type="text/css">
+         .table {
+            border: 1px solid #5C9DD3;
+           
+        }
+
+        .table th{
+            background-repeat: repeat-x;
+            height: 30px;
+            /*background-color:#C6C6C6;*/
+            /*color:white;*/
+        }
+
+        .table td, .table th {
+            border: 1px solid #5C9DD3;
+            padding: 0 1em 0;
+            text-align:center;
+        }
+   
+       
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //查询
+            $("#BtnQuery").click(function () {
+                $("#tabzgzh tr:gt(0)").remove();//移除除了表头的th
+                $.post("../Ajax/ApplyFirstAddZjhm.ashx", { zjhm: $("#txtzjhm").val() },  function (result) {
+                    if (result != "False")
+                    {
+                        //$("#tabzgzh").append('<tr><th><input id="CheckboxAll" type="checkbox" /></th><th>身份证号</th><th>专业</th><th>资格证号</th></tr>');
+                        $.each($.parseJSON(result), function (i, ss) {
+                            $("#tabzgzh").append("<tr><td><input id='Checkbox" + i + "' name='check' type='checkbox' /></td><td>" + ss.SFZH + "</td><td>" + ss.ZCZY + "</td><td>" + ss.ZGZH + "</td></tr>");
+                        })
+                    }
+                    else
+                    {
+                        layer.alert('没有查询到数据', { icon: 5 });
+                    }
+                });
+
+            })
+            //全选反选
+            $("#CheckboxAll").click(function () {
+                if ($("#CheckboxAll").is(':checked')) {
+                    //$(":checkbox").attr("checked", true);
+                    $("input[name='check']").attr("checked",true);
+                }
+                else
+                {
+                    //$(":checkbox").attr("checked", false);
+                    $("input[name='check']").removeAttr("checked");
+                }
+              
+            });
+
+            $("#Checkbox0").click(function () {
+                alert("1111");
+            })
+            //确定
+            $("#BtnSave").click(function () {
+                //parent.$("#RadTextBoxPSN_CertificateNO").val("22222");
+                var openDoc = parent.opener.document;
+                var index = parent.layer.getFrameIndex(window.name); //先得到当前iframe层的索引
+                parent.layer.close(index); //再执行关闭   
+            })
+        })
+    </script>
+
+</head>
+<body>
+    <div style="text-align:center">
+        <br />
+        <strong>请输入证件号码：</strong><input id="txtzjhm" type="text" />
+        <input id="BtnQuery" type="button" value="查 询" class="button" />
+    </div>
+    <br />
+    <table id="tabzgzh" style="width:95%;margin:0 auto" class="table">
+        <tr><th><input id="CheckboxAll" type="checkbox" /></th><th>身份证号</th><th>专业</th><th>资格证号</th></tr>
+    </table>
+    <br />
+    <div style="text-align:center">
+        <input id="BtnSave" type="button" value="确 定" class="button" />
+    </div>
+</body>
+</html>

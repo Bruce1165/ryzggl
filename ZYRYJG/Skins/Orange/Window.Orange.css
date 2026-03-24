@@ -1,0 +1,179 @@
+/* RadWindow for ASP.NET AJAX Sunset Skin */
+
+/* Window Background */
+
+/* Horiznotal */
+.RadWindow_Orange .rwTopLeft,
+.RadWindow_Orange .rwTopRight,
+.RadWindow_Orange .rwTitlebar,
+.RadWindow_Orange .rwFooterLeft,
+.RadWindow_Orange .rwFooterRight,
+.RadWindow_Orange .rwFooterCenter,
+.RadWindow_Orange .rwTopResize,
+.RadWindow_Orange .rwStatusbar div,
+.RadWindow_Orange .rwStatusbar,
+.RadWindow_Orange .rwPopupButton,
+.RadWindow_Orange .rwPopupButton span,
+.RadWindow_Orange.rwMinimizedWindow .rwCorner
+{
+    background-image: url('Window/WindowHorizontalSprites.gif');
+}
+
+/* Vertical */
+.RadWindow_Orange .rwBodyLeft,
+.RadWindow_Orange .rwBodyRight,
+.RadWindow_Orange .rwStatusbarRow .rwCorner
+{
+	background-image: url('Window/WindowVerticalSprites.gif');
+}
+
+/* Window Shadows */
+
+/* Horiznotal */
+.RadWindow_Orange .rwShadow .rwTopLeft,
+.RadWindow_Orange .rwShadow .rwTopRight,
+.RadWindow_Orange .rwShadow .rwTitlebar,
+.RadWindow_Orange .rwShadow .rwFooterLeft,
+.RadWindow_Orange .rwShadow .rwFooterRight,
+.RadWindow_Orange .rwShadow .rwFooterCenter,
+.RadWindow_Orange .rwShadow .rwTopResize,
+.RadWindow_Orange .rwShadow .rwStatusbar div,
+.RadWindow_Orange .rwShadow .rwStatusbar,
+.RadWindow_Orange .rwShadow .rwPopupButton,
+.RadWindow_Orange .rwShadow .rwPopupButton span,
+.RadWindow_Orange .rwShadow .rwBodyLeft,
+.RadWindow_Orange .rwShadow .rwBodyRight,
+.RadWindow_Orange .rwShadow .rwStatusbarRow .rwBodyLeft,
+.RadWindow_Orange .rwShadow .rwStatusbarRow .rwBodyRight
+{
+	background-image: url('Window/WindowHorizontalSprites.png');
+}
+
+/* Vertical */
+.RadWindow_Orange .rwShadow .rwBodyLeft,
+.RadWindow_Orange .rwShadow .rwBodyRight,
+.RadWindow_Orange .rwShadow .rwStatusbarRow .rwBodyLeft,
+.RadWindow_Orange .rwShadow .rwStatusbarRow .rwBodyRight
+{
+	background-image: url('Window/WindowVerticalSprites.png');
+}
+
+/* Shadows End */
+
+.RadWindow_Orange .rwStatusbar input
+{
+    background-color: #f7f3e9;
+}
+
+.RadWindow_Orange .rwControlButtons a
+{
+    background-image: url('Window/CommandButtonSprites.gif');
+}
+
+.RadWindow_Orange a.rwIcon
+{
+	background-image: url('Window/WindowHorizontalSprites.gif');
+}
+
+div.RadWindow_Orange .rwTitlebarControls em
+{
+	color: #fff;
+}
+
+div.RadWindow_Orange .rwDialogInput
+{
+	border: solid 1px #898772;
+}
+
+div.RadWindow_Orange .rwDialogInput:hover
+{
+	border: solid 1px #44a41f;
+}
+
+div.RadWindow_Orange .rwPopupButton .rwInnerSpan
+{
+    color: #045100;
+}
+
+div.RadWindow_Orange .rwPopupButton:hover .rwInnerSpan
+{
+    color: #279500;
+}
+
+div.RadWindow_Orange td.rwWindowContent
+{
+    background-color: #fff;
+}
+
+/* Loading Indicators */
+div.RadWindow_Orange td.rwLoading
+{
+    background-color: #a52900;
+}
+
+/* When ShowContentDuringLoad="true" */
+div.RadWindow_Orange td.rwWindowContent.rwLoading
+{
+    background-image: url('Common/loading.gif');
+}
+
+/* When ShowContentDuringLoad="false" */
+div.RadWindow_Orange input.rwLoading
+{
+    background-image: url('Common/loading_small.gif');
+}
+
+/* Shadow Control Buttons */
+
+.RadWindow_Orange .rwShadow .rwControlButtons 
+{
+	margin: 5px -2px 0 0;
+}
+
+.RadWindow_Orange .rwShadow .rwControlButtons 
+{
+	margin: 5px -1px 0 0\9;
+}
+
+/* ctrl buttons when winodw is minimized */
+.RadWindow_Orange.rwMinimizedWindowShadow .rwShadow .rwControlButtons 
+{
+	margin: 9px -8px 0 0;
+}
+
+
+/* Icon when winodw is minimized */
+
+.RadWindow_Orange .rwShadow .rwControlButtons li
+{
+	float: left;
+	padding: 0;
+}
+
+.RadWindow_Orange .rwShadow .rwControlButtons a
+{
+	width: 30px; 
+}
+
+.rwInactiveWindow .rwShadow .rwTopLeft,
+.rwInactiveWindow .rwShadow .rwTopRight,
+.rwInactiveWindow .rwShadow .rwTitlebar,
+.rwInactiveWindow .rwShadow .rwFooterLeft,
+.rwInactiveWindow .rwShadow .rwFooterRight,
+.rwInactiveWindow .rwShadow .rwFooterCenter,
+.rwInactiveWindow .rwShadow .rwTopResize,
+.rwInactiveWindow .rwShadow .rwStatusbar div,
+.rwInactiveWindow .rwShadow .rwStatusbar,
+.rwInactiveWindow .rwShadow .rwPopupButton,
+.rwInactiveWindow .rwShadow .rwPopupButton span,
+.rwInactiveWindow .rwShadow.rwMinimizedWindow .rwCorner
+{
+    background-image: url('Window/WindowHorizontalSprites.gif') !important;
+}
+
+.rwInactiveWindow .rwShadow .rwBodyLeft,
+.rwInactiveWindow .rwShadow .rwBodyRight,
+.rwInactiveWindow .rwShadow .rwStatusbarRow .rwCorner
+{
+	background-image: url('Window/WindowVerticalSprites.gif') !important;
+}

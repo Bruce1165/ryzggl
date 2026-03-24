@@ -1,0 +1,197 @@
+﻿ ul, li {
+            margin: 0;
+            padding: 3px 0;
+            line-height: 1.2em;
+        }
+
+        body {
+            margin: 0 0;
+            font: normal Microsoft YaHei,sans-serif;
+            background-color: #3E83D0;
+        }
+
+        #content {
+            width: 222px;
+            padding: 10px;
+            border: solid 0px #dfdfdf;
+            background: #ffffff;
+            font-size: 11px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .middle {
+            width: 100%;
+            position: relative !important;
+            left: 0px;
+            top: 70px;
+            z-index: 997;
+        }
+
+        .left {
+            width: 200px;
+            max-height: 1200px;
+            overflow: hidden;
+            background-color: #fefefe;
+            position: absolute;
+            z-index: 999;
+            left: 5px;
+            top: 0;
+            padding: 0 4px;
+            border-left: 1px solid #012966;
+        }
+
+        .split {
+            width: 6px;
+            max-height: 1200px;
+            overflow: hidden;
+            position: absolute;
+            z-index: 999;
+            left: 215px;
+            top: 0;
+            background: #5DA2EF;
+        }
+
+        .split_l {
+            background: url(../images/yckj_left.gif) no-repeat left 300px #5DA2EF;
+        }
+
+        .split_r {
+            background: url(../images/yckj_right.gif) no-repeat left 300px #5DA2EF;
+        }
+
+        .right {
+            position: absolute;
+            z-index: 998;
+            background-color: #fefefe;
+            left: 221px;
+            margin-right: 5px;
+            border: none;
+            padding: 0;
+        }
+
+        * {
+            list-style-type: none;
+        }
+
+        .header {
+            width: 100%;
+            height: 70px;
+            line-height: 40px;
+            color: white;
+            font: 14px 黑体;
+            vertical-align: middle;
+            background: url(../images/t_m.png) repeat-x center center #5C9DD3;
+            position: fixed;
+            z-index: 0;
+        }
+
+        .header-left {
+            width: 535px;
+            height: 70px;
+            background: url(../images/t_l.png) no-repeat left center transparent;
+            position: fixed;
+            z-index: 1;
+        }
+
+        .header-right {
+            width: 25px;
+            height: 70px;
+            background: url(../images/t_r.png) no-repeat right center transparent;
+            position: fixed;
+            right: 0;
+            z-index: 1;
+        }
+
+        .foot {
+            color: #eeeeee;
+            background-color: #000000;
+            font: normal 14px Microsoft YaHei;
+            width: 100%;
+            height: 40px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 40px;
+        }
+
+
+        .time {
+            color: #f9f9f9;
+            line-height: 40px;
+            display: none;
+        }
+
+        .home {
+            color: #f9f9f9;
+            cursor: pointer;
+            line-height: 30px;
+            background: url(../Images/email.png) no-repeat 10px center;
+            padding-left: 30px;
+        }
+
+        .user {
+            float: right;
+            color: #f9f9f9;
+            padding-top: 40px;
+            line-height: 30px;
+        }
+
+        .logout {
+            cursor: pointer;
+            color: #f9f9f9;
+            background-color: transparent;
+            border: none;
+        }
+         .linkme {
+            color: #f9f9f9;
+            cursor: pointer;
+            line-height: 30px;
+            background: url(../Images/linkme.gif) no-repeat 10px center;
+            padding-left: 30px;
+        }
+
+        .sysName {
+            font: bold 22px Microsoft YaHei,sans-serif;
+            color: yellow;
+            line-height: 30px;
+            float: left;
+            padding-top: 15px;
+            padding-left: 70px;
+        }
+
+        .userImg {
+            padding-left: 20px;
+            background: url(../Images/man.png) no-repeat left center;
+        }
+
+        .close {
+            padding-left: 26px;
+            background: url(../Images/hclose.png) no-repeat 10px center;
+        }
+
+        a, img {
+            border: 0;
+        }
+
+        /*-------菜单----*/
+        #RadPanelBar1 {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            width: 200px;
+        }
+
+            #RadPanelBar1 span {
+                line-height: 30px;
+                font-size: 14px;
+            }
+
+        .headbtn {
+            width: 110px;
+            text-align: left;
+            height: 30px;
+            float: right;
+            color: #f9f9f9;
+            border-left: 1px solid #5293C9;
+        }
+        /*-----菜单----------*/

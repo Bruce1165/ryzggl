@@ -1,0 +1,3779 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\work\北京市住房和城乡建设领域人员资格管理信息系统\publish\ZYRYJG</_PublishTargetUrl>
+    <History>True|2025-10-11T12:42:51.4354395Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="About.aspx">
+      <publishTime>06/25/2019 17:01:04</publishTime>
+    </File>
+    <File Include="Ajax/MainNews.ashx">
+      <publishTime>10/11/2016 09:51:18</publishTime>
+    </File>
+    <File Include="Ajax/NewsFalse.ashx">
+      <publishTime>10/11/2016 09:51:18</publishTime>
+    </File>
+    <File Include="Ajax/Qualification.ashx">
+      <publishTime>10/18/2016 14:20:08</publishTime>
+    </File>
+    <File Include="Ajax/zjsQualification.ashx">
+      <publishTime>04/06/2022 17:18:32</publishTime>
+    </File>
+    <File Include="ApplyNotice.ascx">
+      <publishTime>08/19/2021 12:27:38</publishTime>
+    </File>
+    <File Include="App_Browsers/ie.browser">
+      <publishTime>08/10/2016 14:14:10</publishTime>
+    </File>
+    <File Include="bin/App_Browsers.dll">
+      <publishTime>02/09/2026 11:33:37</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.compiled">
+      <publishTime>02/09/2026 11:33:36</publishTime>
+    </File>
+    <File Include="bin/App_global.asax.dll">
+      <publishTime>02/09/2026 11:33:36</publishTime>
+    </File>
+    <File Include="bin/BouncyCastle.Crypto.dll">
+      <publishTime>09/21/2020 23:24:14</publishTime>
+    </File>
+    <File Include="bin/DataAccess.dll">
+      <publishTime>01/21/2026 14:57:56</publishTime>
+    </File>
+    <File Include="bin/DataAccess.pdb">
+      <publishTime>10/11/2025 20:42:16</publishTime>
+    </File>
+    <File Include="bin/DocX.dll">
+      <publishTime>05/26/2016 09:02:04</publishTime>
+    </File>
+    <File Include="bin/DotNetCasClient.dll">
+      <publishTime>03/08/2011 14:38:04</publishTime>
+    </File>
+    <File Include="bin/Interop.Excel.dll">
+      <publishTime>01/13/2010 14:18:46</publishTime>
+    </File>
+    <File Include="bin/Interop.Microsoft.Office.Core.dll">
+      <publishTime>01/13/2010 14:18:46</publishTime>
+    </File>
+    <File Include="bin/Interop.Word.dll">
+      <publishTime>01/13/2010 14:18:46</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>07/07/2009 07:25:16</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="bin/Model.dll">
+      <publishTime>01/21/2026 14:57:54</publishTime>
+    </File>
+    <File Include="bin/Model.pdb">
+      <publishTime>09/12/2025 12:09:28</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>09/25/2014 04:28:24</publishTime>
+    </File>
+    <File Include="bin/O2S.Components.PDFRender4NET.dll">
+      <publishTime>02/09/2023 23:20:19</publishTime>
+    </File>
+    <File Include="bin/PdfiumViewer.dll">
+      <publishTime>02/10/2023 12:02:00</publishTime>
+    </File>
+    <File Include="bin/Renci.SshNet.dll">
+      <publishTime>10/17/2017 02:53:04</publishTime>
+    </File>
+    <File Include="bin/stdole.dll">
+      <publishTime>03/18/2010 23:21:56</publishTime>
+    </File>
+    <File Include="bin/Synergy.Common.dll">
+      <publishTime>12/22/2009 16:04:10</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.Design.dll">
+      <publishTime>07/12/2010 11:53:40</publishTime>
+    </File>
+    <File Include="bin/Telerik.Web.UI.dll">
+      <publishTime>07/12/2010 11:53:40</publishTime>
+    </File>
+    <File Include="bin/Utility.dll">
+      <publishTime>01/08/2026 18:44:58</publishTime>
+    </File>
+    <File Include="bin/Utility.pdb">
+      <publishTime>09/21/2025 00:17:32</publishTime>
+    </File>
+    <File Include="bin/zxing.dll">
+      <publishTime>04/01/2014 22:21:20</publishTime>
+    </File>
+    <File Include="bin/ZYRYJG.dll">
+      <publishTime>02/09/2026 11:33:19</publishTime>
+    </File>
+    <File Include="bin/ZYRYJG.pdb">
+      <publishTime>10/11/2025 20:42:24</publishTime>
+    </File>
+    <File Include="bin/ZYRYJG.XmlSerializers.dll">
+      <publishTime>02/09/2026 11:33:20</publishTime>
+    </File>
+    <File Include="bin/__browserCapabilitiesCompiler.compiled">
+      <publishTime>02/09/2026 11:33:37</publishTime>
+    </File>
+    <File Include="CertifEnter/CertifEnterAccepted.aspx">
+      <publishTime>04/15/2025 09:05:52</publishTime>
+    </File>
+    <File Include="CertifEnter/CertifEnterApplyEdit.aspx">
+      <publishTime>04/15/2025 20:32:06</publishTime>
+    </File>
+    <File Include="CertifEnter/CertifEnterApplyList.aspx">
+      <publishTime>05/20/2025 18:36:22</publishTime>
+    </File>
+    <File Include="CertifEnter/CertifEnterApplyView.aspx">
+      <publishTime>03/20/2024 11:12:53</publishTime>
+    </File>
+    <File Include="CertifEnter/CertifEnterCheck.aspx">
+      <publishTime>05/20/2025 18:36:56</publishTime>
+    </File>
+    <File Include="CertifEnter/CertifEnterCode.aspx">
+      <publishTime>02/27/2023 05:58:41</publishTime>
+    </File>
+    <File Include="CertifEnter/CertifEnterConfirm.aspx">
+      <publishTime>08/30/2020 01:20:06</publishTime>
+    </File>
+    <File Include="CertifEnter/default.aspx">
+      <publishTime>10/23/2019 14:05:17</publishTime>
+    </File>
+    <File Include="CertifEnter/SelectOutCert.aspx">
+      <publishTime>08/16/2024 10:00:43</publishTime>
+    </File>
+    <File Include="CertifManage/Application.aspx">
+      <publishTime>12/02/2025 20:01:01</publishTime>
+    </File>
+    <File Include="CertifManage/ApplyQuerySLR.aspx">
+      <publishTime>07/11/2024 03:28:58</publishTime>
+    </File>
+    <File Include="CertifManage/ApplyQueryTZ.aspx">
+      <publishTime>07/11/2024 03:28:58</publishTime>
+    </File>
+    <File Include="CertifManage/CertChangeTestify.aspx">
+      <publishTime>01/17/2024 22:07:50</publishTime>
+    </File>
+    <File Include="CertifManage/CertifChange.aspx">
+      <publishTime>05/20/2025 18:27:05</publishTime>
+    </File>
+    <File Include="CertifManage/CertifChangeCheckConfirm.aspx">
+      <publishTime>05/20/2025 18:31:09</publishTime>
+    </File>
+    <File Include="CertifManage/CertifChangeCheckPatch.aspx">
+      <publishTime>02/13/2020 14:02:50</publishTime>
+    </File>
+    <File Include="CertifManage/CertifChangeCheckUnit.aspx">
+      <publishTime>02/10/2025 11:07:38</publishTime>
+    </File>
+    <File Include="CertifManage/CertifChangeConfirm.aspx">
+      <publishTime>05/20/2025 18:32:03</publishTime>
+    </File>
+    <File Include="CertifManage/CertifChangeStatusList.aspx">
+      <publishTime>08/13/2021 13:31:31</publishTime>
+    </File>
+    <File Include="CertifManage/CertificateMergeApply.aspx">
+      <publishTime>11/22/2025 19:06:27</publishTime>
+    </File>
+    <File Include="CertifManage/CertificateMergeList.aspx">
+      <publishTime>02/07/2025 22:48:10</publishTime>
+    </File>
+    <File Include="CertifManage/CertifMoreAccepted.aspx">
+      <publishTime>03/31/2022 11:41:12</publishTime>
+    </File>
+    <File Include="CertifManage/CertifMoreApply.aspx">
+      <publishTime>04/15/2025 20:39:20</publishTime>
+    </File>
+    <File Include="CertifManage/CertifMoreApplyList.aspx">
+      <publishTime>09/07/2021 16:43:08</publishTime>
+    </File>
+    <File Include="CertifManage/CertifMoreCheck.aspx">
+      <publishTime>04/15/2025 20:36:37</publishTime>
+    </File>
+    <File Include="CertifManage/CertifMoreConfirm.aspx">
+      <publishTime>02/07/2025 22:46:06</publishTime>
+    </File>
+    <File Include="CertifManage/CompanyNameChange.aspx">
+      <publishTime>07/11/2024 03:28:59</publishTime>
+    </File>
+    <File Include="CertifManage/DelChangeHistory.aspx">
+      <publishTime>08/30/2020 01:20:07</publishTime>
+    </File>
+    <File Include="CertifManage/EndWarn.aspx">
+      <publishTime>11/01/2025 17:59:46</publishTime>
+    </File>
+    <File Include="CertifManage/gbCertView.aspx">
+      <publishTime>02/10/2023 05:31:19</publishTime>
+    </File>
+    <File Include="CheckAll.ascx">
+      <publishTime>01/09/2024 09:42:13</publishTime>
+    </File>
+    <File Include="CheckMgr/ApplyCheckDetail.aspx">
+      <publishTime>01/06/2026 15:41:05</publishTime>
+    </File>
+    <File Include="CheckMgr/ApplyCheckEdit.aspx">
+      <publishTime>08/27/2025 13:40:54</publishTime>
+    </File>
+    <File Include="CheckMgr/ApplyCheckMgr.aspx">
+      <publishTime>10/20/2025 11:41:28</publishTime>
+    </File>
+    <File Include="CheckMgr/CheckTaskAccept.aspx">
+      <publishTime>12/10/2024 20:52:01</publishTime>
+    </File>
+    <File Include="CheckMgr/CheckTaskCheck.aspx">
+      <publishTime>03/25/2025 16:21:07</publishTime>
+    </File>
+    <File Include="CheckMgr/CheckTaskConfirm.aspx">
+      <publishTime>03/25/2025 16:33:19</publishTime>
+    </File>
+    <File Include="CheckMgr/CheckTaskEdit.aspx">
+      <publishTime>11/20/2024 20:13:58</publishTime>
+    </File>
+    <File Include="CheckMgr/CheckTaskList.aspx">
+      <publishTime>10/30/2024 02:39:38</publishTime>
+    </File>
+    <File Include="CheckMgr/CheckTaskMgr.aspx">
+      <publishTime>10/25/2024 13:48:01</publishTime>
+    </File>
+    <File Include="CheckMgr/CheckTaskTj.aspx">
+      <publishTime>10/31/2024 17:17:32</publishTime>
+    </File>
+    <File Include="CheckMgr/QuestionFeedBack.aspx">
+      <publishTime>04/23/2025 11:05:57</publishTime>
+    </File>
+    <File Include="CheckMgr/QuestionFeedBackDetail.aspx">
+      <publishTime>04/23/2025 09:08:23</publishTime>
+    </File>
+    <File Include="CheckMgr/RandomCheckAdd.aspx">
+      <publishTime>01/20/2026 11:45:26</publishTime>
+    </File>
+    <File Include="CheckMgr/RandomCheckBase.aspx">
+      <publishTime>01/20/2026 18:34:39</publishTime>
+    </File>
+    <File Include="CheckMgr/RandomCheckSheBao.aspx">
+      <publishTime>01/07/2026 03:57:23</publishTime>
+    </File>
+    <File Include="City/CityMonitoring.aspx">
+      <publishTime>11/15/2023 15:52:51</publishTime>
+    </File>
+    <File Include="City/DeclareBusiness.aspx">
+      <publishTime>08/07/2023 18:04:08</publishTime>
+    </File>
+    <File Include="City/EnterpriseMonitoring.aspx">
+      <publishTime>08/07/2023 18:04:08</publishTime>
+    </File>
+    <File Include="City/GCDetail.aspx">
+      <publishTime>08/07/2023 18:04:08</publishTime>
+    </File>
+    <File Include="City/GCList.aspx">
+      <publishTime>08/20/2024 23:48:12</publishTime>
+    </File>
+    <File Include="City/ItemsMonitoring.aspx">
+      <publishTime>08/07/2023 18:04:09</publishTime>
+    </File>
+    <File Include="City/LogQuery.aspx">
+      <publishTime>08/07/2023 18:04:09</publishTime>
+    </File>
+    <File Include="City/NewStatistics.aspx">
+      <publishTime>08/07/2023 18:04:09</publishTime>
+    </File>
+    <File Include="City/PersonLostList.aspx">
+      <publishTime>08/07/2023 18:04:10</publishTime>
+    </File>
+    <File Include="City/PersonnelMonitoring.aspx">
+      <publishTime>08/20/2024 23:47:05</publishTime>
+    </File>
+    <File Include="City/QYAQXKWDBList.aspx">
+      <publishTime>08/20/2024 23:51:13</publishTime>
+    </File>
+    <File Include="City/QYDetail.aspx">
+      <publishTime>08/07/2023 18:04:11</publishTime>
+    </File>
+    <File Include="City/QYZZWDBList.aspx">
+      <publishTime>08/20/2024 23:53:11</publishTime>
+    </File>
+    <File Include="City/StatisticsTable.aspx">
+      <publishTime>08/07/2023 18:04:11</publishTime>
+    </File>
+    <File Include="City/TaskLE.aspx">
+      <publishTime>01/06/2026 10:42:44</publishTime>
+    </File>
+    <File Include="County/Acceptance.aspx">
+      <publishTime>03/12/2021 12:28:28</publishTime>
+    </File>
+    <File Include="County/Agency.aspx">
+      <publishTime>08/07/2023 18:04:12</publishTime>
+    </File>
+    <File Include="County/AgencyFinish.aspx">
+      <publishTime>08/07/2023 18:04:12</publishTime>
+    </File>
+    <File Include="County/AgencyUnit.aspx">
+      <publishTime>08/07/2023 18:04:12</publishTime>
+    </File>
+    <File Include="County/ApplyAccept.aspx">
+      <publishTime>08/07/2023 18:04:13</publishTime>
+    </File>
+    <File Include="County/ApplyAcceptDetail.aspx">
+      <publishTime>08/07/2023 18:04:13</publishTime>
+    </File>
+    <File Include="County/BusinessFinishList.aspx">
+      <publishTime>01/03/2026 20:18:18</publishTime>
+    </File>
+    <File Include="County/BusinessList.aspx">
+      <publishTime>01/03/2026 20:15:46</publishTime>
+    </File>
+    <File Include="County/BusinessQuery.aspx">
+      <publishTime>01/02/2026 22:09:58</publishTime>
+    </File>
+    <File Include="County/BusinessSummarizing.aspx">
+      <publishTime>07/11/2024 03:29:00</publishTime>
+    </File>
+    <File Include="County/CertCodeBarPrint.aspx">
+      <publishTime>08/07/2023 18:04:15</publishTime>
+    </File>
+    <File Include="County/CertLockView.aspx">
+      <publishTime>08/07/2023 18:04:15</publishTime>
+    </File>
+    <File Include="County/CertPrint.aspx">
+      <publishTime>08/02/2023 15:47:29</publishTime>
+    </File>
+    <File Include="County/CertPrintMgr.aspx">
+      <publishTime>08/07/2023 18:04:15</publishTime>
+    </File>
+    <File Include="County/CertPrintPnoto.aspx">
+      <publishTime>08/07/2023 18:04:15</publishTime>
+    </File>
+    <File Include="County/CheckReturnList.aspx">
+      <publishTime>08/07/2023 18:04:16</publishTime>
+    </File>
+    <File Include="County/ChoiceBusinessSummarizing.aspx">
+      <publishTime>07/11/2024 03:29:01</publishTime>
+    </File>
+    <File Include="County/Examine.aspx">
+      <publishTime>07/11/2024 03:29:01</publishTime>
+    </File>
+    <File Include="County/LockDetailed.aspx">
+      <publishTime>08/07/2023 18:04:17</publishTime>
+    </File>
+    <File Include="County/LockList.aspx">
+      <publishTime>07/11/2024 03:29:01</publishTime>
+    </File>
+    <File Include="County/NoticeChoice.aspx">
+      <publishTime>08/07/2023 18:04:17</publishTime>
+    </File>
+    <File Include="County/NoticeLook.aspx">
+      <publishTime>07/11/2024 03:29:02</publishTime>
+    </File>
+    <File Include="County/Notification.aspx">
+      <publishTime>07/11/2024 03:29:02</publishTime>
+    </File>
+    <File Include="County/PublicityChoice.aspx">
+      <publishTime>08/07/2023 18:04:18</publishTime>
+    </File>
+    <File Include="County/PublicityLook.aspx">
+      <publishTime>07/11/2024 03:29:02</publishTime>
+    </File>
+    <File Include="County/PublicityModify.aspx">
+      <publishTime>08/07/2023 18:04:19</publishTime>
+    </File>
+    <File Include="County/PublicityModifyImg.aspx">
+      <publishTime>08/07/2023 18:04:19</publishTime>
+    </File>
+    <File Include="County/Qualification.aspx">
+      <publishTime>11/25/2025 06:01:56</publishTime>
+    </File>
+    <File Include="County/RegisterStatistical.aspx">
+      <publishTime>08/07/2023 18:04:20</publishTime>
+    </File>
+    <File Include="County/ReportImgView.aspx">
+      <publishTime>08/07/2023 18:04:20</publishTime>
+    </File>
+    <File Include="County/ReportList.aspx">
+      <publishTime>07/11/2024 03:29:03</publishTime>
+    </File>
+    <File Include="County/RYSBView.aspx">
+      <publishTime>07/11/2024 03:29:03</publishTime>
+    </File>
+    <File Include="County/TransactStatistical.aspx">
+      <publishTime>08/07/2023 18:04:21</publishTime>
+    </File>
+    <File Include="County/UnitMessage.aspx">
+      <publishTime>08/07/2023 18:04:21</publishTime>
+    </File>
+    <File Include="County/UnLockDetailed.aspx">
+      <publishTime>08/07/2023 18:04:22</publishTime>
+    </File>
+    <File Include="County/ZSSDDetail.aspx">
+      <publishTime>08/07/2023 18:04:22</publishTime>
+    </File>
+    <File Include="County/ZSSDList.aspx">
+      <publishTime>07/11/2024 03:29:04</publishTime>
+    </File>
+    <File Include="css/bootstrap.min.css">
+      <publishTime>01/31/2019 10:38:28</publishTime>
+    </File>
+    <File Include="css/cerCheck.css">
+      <publishTime>08/29/2018 17:49:24</publishTime>
+    </File>
+    <File Include="css/default.css">
+      <publishTime>10/22/2019 13:53:05</publishTime>
+    </File>
+    <File Include="css/defaultRed.css">
+      <publishTime>03/22/2020 22:09:49</publishTime>
+    </File>
+    <File Include="css/gbCertView.css">
+      <publishTime>02/09/2023 00:48:35</publishTime>
+    </File>
+    <File Include="css/Grid.Default.css">
+      <publishTime>03/21/2017 16:05:53</publishTime>
+    </File>
+    <File Include="css/Grid/AddRecord.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="css/Grid/Cancel.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="css/Grid/Default.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="css/Grid/Delete.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="css/Grid/Edit.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="css/Grid/export.gif">
+      <publishTime>07/13/2010 16:56:26</publishTime>
+    </File>
+    <File Include="css/Grid/ExportToCsv.gif">
+      <publishTime>07/13/2010 16:56:26</publishTime>
+    </File>
+    <File Include="css/Grid/ExportToExcel.gif">
+      <publishTime>07/13/2010 16:56:26</publishTime>
+    </File>
+    <File Include="css/Grid/ExportToPdf.gif">
+      <publishTime>07/13/2010 16:56:26</publishTime>
+    </File>
+    <File Include="css/Grid/ExportToWord.gif">
+      <publishTime>07/13/2010 16:56:26</publishTime>
+    </File>
+    <File Include="css/Grid/Filter.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="css/Grid/loading_small.gif">
+      <publishTime>10/22/2010 15:28:22</publishTime>
+    </File>
+    <File Include="css/Grid/MoveDown.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="css/Grid/MoveUp.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="css/Grid/PagingFirst.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="css/Grid/PagingLast.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="css/Grid/PagingNext.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="css/Grid/PagingPrev.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="css/Grid/Refresh.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="css/Grid/rgDrag.gif">
+      <publishTime>07/13/2010 16:56:26</publishTime>
+    </File>
+    <File Include="css/Grid/SingleMinus.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="css/Grid/SinglePlus.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="css/Grid/SortAsc.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="css/Grid/SortDesc.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="css/Grid/sprite.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="css/Grid/Update.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="css/main.css">
+      <publishTime>07/19/2021 21:30:23</publishTime>
+    </File>
+    <File Include="css/menu-css.css">
+      <publishTime>10/24/2019 11:53:13</publishTime>
+    </File>
+    <File Include="css/menuRed.css">
+      <publishTime>03/22/2020 01:02:57</publishTime>
+    </File>
+    <File Include="css/monitor.css">
+      <publishTime>03/22/2020 20:38:06</publishTime>
+    </File>
+    <File Include="css/reset.css">
+      <publishTime>12/25/2015 10:20:53</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>12/25/2015 10:20:53</publishTime>
+    </File>
+    <File Include="css/style2.css">
+      <publishTime>11/22/2019 09:30:44</publishTime>
+    </File>
+    <File Include="css/Style3.css">
+      <publishTime>12/25/2019 17:09:53</publishTime>
+    </File>
+    <File Include="css/StyleRed.css">
+      <publishTime>08/02/2023 13:15:23</publishTime>
+    </File>
+    <File Include="css/timelimit.css">
+      <publishTime>12/03/2021 15:51:47</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>02/09/2026 11:33:05</publishTime>
+    </File>
+    <File Include="dll/BouncyCastle.Crypto.dll">
+      <publishTime>09/21/2020 23:24:14</publishTime>
+    </File>
+    <File Include="dll/DocX.dll">
+      <publishTime>05/26/2016 09:02:04</publishTime>
+    </File>
+    <File Include="dll/DocX.xml">
+      <publishTime>05/26/2016 09:02:04</publishTime>
+    </File>
+    <File Include="dll/DotNetCasClient.dll">
+      <publishTime>03/08/2011 14:38:04</publishTime>
+    </File>
+    <File Include="dll/Interop.Excel.dll">
+      <publishTime>01/13/2010 14:18:46</publishTime>
+    </File>
+    <File Include="dll/Interop.Microsoft.Office.Core.dll">
+      <publishTime>01/13/2010 14:18:46</publishTime>
+    </File>
+    <File Include="dll/Interop.Word.dll">
+      <publishTime>01/13/2010 14:18:46</publishTime>
+    </File>
+    <File Include="dll/iTextAsian.dll">
+      <publishTime>11/20/2012 00:27:05</publishTime>
+    </File>
+    <File Include="dll/iTextAsianCmaps.dll">
+      <publishTime>11/20/2012 00:27:05</publishTime>
+    </File>
+    <File Include="dll/itextsharp.dll">
+      <publishTime>07/07/2009 07:25:16</publishTime>
+    </File>
+    <File Include="dll/log4net.dll">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="dll/Newtonsoft.Json.dll">
+      <publishTime>09/25/2014 04:28:24</publishTime>
+    </File>
+    <File Include="dll/Renci.SshNet.dll">
+      <publishTime>10/17/2017 02:53:04</publishTime>
+    </File>
+    <File Include="dll/Renci.SshNet.xml">
+      <publishTime>10/17/2017 02:53:04</publishTime>
+    </File>
+    <File Include="dll/Synergy.Common.dll">
+      <publishTime>12/22/2009 16:04:10</publishTime>
+    </File>
+    <File Include="dll/Telerik.Web.UI.dll">
+      <publishTime>07/12/2010 11:53:40</publishTime>
+    </File>
+    <File Include="dll/zxing.dll">
+      <publishTime>04/01/2014 22:21:20</publishTime>
+    </File>
+    <File Include="dll/zxja.Interface.Buisness.dll">
+      <publishTime>09/26/2012 16:13:28</publishTime>
+    </File>
+    <File Include="EXamManage/AcceptLineManage.aspx">
+      <publishTime>06/21/2021 17:43:11</publishTime>
+    </File>
+    <File Include="EXamManage/AcceptLineSet.aspx">
+      <publishTime>06/22/2021 16:18:04</publishTime>
+    </File>
+    <File Include="EXamManage/BatUploadImg.aspx">
+      <publishTime>11/29/2019 13:58:22</publishTime>
+    </File>
+    <File Include="EXamManage/BatUploadPhoto.aspx">
+      <publishTime>10/14/2019 15:11:40</publishTime>
+    </File>
+    <File Include="EXamManage/BlackListEdit.aspx">
+      <publishTime>08/13/2021 13:47:07</publishTime>
+    </File>
+    <File Include="EXamManage/BlackListManage.aspx">
+      <publishTime>08/13/2021 13:47:18</publishTime>
+    </File>
+    <File Include="EXamManage/CertificateAdd.aspx">
+      <publishTime>05/22/2023 12:35:10</publishTime>
+    </File>
+    <File Include="EXamManage/CertificateAddList.aspx">
+      <publishTime>08/13/2021 13:48:00</publishTime>
+    </File>
+    <File Include="EXamManage/CertificateAllocateNo.aspx">
+      <publishTime>08/13/2021 13:48:18</publishTime>
+    </File>
+    <File Include="EXamManage/CertificateAllocateNoList.aspx">
+      <publishTime>11/13/2019 13:47:33</publishTime>
+    </File>
+    <File Include="EXamManage/CertificateInfo.aspx">
+      <publishTime>10/14/2019 15:11:41</publishTime>
+    </File>
+    <File Include="EXamManage/CertificatePrint.aspx">
+      <publishTime>08/13/2021 13:48:41</publishTime>
+    </File>
+    <File Include="EXamManage/CertificateSendTrainList.aspx">
+      <publishTime>08/13/2021 13:48:50</publishTime>
+    </File>
+    <File Include="EXamManage/CertifRegisty.aspx">
+      <publishTime>02/27/2023 03:24:29</publishTime>
+    </File>
+    <File Include="EXamManage/CertifRegistyPop.aspx">
+      <publishTime>08/13/2021 13:49:05</publishTime>
+    </File>
+    <File Include="EXamManage/CheckSign.aspx">
+      <publishTime>05/30/2025 09:51:54</publishTime>
+    </File>
+    <File Include="EXamManage/CheckSignFirst.aspx">
+      <publishTime>05/30/2025 09:49:22</publishTime>
+    </File>
+    <File Include="EXamManage/CheckSignUnit.aspx">
+      <publishTime>03/24/2025 15:10:16</publishTime>
+    </File>
+    <File Include="EXamManage/CustomHandler.ashx">
+      <publishTime>10/14/2019 15:11:42</publishTime>
+    </File>
+    <File Include="EXamManage/default.aspx">
+      <publishTime>10/23/2019 14:02:58</publishTime>
+    </File>
+    <File Include="EXamManage/ExamAdnormalList.aspx">
+      <publishTime>08/25/2021 15:47:49</publishTime>
+    </File>
+    <File Include="EXamManage/ExamCard.aspx">
+      <publishTime>05/22/2024 17:34:20</publishTime>
+    </File>
+    <File Include="EXamManage/ExamCardManage.aspx">
+      <publishTime>06/20/2025 12:17:26</publishTime>
+    </File>
+    <File Include="EXamManage/ExamCardManageSC.aspx">
+      <publishTime>07/12/2022 18:51:38</publishTime>
+    </File>
+    <File Include="EXamManage/ExamDeskTag.aspx">
+      <publishTime>03/30/2022 22:41:48</publishTime>
+    </File>
+    <File Include="EXamManage/ExamInfoRight.aspx">
+      <publishTime>08/30/2020 01:20:10</publishTime>
+    </File>
+    <File Include="EXamManage/ExamPageTag.aspx">
+      <publishTime>03/30/2022 22:46:47</publishTime>
+    </File>
+    <File Include="EXamManage/ExamPhoto.aspx">
+      <publishTime>02/06/2023 21:22:13</publishTime>
+    </File>
+    <File Include="EXamManage/ExamPhotoBatch.aspx">
+      <publishTime>02/06/2023 20:05:35</publishTime>
+    </File>
+    <File Include="EXamManage/ExamPhotoList.aspx">
+      <publishTime>03/30/2022 23:50:18</publishTime>
+    </File>
+    <File Include="EXamManage/ExamPlan.aspx">
+      <publishTime>07/07/2023 09:33:30</publishTime>
+    </File>
+    <File Include="EXamManage/ExamPlanDetail.aspx">
+      <publishTime>08/13/2021 08:21:38</publishTime>
+    </File>
+    <File Include="EXamManage/ExamPlanSearch.aspx">
+      <publishTime>03/28/2022 22:18:35</publishTime>
+    </File>
+    <File Include="EXamManage/ExamPlanSignupCount.aspx">
+      <publishTime>03/10/2023 12:45:09</publishTime>
+    </File>
+    <File Include="EXamManage/ExamRoomAllot.aspx">
+      <publishTime>03/29/2022 21:04:15</publishTime>
+    </File>
+    <File Include="EXamManage/ExamRoomAllotSC.aspx">
+      <publishTime>03/10/2022 12:27:57</publishTime>
+    </File>
+    <File Include="EXamManage/ExamRoomTag.aspx">
+      <publishTime>03/30/2022 22:09:15</publishTime>
+    </File>
+    <File Include="EXamManage/ExamSign.aspx">
+      <publishTime>05/20/2025 18:42:19</publishTime>
+    </File>
+    <File Include="EXamManage/ExamSignimage.aspx">
+      <publishTime>07/08/2022 01:17:58</publishTime>
+    </File>
+    <File Include="EXamManage/ExamSignInfo.aspx">
+      <publishTime>08/13/2021 10:50:35</publishTime>
+    </File>
+    <File Include="EXamManage/ExamSignList.aspx">
+      <publishTime>10/18/2024 11:00:05</publishTime>
+    </File>
+    <File Include="EXamManage/ExamSignLock.aspx">
+      <publishTime>09/28/2021 17:02:52</publishTime>
+    </File>
+    <File Include="EXamManage/ExamSignLockView.aspx">
+      <publishTime>08/07/2023 18:04:24</publishTime>
+    </File>
+    <File Include="EXamManage/ExamSignManage.aspx">
+      <publishTime>12/06/2021 16:12:17</publishTime>
+    </File>
+    <File Include="EXamManage/ExamSignPrint.aspx">
+      <publishTime>02/07/2025 22:37:02</publishTime>
+    </File>
+    <File Include="EXamManage/ExamSignSearch.aspx">
+      <publishTime>05/30/2025 10:19:54</publishTime>
+    </File>
+    <File Include="EXamManage/ExamSignSplit.aspx">
+      <publishTime>09/22/2021 16:17:38</publishTime>
+    </File>
+    <File Include="EXamManage/ExamSignTj.aspx">
+      <publishTime>10/15/2019 21:59:56</publishTime>
+    </File>
+    <File Include="EXamManage/ExamSignupDelHistory.aspx">
+      <publishTime>08/01/2022 15:39:01</publishTime>
+    </File>
+    <File Include="EXamManage/ExamSignView.aspx">
+      <publishTime>04/15/2025 20:40:30</publishTime>
+    </File>
+    <File Include="EXamManage/ExamSignViewBySM.aspx">
+      <publishTime>03/03/2023 11:41:01</publishTime>
+    </File>
+    <File Include="EXamManage/MachineExamPhoto.aspx">
+      <publishTime>02/06/2023 21:49:46</publishTime>
+    </File>
+    <File Include="EXamManage/MoreAddSign.aspx">
+      <publishTime>09/07/2021 16:44:17</publishTime>
+    </File>
+    <File Include="EXamManage/NewCertificatePrint.aspx">
+      <publishTime>02/06/2023 21:54:49</publishTime>
+    </File>
+    <File Include="EXamManage/NewCertificatePrintManage.aspx">
+      <publishTime>08/13/2021 13:52:41</publishTime>
+    </File>
+    <File Include="EXamManage/PayConfirm.aspx">
+      <publishTime>05/30/2025 09:58:06</publishTime>
+    </File>
+    <File Include="EXamManage/PaySign.aspx">
+      <publishTime>12/06/2021 16:51:27</publishTime>
+    </File>
+    <File Include="EXamManage/PMCertPrint.aspx">
+      <publishTime>02/06/2023 21:57:43</publishTime>
+    </File>
+    <File Include="EXamManage/PMCertPrintManage.aspx">
+      <publishTime>02/06/2023 21:59:34</publishTime>
+    </File>
+    <File Include="EXamManage/ReadManage.aspx">
+      <publishTime>05/19/2021 13:32:43</publishTime>
+    </File>
+    <File Include="EXamManage/ScoreDetail.aspx">
+      <publishTime>04/03/2020 20:55:15</publishTime>
+    </File>
+    <File Include="EXamManage/ScorePublish.aspx">
+      <publishTime>08/30/2020 01:20:15</publishTime>
+    </File>
+    <File Include="EXamManage/ScoreTZZY.aspx">
+      <publishTime>05/31/2023 17:10:49</publishTime>
+    </File>
+    <File Include="EXamManage/ScoreView.aspx">
+      <publishTime>05/23/2025 01:39:11</publishTime>
+    </File>
+    <File Include="EXamManage/SignUpPlaceSet.aspx">
+      <publishTime>08/30/2020 01:20:15</publishTime>
+    </File>
+    <File Include="EXamManage/Split.aspx">
+      <publishTime>03/22/2020 05:14:41</publishTime>
+    </File>
+    <File Include="EXamManage/Splitnew.aspx">
+      <publishTime>03/22/2020 05:14:41</publishTime>
+    </File>
+    <File Include="ExamNotice.ascx">
+      <publishTime>08/19/2021 11:18:57</publishTime>
+    </File>
+    <File Include="ExamPlanSelect.ascx">
+      <publishTime>08/13/2021 16:01:04</publishTime>
+    </File>
+    <File Include="FaceCheck.aspx">
+      <publishTime>06/17/2021 14:53:12</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>04/11/2016 10:36:09</publishTime>
+    </File>
+    <File Include="FileShareService.asmx">
+      <publishTime>01/13/2022 17:38:26</publishTime>
+    </File>
+    <File Include="GridPagerTemple.ascx">
+      <publishTime>06/25/2019 17:01:04</publishTime>
+    </File>
+    <File Include="help/index.aspx">
+      <publishTime>09/07/2021 18:19:47</publishTime>
+    </File>
+    <File Include="help/常见问题及处理方法最终版.files/image001.png">
+      <publishTime>09/07/2021 21:05:56</publishTime>
+    </File>
+    <File Include="help/常见问题及处理方法最终版.files/image006.jpg">
+      <publishTime>09/07/2021 21:24:57</publishTime>
+    </File>
+    <File Include="help/常见问题及处理方法最终版.files/image007.jpg">
+      <publishTime>09/07/2021 21:24:57</publishTime>
+    </File>
+    <File Include="help/常见问题及处理方法最终版.files/image008.jpg">
+      <publishTime>09/07/2021 21:24:57</publishTime>
+    </File>
+    <File Include="help/常见问题及处理方法最终版.files/image009.jpg">
+      <publishTime>09/07/2021 21:24:57</publishTime>
+    </File>
+    <File Include="help/常见问题及处理方法最终版.htm">
+      <publishTime>09/07/2021 21:24:57</publishTime>
+    </File>
+    <File Include="help/执业技能准考证管理.files/image001.jpg">
+      <publishTime>01/18/2024 00:07:45</publishTime>
+    </File>
+    <File Include="help/执业技能准考证管理.files/image002.jpg">
+      <publishTime>01/18/2024 00:07:45</publishTime>
+    </File>
+    <File Include="help/执业技能准考证管理.files/image003.jpg">
+      <publishTime>01/18/2024 00:07:45</publishTime>
+    </File>
+    <File Include="help/执业技能准考证管理.files/image004.jpg">
+      <publishTime>01/18/2024 00:07:45</publishTime>
+    </File>
+    <File Include="help/执业技能准考证管理.files/image005.jpg">
+      <publishTime>01/18/2024 00:07:45</publishTime>
+    </File>
+    <File Include="help/执业技能准考证管理.files/image006.jpg">
+      <publishTime>01/18/2024 00:07:46</publishTime>
+    </File>
+    <File Include="help/执业技能准考证管理.htm">
+      <publishTime>01/18/2024 00:07:46</publishTime>
+    </File>
+    <File Include="help/职业技能考试成绩录入.files/image001.jpg">
+      <publishTime>01/18/2024 00:53:52</publishTime>
+    </File>
+    <File Include="help/职业技能考试成绩录入.files/image002.jpg">
+      <publishTime>01/18/2024 00:53:53</publishTime>
+    </File>
+    <File Include="help/职业技能考试成绩录入.files/image003.jpg">
+      <publishTime>01/18/2024 00:53:53</publishTime>
+    </File>
+    <File Include="help/职业技能考试成绩录入.htm">
+      <publishTime>01/18/2024 00:53:53</publishTime>
+    </File>
+    <File Include="help/职业技能考试计划.files/image001.jpg">
+      <publishTime>01/11/2024 17:09:54</publishTime>
+    </File>
+    <File Include="help/职业技能考试计划.files/image002.jpg">
+      <publishTime>01/11/2024 17:09:54</publishTime>
+    </File>
+    <File Include="help/职业技能考试计划.files/image003.jpg">
+      <publishTime>01/11/2024 17:09:54</publishTime>
+    </File>
+    <File Include="help/职业技能考试计划.htm">
+      <publishTime>01/11/2024 17:16:47</publishTime>
+    </File>
+    <File Include="IframeView.ascx">
+      <publishTime>04/14/2023 03:45:25</publishTime>
+    </File>
+    <File Include="Images/014.jpg">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/1034.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/1616028088.jpg">
+      <publishTime>11/11/2022 10:12:29</publishTime>
+    </File>
+    <File Include="Images/1寸照片生成器.exe">
+      <publishTime>05/12/2008 10:10:26</publishTime>
+    </File>
+    <File Include="Images/a11.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/AVx03.jpg">
+      <publishTime>01/28/2011 10:11:30</publishTime>
+    </File>
+    <File Include="Images/bar1.png">
+      <publishTime>05/09/2014 17:31:58</publishTime>
+    </File>
+    <File Include="Images/bg.jpg">
+      <publishTime>02/28/2017 17:13:13</publishTime>
+    </File>
+    <File Include="Images/bgx.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/blue_a.gif">
+      <publishTime>09/28/2017 14:43:18</publishTime>
+    </File>
+    <File Include="Images/blue_center.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/bt_large.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/button.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/button_0.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/button_down.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/button_up.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/Cancel.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/cert.jpg">
+      <publishTime>10/21/2016 15:28:01</publishTime>
+    </File>
+    <File Include="Images/certbg1.png">
+      <publishTime>11/03/2015 10:18:45</publishTime>
+    </File>
+    <File Include="Images/certbg2.png">
+      <publishTime>10/25/2016 14:36:08</publishTime>
+    </File>
+    <File Include="Images/chapter01.png">
+      <publishTime>07/20/2018 17:31:23</publishTime>
+    </File>
+    <File Include="Images/chapter01ddd.png">
+      <publishTime>03/01/2018 15:16:16</publishTime>
+    </File>
+    <File Include="Images/chapter01ddd.tif">
+      <publishTime>03/13/2018 16:12:11</publishTime>
+    </File>
+    <File Include="Images/chapter02.png">
+      <publishTime>07/19/2018 16:48:57</publishTime>
+    </File>
+    <File Include="Images/chapter03.png">
+      <publishTime>07/20/2018 17:21:01</publishTime>
+    </File>
+    <File Include="Images/chart_bar.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/close.gif">
+      <publishTime>08/08/2016 11:58:02</publishTime>
+    </File>
+    <File Include="Images/close.png">
+      <publishTime>04/03/2008 11:56:18</publishTime>
+    </File>
+    <File Include="Images/CodeBarBG.jpg">
+      <publishTime>10/24/2016 11:49:42</publishTime>
+    </File>
+    <File Include="Images/CodeBarYX.jpg">
+      <publishTime>10/24/2016 11:50:15</publishTime>
+    </File>
+    <File Include="Images/CodeBarZX.jpg">
+      <publishTime>10/24/2016 11:50:02</publishTime>
+    </File>
+    <File Include="Images/common.gif">
+      <publishTime>11/28/2008 11:50:42</publishTime>
+    </File>
+    <File Include="Images/confirm.png">
+      <publishTime>11/16/2015 15:55:07</publishTime>
+    </File>
+    <File Include="Images/cur.png">
+      <publishTime>02/22/2012 14:09:28</publishTime>
+    </File>
+    <File Include="Images/date.png">
+      <publishTime>02/22/2012 13:51:20</publishTime>
+    </File>
+    <File Include="Images/doc.gif">
+      <publishTime>06/12/2007 10:28:22</publishTime>
+    </File>
+    <File Include="Images/email.png">
+      <publishTime>02/22/2012 13:44:38</publishTime>
+    </File>
+    <File Include="Images/excel.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/files.png">
+      <publishTime>02/22/2012 13:44:37</publishTime>
+    </File>
+    <File Include="Images/Filter.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/find.png">
+      <publishTime>02/22/2012 13:51:26</publishTime>
+    </File>
+    <File Include="Images/flag_black.png">
+      <publishTime>07/13/2018 15:12:20</publishTime>
+    </File>
+    <File Include="Images/flag_blue.png">
+      <publishTime>12/22/2014 17:30:39</publishTime>
+    </File>
+    <File Include="Images/flag_green.png">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/flag_orange.png">
+      <publishTime>12/22/2014 17:30:40</publishTime>
+    </File>
+    <File Include="Images/flag_purple.png">
+      <publishTime>08/09/2017 11:44:16</publishTime>
+    </File>
+    <File Include="Images/flag_red.png">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/flag_yellow.png">
+      <publishTime>12/22/2014 17:30:40</publishTime>
+    </File>
+    <File Include="Images/flower.gif">
+      <publishTime>05/30/2008 13:20:42</publishTime>
+    </File>
+    <File Include="Images/folderopen.gif">
+      <publishTime>12/14/2015 10:06:45</publishTime>
+    </File>
+    <File Include="Images/gdxf_net082.gif">
+      <publishTime>08/29/2004 20:30:54</publishTime>
+    </File>
+    <File Include="Images/go_little.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/hclose.png">
+      <publishTime>01/25/2016 02:44:06</publishTime>
+    </File>
+    <File Include="Images/help.png">
+      <publishTime>11/16/2015 15:55:07</publishTime>
+    </File>
+    <File Include="Images/home.png">
+      <publishTime>01/25/2016 02:41:40</publishTime>
+    </File>
+    <File Include="Images/ico_next.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/ico_prev.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/IDCard.jpg">
+      <publishTime>02/25/2021 15:49:52</publishTime>
+    </File>
+    <File Include="Images/if_l.png">
+      <publishTime>08/03/2016 16:21:18</publishTime>
+    </File>
+    <File Include="Images/if_m.png">
+      <publishTime>08/03/2016 16:23:01</publishTime>
+    </File>
+    <File Include="Images/if_r.png">
+      <publishTime>08/03/2016 16:20:58</publishTime>
+    </File>
+    <File Include="Images/image009.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/jdk.jpg">
+      <publishTime>11/17/2021 13:02:23</publishTime>
+    </File>
+    <File Include="Images/jglb.png">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/jia.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/jiah.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/jiandang100-2.jpg">
+      <publishTime>06/25/2021 17:29:23</publishTime>
+    </File>
+    <File Include="Images/jiandang100.jpg">
+      <publishTime>06/25/2021 18:07:23</publishTime>
+    </File>
+    <File Include="Images/jianh.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/jz/01.jpg">
+      <publishTime>03/23/2023 16:00:21</publishTime>
+    </File>
+    <File Include="Images/jz/02.jpg">
+      <publishTime>03/23/2023 16:01:35</publishTime>
+    </File>
+    <File Include="Images/jz/03.jpg">
+      <publishTime>05/02/2023 01:48:39</publishTime>
+    </File>
+    <File Include="Images/jz/04.jpg">
+      <publishTime>03/23/2023 16:02:20</publishTime>
+    </File>
+    <File Include="Images/jz/05.jpg">
+      <publishTime>03/23/2023 16:03:03</publishTime>
+    </File>
+    <File Include="Images/jz/06.jpg">
+      <publishTime>03/23/2023 16:03:26</publishTime>
+    </File>
+    <File Include="Images/jz/07.jpg">
+      <publishTime>05/02/2023 01:49:03</publishTime>
+    </File>
+    <File Include="Images/jz/08.jpg">
+      <publishTime>03/23/2023 16:05:44</publishTime>
+    </File>
+    <File Include="Images/jz/09.jpg">
+      <publishTime>03/23/2023 16:07:05</publishTime>
+    </File>
+    <File Include="Images/jz/g01.jpg">
+      <publishTime>05/15/2023 11:37:03</publishTime>
+    </File>
+    <File Include="Images/jz/g02.jpg">
+      <publishTime>05/24/2023 03:19:35</publishTime>
+    </File>
+    <File Include="Images/jz/g03.jpg">
+      <publishTime>05/24/2023 03:23:11</publishTime>
+    </File>
+    <File Include="Images/jz/g04.jpg">
+      <publishTime>05/24/2023 03:24:37</publishTime>
+    </File>
+    <File Include="Images/jz/g05.jpg">
+      <publishTime>05/24/2023 03:28:42</publishTime>
+    </File>
+    <File Include="Images/jz/g06.jpg">
+      <publishTime>05/24/2023 03:29:28</publishTime>
+    </File>
+    <File Include="Images/jz/g07.jpg">
+      <publishTime>05/24/2023 03:30:20</publishTime>
+    </File>
+    <File Include="Images/jz/g08.jpg">
+      <publishTime>05/24/2023 03:32:26</publishTime>
+    </File>
+    <File Include="Images/jz/g09.jpg">
+      <publishTime>05/24/2023 03:34:10</publishTime>
+    </File>
+    <File Include="Images/jz/x01.jpg">
+      <publishTime>05/15/2023 11:23:02</publishTime>
+    </File>
+    <File Include="Images/jz/x02.jpg">
+      <publishTime>05/15/2023 11:26:46</publishTime>
+    </File>
+    <File Include="Images/jz/x03.jpg">
+      <publishTime>05/15/2023 11:37:51</publishTime>
+    </File>
+    <File Include="Images/light.gif">
+      <publishTime>08/24/2009 17:04:32</publishTime>
+    </File>
+    <File Include="Images/linkme.gif">
+      <publishTime>06/30/2017 14:02:43</publishTime>
+    </File>
+    <File Include="Images/littel_blue.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/littel_mr.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/littel_red.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/little_autumn.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/little_green.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/little_summer.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/little_sunglow.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/Lock.png">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="Images/lock1.png">
+      <publishTime>06/29/2012 05:16:09</publishTime>
+    </File>
+    <File Include="Images/lockw.png">
+      <publishTime>01/22/2016 17:33:02</publishTime>
+    </File>
+    <File Include="Images/logbg.png">
+      <publishTime>01/22/2016 15:23:44</publishTime>
+    </File>
+    <File Include="Images/login_button.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/logo.png">
+      <publishTime>01/25/2016 02:49:17</publishTime>
+    </File>
+    <File Include="Images/logow.png">
+      <publishTime>01/22/2016 16:44:09</publishTime>
+    </File>
+    <File Include="Images/lookout.png">
+      <publishTime>02/22/2021 17:53:27</publishTime>
+    </File>
+    <File Include="Images/man.png">
+      <publishTime>02/22/2012 13:51:34</publishTime>
+    </File>
+    <File Include="Images/manw.png">
+      <publishTime>01/22/2016 17:42:06</publishTime>
+    </File>
+    <File Include="Images/menu_tubiao.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/message5.png">
+      <publishTime>04/07/2016 10:23:31</publishTime>
+    </File>
+    <File Include="Images/mf.png">
+      <publishTime>11/11/2011 15:22:09</publishTime>
+    </File>
+    <File Include="Images/new.gif">
+      <publishTime>05/30/2008 13:15:40</publishTime>
+    </File>
+    <File Include="Images/news_title.png">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/no.gif">
+      <publishTime>04/08/2008 14:12:44</publishTime>
+    </File>
+    <File Include="Images/no_access.jpg">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/null.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/off.png">
+      <publishTime>10/22/2019 14:24:28</publishTime>
+    </File>
+    <File Include="Images/ok.gif">
+      <publishTime>04/18/2012 16:29:50</publishTime>
+    </File>
+    <File Include="Images/on.png">
+      <publishTime>10/22/2019 14:26:31</publishTime>
+    </File>
+    <File Include="Images/pdf.png">
+      <publishTime>01/08/2018 16:14:33</publishTime>
+    </File>
+    <File Include="Images/phone.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/photo_ry.jpg">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/plan.png">
+      <publishTime>02/22/2012 13:51:20</publishTime>
+    </File>
+    <File Include="Images/print.png">
+      <publishTime>09/25/2015 10:33:03</publishTime>
+    </File>
+    <File Include="Images/question3.png">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="Images/qy.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/red/if_l.png">
+      <publishTime>03/22/2020 03:45:28</publishTime>
+    </File>
+    <File Include="Images/red/if_m.png">
+      <publishTime>03/22/2020 03:49:07</publishTime>
+    </File>
+    <File Include="Images/red/if_r.png">
+      <publishTime>03/22/2020 03:49:17</publishTime>
+    </File>
+    <File Include="Images/red/ofd.png">
+      <publishTime>02/28/2023 03:46:38</publishTime>
+    </File>
+    <File Include="Images/red/pdf.png">
+      <publishTime>02/28/2023 03:25:14</publishTime>
+    </File>
+    <File Include="Images/red/t_l.png">
+      <publishTime>03/21/2020 13:36:01</publishTime>
+    </File>
+    <File Include="Images/red/t_m.png">
+      <publishTime>03/21/2020 13:36:45</publishTime>
+    </File>
+    <File Include="Images/red/t_r.png">
+      <publishTime>03/21/2020 13:38:15</publishTime>
+    </File>
+    <File Include="Images/report.png">
+      <publishTime>02/22/2012 13:44:38</publishTime>
+    </File>
+    <File Include="Images/RootItemBg.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/RootItemBg.png">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/search.png">
+      <publishTime>02/22/2012 14:02:30</publishTime>
+    </File>
+    <File Include="Images/selectkm.png">
+      <publishTime>09/01/2014 14:50:40</publishTime>
+    </File>
+    <File Include="Images/shadow.png">
+      <publishTime>12/25/2015 11:31:03</publishTime>
+    </File>
+    <File Include="Images/shot_ej.png">
+      <publishTime>10/26/2024 02:28:26</publishTime>
+    </File>
+    <File Include="Images/shot_jl.png">
+      <publishTime>10/26/2024 02:28:48</publishTime>
+    </File>
+    <File Include="Images/shot_yj.png">
+      <publishTime>10/26/2024 02:28:06</publishTime>
+    </File>
+    <File Include="Images/SignImg.jpg">
+      <publishTime>02/25/2021 16:14:23</publishTime>
+    </File>
+    <File Include="Images/SignNull.jpg">
+      <publishTime>11/23/2021 21:25:16</publishTime>
+    </File>
+    <File Include="Images/Soft_common.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/SubItemStates.png">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/subx_title.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/subx_title1.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/s_lock.png">
+      <publishTime>02/22/2012 13:44:37</publishTime>
+    </File>
+    <File Include="Images/table_row3.jpg">
+      <publishTime>08/17/2015 17:19:02</publishTime>
+    </File>
+    <File Include="Images/time.png">
+      <publishTime>02/22/2012 13:51:20</publishTime>
+    </File>
+    <File Include="Images/ts.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/tup.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/t_l.png">
+      <publishTime>08/02/2016 16:47:46</publishTime>
+    </File>
+    <File Include="Images/t_m.png">
+      <publishTime>08/02/2016 16:07:09</publishTime>
+    </File>
+    <File Include="Images/t_r.png">
+      <publishTime>08/03/2016 10:53:40</publishTime>
+    </File>
+    <File Include="Images/unlock.png">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="Images/update.png">
+      <publishTime>02/22/2012 13:51:26</publishTime>
+    </File>
+    <File Include="Images/upload.png">
+      <publishTime>02/22/2012 13:51:34</publishTime>
+    </File>
+    <File Include="Images/watch.png">
+      <publishTime>02/22/2012 14:07:23</publishTime>
+    </File>
+    <File Include="Images/wel_title.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/wel_title0.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/wel_xx_bg.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/wh.jpg">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/wx.png">
+      <publishTime>02/22/2012 13:23:18</publishTime>
+    </File>
+    <File Include="Images/xls.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/yckj_bg.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/yckj_center_left.gif">
+      <publishTime>09/02/2010 20:14:26</publishTime>
+    </File>
+    <File Include="Images/yckj_center_right.gif">
+      <publishTime>09/02/2010 20:14:26</publishTime>
+    </File>
+    <File Include="Images/yckj_left.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/yckj_right.gif">
+      <publishTime>11/10/2015 16:22:22</publishTime>
+    </File>
+    <File Include="Images/yx.png">
+      <publishTime>02/22/2012 13:25:10</publishTime>
+    </File>
+    <File Include="Images/zakladka.png">
+      <publishTime>08/17/2015 17:19:16</publishTime>
+    </File>
+    <File Include="Images/zc_bb.png">
+      <publishTime>06/21/2017 23:12:44</publishTime>
+    </File>
+    <File Include="Images/zc_cancel.png">
+      <publishTime>06/21/2017 23:15:08</publishTime>
+    </File>
+    <File Include="Images/zc_cs.png">
+      <publishTime>06/21/2017 23:15:04</publishTime>
+    </File>
+    <File Include="Images/zc_cx.png">
+      <publishTime>06/21/2017 23:14:57</publishTime>
+    </File>
+    <File Include="Images/zc_grbg.png">
+      <publishTime>06/21/2017 23:15:36</publishTime>
+    </File>
+    <File Include="Images/zc_qybg.png">
+      <publishTime>06/21/2017 23:15:28</publishTime>
+    </File>
+    <File Include="Images/zc_yq.png">
+      <publishTime>06/21/2017 23:15:58</publishTime>
+    </File>
+    <File Include="Images/zc_zx.png">
+      <publishTime>06/21/2017 23:15:21</publishTime>
+    </File>
+    <File Include="Images/zc_zybg.png">
+      <publishTime>06/21/2017 23:15:16</publishTime>
+    </File>
+    <File Include="jxjy/MyTrain.aspx">
+      <publishTime>04/06/2023 12:56:06</publishTime>
+    </File>
+    <File Include="jxjy/PackageEdit.aspx">
+      <publishTime>07/11/2024 03:29:05</publishTime>
+    </File>
+    <File Include="jxjy/PackageMgr.aspx">
+      <publishTime>12/29/2025 02:38:14</publishTime>
+    </File>
+    <File Include="jxjy/QuestionEdit.aspx">
+      <publishTime>07/11/2024 03:29:05</publishTime>
+    </File>
+    <File Include="jxjy/QuestionMgr.aspx">
+      <publishTime>07/11/2024 03:29:06</publishTime>
+    </File>
+    <File Include="jxjy/QuestionView.aspx">
+      <publishTime>07/11/2024 03:29:06</publishTime>
+    </File>
+    <File Include="jxjy/SelectSourceImg.aspx">
+      <publishTime>05/23/2023 22:37:35</publishTime>
+    </File>
+    <File Include="jxjy/SourceEdit.aspx">
+      <publishTime>03/06/2025 12:28:32</publishTime>
+    </File>
+    <File Include="jxjy/SourceMgr.aspx">
+      <publishTime>07/11/2024 03:29:06</publishTime>
+    </File>
+    <File Include="jxjy/SourceSearch.aspx">
+      <publishTime>04/26/2023 14:15:02</publishTime>
+    </File>
+    <File Include="jxjy/SourceWarePaly.aspx">
+      <publishTime>08/08/2023 16:30:15</publishTime>
+    </File>
+    <File Include="jxjy/TjStudyCert.aspx">
+      <publishTime>07/11/2024 03:29:07</publishTime>
+    </File>
+    <File Include="jxjy/TjStudyCount.aspx">
+      <publishTime>07/11/2024 03:29:07</publishTime>
+    </File>
+    <File Include="jxjy/UnitTrainCase.aspx">
+      <publishTime>07/11/2024 03:29:07</publishTime>
+    </File>
+    <File Include="jxjy/UnitTrainPlan.aspx">
+      <publishTime>07/11/2024 03:29:08</publishTime>
+    </File>
+    <File Include="jxjy/UnitTrainPlanEdit.aspx">
+      <publishTime>07/11/2024 03:29:08</publishTime>
+    </File>
+    <File Include="jxjy/WenjuanTj.aspx">
+      <publishTime>12/29/2025 04:21:53</publishTime>
+    </File>
+    <File Include="layer/layer.js">
+      <publishTime>10/11/2016 09:51:18</publishTime>
+    </File>
+    <File Include="layer/skin/default/icon-ext.png">
+      <publishTime>10/11/2016 09:51:42</publishTime>
+    </File>
+    <File Include="layer/skin/default/icon.png">
+      <publishTime>10/11/2016 09:51:42</publishTime>
+    </File>
+    <File Include="layer/skin/default/loading-0.gif">
+      <publishTime>10/11/2016 09:51:18</publishTime>
+    </File>
+    <File Include="layer/skin/default/loading-1.gif">
+      <publishTime>10/11/2016 09:51:42</publishTime>
+    </File>
+    <File Include="layer/skin/default/loading-2.gif">
+      <publishTime>10/11/2016 09:51:18</publishTime>
+    </File>
+    <File Include="layer/skin/layer.css">
+      <publishTime>11/05/2019 15:34:05</publishTime>
+    </File>
+    <File Include="linkme.html">
+      <publishTime>09/02/2021 02:47:30</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>04/23/2020 12:34:17</publishTime>
+    </File>
+    <File Include="Login1.aspx">
+      <publishTime>06/25/2019 17:01:04</publishTime>
+    </File>
+    <File Include="Login2.aspx">
+      <publishTime>06/25/2019 17:01:04</publishTime>
+    </File>
+    <File Include="LoginJava.aspx">
+      <publishTime>04/19/2021 10:28:18</publishTime>
+    </File>
+    <File Include="LoginUnit.aspx">
+      <publishTime>11/27/2025 14:41:08</publishTime>
+    </File>
+    <File Include="LoginYZT.aspx">
+      <publishTime>10/22/2020 03:25:04</publishTime>
+    </File>
+    <File Include="Main.aspx">
+      <publishTime>11/01/2025 17:54:22</publishTime>
+    </File>
+    <File Include="My97DatePicker/calendar.js">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/config.js">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/lang/en.js">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/lang/zh-cn.js">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/lang/zh-tw.js">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/My97DatePicker.htm">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/skin/datePicker.gif">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/skin/default/datepicker.css">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/skin/default/img.gif">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/skin/WdatePicker.css">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/skin/whyGreen/bg.jpg">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/skin/whyGreen/datepicker.css">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/skin/whyGreen/img.gif">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/WdatePicker.js">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/开发包/lang/en.js">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/开发包/lang/zh-cn.js">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/开发包/lang/zh-tw.js">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/开发包/readme.txt">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/开发包/skin/datePicker.gif">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/开发包/skin/default/datepicker.css">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/开发包/skin/default/img.gif">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/开发包/skin/WdatePicker.css">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/开发包/skin/whyGreen/bg.jpg">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/开发包/skin/whyGreen/datepicker.css">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="My97DatePicker/开发包/skin/whyGreen/img.gif">
+      <publishTime>05/17/2018 09:55:29</publishTime>
+    </File>
+    <File Include="myhelp.ascx">
+      <publishTime>01/11/2024 16:45:54</publishTime>
+    </File>
+    <File Include="Network Neighbourhood.ico">
+      <publishTime>07/29/2016 13:45:03</publishTime>
+    </File>
+    <File Include="NoticelChoice.aspx">
+      <publishTime>06/25/2019 17:01:04</publishTime>
+    </File>
+    <File Include="PersonnelFile/ApplyProcess.aspx">
+      <publishTime>05/20/2025 11:40:27</publishTime>
+    </File>
+    <File Include="PersonnelFile/Appraise.aspx">
+      <publishTime>01/16/2024 13:22:00</publishTime>
+    </File>
+    <File Include="PersonnelFile/CertCheck.aspx">
+      <publishTime>12/28/2023 09:36:31</publishTime>
+    </File>
+    <File Include="PersonnelFile/CertCheckJZS.aspx">
+      <publishTime>12/26/2023 11:32:33</publishTime>
+    </File>
+    <File Include="PersonnelFile/CertifHistory.aspx">
+      <publishTime>11/29/2019 14:00:00</publishTime>
+    </File>
+    <File Include="PersonnelFile/CertificateInfo.aspx">
+      <publishTime>03/20/2024 15:10:26</publishTime>
+    </File>
+    <File Include="PersonnelFile/CertificateInfoModify.aspx">
+      <publishTime>02/28/2023 10:07:03</publishTime>
+    </File>
+    <File Include="PersonnelFile/CertificateLock.aspx">
+      <publishTime>08/13/2021 13:53:45</publishTime>
+    </File>
+    <File Include="PersonnelFile/CertificatePdf.aspx">
+      <publishTime>03/07/2025 02:57:52</publishTime>
+    </File>
+    <File Include="PersonnelFile/CompanyDefault.aspx">
+      <publishTime>10/15/2019 21:47:51</publishTime>
+    </File>
+    <File Include="PersonnelFile/CompanyWorkCertInfoHighcharts.aspx">
+      <publishTime>03/22/2020 23:18:58</publishTime>
+    </File>
+    <File Include="PersonnelFile/CompanyWorkCertInfoList.aspx">
+      <publishTime>04/26/2022 11:00:58</publishTime>
+    </File>
+    <File Include="PersonnelFile/CompanyWorkerList.aspx">
+      <publishTime>02/25/2020 16:26:04</publishTime>
+    </File>
+    <File Include="PersonnelFile/default.aspx">
+      <publishTime>10/23/2019 14:05:16</publishTime>
+    </File>
+    <File Include="PersonnelFile/EJuse.aspx">
+      <publishTime>07/01/2025 15:02:46</publishTime>
+    </File>
+    <File Include="PersonnelFile/FRList.aspx">
+      <publishTime>03/25/2024 13:24:56</publishTime>
+    </File>
+    <File Include="PersonnelFile/GetFile.aspx">
+      <publishTime>04/14/2023 05:25:14</publishTime>
+    </File>
+    <File Include="PersonnelFile/GetHighchartsDataHandler.ashx">
+      <publishTime>10/14/2019 17:30:37</publishTime>
+    </File>
+    <File Include="PersonnelFile/GetImg.aspx">
+      <publishTime>02/13/2023 09:20:57</publishTime>
+    </File>
+    <File Include="PersonnelFile/PersonCertiInfo.aspx">
+      <publishTime>12/16/2025 18:43:34</publishTime>
+    </File>
+    <File Include="PersonnelFile/PersonInfo.aspx">
+      <publishTime>12/27/2022 19:27:31</publishTime>
+    </File>
+    <File Include="PersonnelFile/PersonInfoEdit.aspx">
+      <publishTime>11/25/2021 13:12:41</publishTime>
+    </File>
+    <File Include="PersonnelFile/PersonLock.aspx">
+      <publishTime>08/13/2021 13:54:41</publishTime>
+    </File>
+    <File Include="PersonnelFile/Projection.aspx">
+      <publishTime>03/22/2020 05:14:42</publishTime>
+    </File>
+    <File Include="PersonnelFile/PunishInfo.aspx">
+      <publishTime>03/22/2020 05:14:42</publishTime>
+    </File>
+    <File Include="PersonnelFile/RepeatWarning.aspx">
+      <publishTime>08/30/2020 00:39:38</publishTime>
+    </File>
+    <File Include="PersonnelFile/RYSBView.aspx">
+      <publishTime>05/06/2024 10:27:39</publishTime>
+    </File>
+    <File Include="PersonnelFile/WinningInfor.aspx">
+      <publishTime>03/22/2020 05:14:43</publishTime>
+    </File>
+    <File Include="PersonnelFile/WorkerCertiInfoList.aspx">
+      <publishTime>12/16/2025 18:44:56</publishTime>
+    </File>
+    <File Include="PersonnelFile/WorkerImgEdit.aspx">
+      <publishTime>11/24/2021 10:35:50</publishTime>
+    </File>
+    <File Include="PersonnelFile/WorkerInfoEdit.aspx">
+      <publishTime>05/22/2024 18:01:23</publishTime>
+    </File>
+    <File Include="PostAllSelect.ascx">
+      <publishTime>11/11/2022 01:20:24</publishTime>
+    </File>
+    <File Include="PostSelect.ascx">
+      <publishTime>02/21/2023 03:52:32</publishTime>
+    </File>
+    <File Include="PrecompiledApp.config">
+      <publishTime>02/09/2026 11:33:34</publishTime>
+    </File>
+    <File Include="QuestionMgr/dsoframer.CAB">
+      <publishTime>09/25/2017 17:22:16</publishTime>
+    </File>
+    <File Include="QuestionMgr/ExamPageCompare.aspx">
+      <publishTime>10/14/2019 17:38:25</publishTime>
+    </File>
+    <File Include="QuestionMgr/ExamPageEdit.aspx">
+      <publishTime>03/02/2020 14:17:55</publishTime>
+    </File>
+    <File Include="QuestionMgr/ExamPagePrint.aspx">
+      <publishTime>11/29/2019 14:08:06</publishTime>
+    </File>
+    <File Include="QuestionMgr/InfoTagManage.aspx">
+      <publishTime>03/22/2020 05:07:40</publishTime>
+    </File>
+    <File Include="QuestionMgr/MainExamOutline.aspx">
+      <publishTime>03/22/2020 05:06:05</publishTime>
+    </File>
+    <File Include="QuestionMgr/MainExamOutlineNew.aspx">
+      <publishTime>10/14/2019 17:38:14</publishTime>
+    </File>
+    <File Include="QuestionMgr/MainExamPage.aspx">
+      <publishTime>10/14/2019 17:38:14</publishTime>
+    </File>
+    <File Include="QuestionMgr/MainQuestionManage.aspx">
+      <publishTime>11/26/2025 15:50:31</publishTime>
+    </File>
+    <File Include="QuestionMgr/WordRead.aspx">
+      <publishTime>10/14/2019 17:38:14</publishTime>
+    </File>
+    <File Include="QuestionMgr/WordView.aspx">
+      <publishTime>10/14/2019 17:38:14</publishTime>
+    </File>
+    <File Include="QuestionMgr/WordWrite.aspx">
+      <publishTime>10/14/2019 17:38:14</publishTime>
+    </File>
+    <File Include="RadControls.Master">
+      <publishTime>08/02/2023 15:47:46</publishTime>
+    </File>
+    <File Include="Register/CertificateNoChange.aspx">
+      <publishTime>08/07/2023 18:04:26</publishTime>
+    </File>
+    <File Include="Register/NewsView.aspx">
+      <publishTime>08/07/2023 18:04:26</publishTime>
+    </File>
+    <File Include="Register/NumberChange.aspx">
+      <publishTime>11/25/2025 06:45:14</publishTime>
+    </File>
+    <File Include="Register/NumberIssue.aspx">
+      <publishTime>07/11/2024 03:29:09</publishTime>
+    </File>
+    <File Include="Register/NumberIssueChoice.aspx">
+      <publishTime>08/21/2024 00:45:04</publishTime>
+    </File>
+    <File Include="Register/ReleaseNew.aspx">
+      <publishTime>08/07/2023 18:04:27</publishTime>
+    </File>
+    <File Include="Register/ReleaseNews.aspx">
+      <publishTime>09/12/2024 15:20:42</publishTime>
+    </File>
+    <File Include="RenewCertifates/ApplyDetail.aspx">
+      <publishTime>05/20/2025 18:41:47</publishTime>
+    </File>
+    <File Include="RenewCertifates/ApplyView.aspx">
+      <publishTime>04/03/2020 20:55:19</publishTime>
+    </File>
+    <File Include="RenewCertifates/CertifAccept.aspx">
+      <publishTime>11/10/2025 11:07:56</publishTime>
+    </File>
+    <File Include="RenewCertifates/CertifApply.aspx">
+      <publishTime>05/20/2025 18:28:56</publishTime>
+    </File>
+    <File Include="RenewCertifates/CertifCheck.aspx">
+      <publishTime>11/10/2025 11:08:14</publishTime>
+    </File>
+    <File Include="RenewCertifates/CertifCheckUnit.aspx">
+      <publishTime>12/24/2025 16:15:11</publishTime>
+    </File>
+    <File Include="RenewCertifates/CertifConfirm.aspx">
+      <publishTime>11/10/2025 11:09:21</publishTime>
+    </File>
+    <File Include="RenewCertifates/CertifConfirmP.aspx">
+      <publishTime>08/13/2021 13:56:59</publishTime>
+    </File>
+    <File Include="RenewCertifates/CertifConfirmTop.aspx">
+      <publishTime>08/13/2021 13:57:11</publishTime>
+    </File>
+    <File Include="RenewCertifates/CertifReport.aspx">
+      <publishTime>08/13/2021 13:57:26</publishTime>
+    </File>
+    <File Include="RenewCertifates/CertifReportEdit.aspx">
+      <publishTime>08/13/2021 13:58:04</publishTime>
+    </File>
+    <File Include="RenewCertifates/CertifReportUpload.aspx">
+      <publishTime>05/13/2021 20:52:16</publishTime>
+    </File>
+    <File Include="RenewCertifates/CertifStatusList.aspx">
+      <publishTime>10/07/2024 18:52:21</publishTime>
+    </File>
+    <File Include="RenewCertifates/default.aspx">
+      <publishTime>10/23/2019 14:05:16</publishTime>
+    </File>
+    <File Include="RenewCertifates/DelHistory.aspx">
+      <publishTime>08/30/2020 01:20:18</publishTime>
+    </File>
+    <File Include="RenewCertifates/ReportSearch.aspx">
+      <publishTime>08/13/2021 13:58:51</publishTime>
+    </File>
+    <File Include="ReportSelect.ascx">
+      <publishTime>10/14/2019 15:03:43</publishTime>
+    </File>
+    <File Include="ResultInfoPage.aspx">
+      <publishTime>06/25/2019 17:01:04</publishTime>
+    </File>
+    <File Include="rygate.aspx">
+      <publishTime>09/12/2023 19:19:21</publishTime>
+    </File>
+    <File Include="Scripts/Barrett.js">
+      <publishTime>08/04/2005 13:42:30</publishTime>
+    </File>
+    <File Include="Scripts/BigInt.js">
+      <publishTime>08/04/2005 13:42:26</publishTime>
+    </File>
+    <File Include="Scripts/checkBrower.js">
+      <publishTime>05/29/2020 04:14:24</publishTime>
+    </File>
+    <File Include="Scripts/CodeManage.js">
+      <publishTime>07/03/2009 14:09:29</publishTime>
+    </File>
+    <File Include="Scripts/default.js">
+      <publishTime>10/30/2018 17:36:53</publishTime>
+    </File>
+    <File Include="Scripts/echarts-all.js">
+      <publishTime>07/29/2016 16:39:46</publishTime>
+    </File>
+    <File Include="Scripts/echarts.min.js">
+      <publishTime>05/23/2016 09:50:56</publishTime>
+    </File>
+    <File Include="Scripts/FloatMessage.js">
+      <publishTime>07/18/2021 16:08:24</publishTime>
+    </File>
+    <File Include="Scripts/highcharts-3d.js">
+      <publishTime>09/26/2014 14:20:26</publishTime>
+    </File>
+    <File Include="Scripts/highcharts.js">
+      <publishTime>09/25/2014 04:24:41</publishTime>
+    </File>
+    <File Include="Scripts/highstock.js">
+      <publishTime>09/25/2014 04:24:41</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.8.3.min.js">
+      <publishTime>09/25/2014 04:24:41</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.js">
+      <publishTime>01/08/2016 10:42:58</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.4.1.min.js">
+      <publishTime>04/23/2020 12:29:37</publishTime>
+    </File>
+    <File Include="Scripts/jquery.pageslide.js">
+      <publishTime>11/30/2019 17:07:41</publishTime>
+    </File>
+    <File Include="Scripts/jquery.pageslide.min.js">
+      <publishTime>11/30/2019 17:07:41</publishTime>
+    </File>
+    <File Include="Scripts/main.js">
+      <publishTime>03/16/2022 16:51:35</publishTime>
+    </File>
+    <File Include="Scripts/menu_min.js">
+      <publishTime>08/02/2016 15:23:46</publishTime>
+    </File>
+    <File Include="Scripts/Public.js">
+      <publishTime>08/08/2023 15:43:34</publishTime>
+    </File>
+    <File Include="Scripts/RSA.js">
+      <publishTime>06/03/2019 11:46:52</publishTime>
+    </File>
+    <File Include="Scripts/timelimit.js">
+      <publishTime>07/01/2022 21:55:50</publishTime>
+    </File>
+    <File Include="SelectImg.ascx">
+      <publishTime>05/24/2023 00:04:10</publishTime>
+    </File>
+    <File Include="SelectQY.aspx">
+      <publishTime>08/20/2024 01:28:48</publishTime>
+    </File>
+    <File Include="SelectSource.ascx">
+      <publishTime>11/16/2023 01:27:09</publishTime>
+    </File>
+    <File Include="Service References/Thehall/ZYRYJG.Thehall.CorpInfo.datasource">
+      <publishTime>06/25/2019 17:01:25</publishTime>
+    </File>
+    <File Include="Service References/Thehall/ZYRYJG.Thehall.DataSummaryInfo.datasource">
+      <publishTime>06/25/2019 17:01:25</publishTime>
+    </File>
+    <File Include="Service References/Thehall/ZYRYJG.Thehall.EGovSoapHead.datasource">
+      <publishTime>06/25/2019 17:01:24</publishTime>
+    </File>
+    <File Include="Service References/Thehall/ZYRYJG.Thehall.OHHeads.datasource">
+      <publishTime>06/25/2019 17:01:24</publishTime>
+    </File>
+    <File Include="Service References/Thehall/ZYRYJG.Thehall.OH_PersonInfo.datasource">
+      <publishTime>06/25/2019 17:01:24</publishTime>
+    </File>
+    <File Include="Service References/Thehall/ZYRYJG.Thehall.Project.datasource">
+      <publishTime>06/25/2019 17:01:24</publishTime>
+    </File>
+    <File Include="Service References/Thehall/ZYRYJG.Thehall.SubAccountUserInfo.datasource">
+      <publishTime>06/25/2019 17:01:25</publishTime>
+    </File>
+    <File Include="Service References/升级脚本.txt">
+      <publishTime>12/06/2019 09:18:41</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid.Blue.css">
+      <publishTime>07/11/2024 01:02:40</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/AddRecord.gif">
+      <publishTime>10/20/2010 01:50:51</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/Cancel.gif">
+      <publishTime>10/18/2010 18:22:16</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/Delete.gif">
+      <publishTime>10/18/2010 18:22:16</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/Edit.gif">
+      <publishTime>10/18/2010 18:22:16</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/export.gif">
+      <publishTime>10/22/2010 15:28:22</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/Filter.gif">
+      <publishTime>10/18/2010 18:22:16</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/loading_small.gif">
+      <publishTime>10/22/2010 15:28:22</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/MoveDown.gif">
+      <publishTime>10/18/2010 18:22:16</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/MoveUp.gif">
+      <publishTime>10/18/2010 18:22:16</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/PagingFirst.gif">
+      <publishTime>10/18/2010 18:22:16</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/PagingLast.gif">
+      <publishTime>10/18/2010 18:22:16</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/PagingNext.gif">
+      <publishTime>10/18/2010 18:22:16</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/PagingPrev.gif">
+      <publishTime>10/18/2010 18:22:16</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/Refresh.gif">
+      <publishTime>10/18/2010 18:22:16</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/rgCommandRow.gif">
+      <publishTime>10/18/2010 18:22:16</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/rgDrag.gif">
+      <publishTime>10/18/2010 18:22:16</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/SingleMinus.gif">
+      <publishTime>10/18/2010 18:22:16</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/SinglePlus.gif">
+      <publishTime>10/18/2010 18:22:16</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/SortAsc.gif">
+      <publishTime>10/18/2010 18:22:16</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/SortDesc.gif">
+      <publishTime>10/18/2010 18:22:16</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/sprite.gif">
+      <publishTime>10/18/2010 18:22:16</publishTime>
+    </File>
+    <File Include="Skins/Blue/Grid/Update.gif">
+      <publishTime>10/18/2010 18:22:16</publishTime>
+    </File>
+    <File Include="Skins/Hot/PanelBar.hot.css">
+      <publishTime>10/12/2010 17:33:51</publishTime>
+    </File>
+    <File Include="Skins/Hot/PanelBar/Expandable.png">
+      <publishTime>10/12/2010 12:09:38</publishTime>
+    </File>
+    <File Include="Skins/Hot/PanelBar/RootItemBg.png">
+      <publishTime>10/12/2010 17:33:51</publishTime>
+    </File>
+    <File Include="Skins/Hot/PanelBar/SubItemStates.png">
+      <publishTime>10/12/2010 17:33:51</publishTime>
+    </File>
+    <File Include="Skins/Hot/Upload.hot.css">
+      <publishTime>03/22/2020 04:36:33</publishTime>
+    </File>
+    <File Include="Skins/Hot/Upload/AsyncProgress.gif">
+      <publishTime>07/13/2010 16:56:26</publishTime>
+    </File>
+    <File Include="Skins/Hot/Upload/AsyncStates.png">
+      <publishTime>07/13/2010 16:56:28</publishTime>
+    </File>
+    <File Include="Skins/Hot/Upload/Default.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="Skins/Hot/Upload/ruProgress.gif">
+      <publishTime>07/13/2010 16:56:27</publishTime>
+    </File>
+    <File Include="Skins/Hot/Upload/ruSprite.png">
+      <publishTime>07/13/2010 16:56:28</publishTime>
+    </File>
+    <File Include="Skins/Orange/Window.Orange.css">
+      <publishTime>11/01/2010 11:35:48</publishTime>
+    </File>
+    <File Include="Skins/Orange/Window/CommandButtonSprites.gif">
+      <publishTime>11/01/2010 11:35:42</publishTime>
+    </File>
+    <File Include="Skins/Orange/Window/Orange.gif">
+      <publishTime>11/01/2010 11:35:42</publishTime>
+    </File>
+    <File Include="Skins/Orange/Window/WindowHorizontalSprites.gif">
+      <publishTime>11/01/2010 11:35:42</publishTime>
+    </File>
+    <File Include="Skins/Orange/Window/WindowHorizontalSprites.png">
+      <publishTime>11/01/2010 11:35:42</publishTime>
+    </File>
+    <File Include="Skins/Orange/Window/WindowVerticalSprites.gif">
+      <publishTime>11/01/2010 11:35:42</publishTime>
+    </File>
+    <File Include="Skins/Orange/Window/WindowVerticalSprites.png">
+      <publishTime>11/01/2010 11:35:42</publishTime>
+    </File>
+    <File Include="Split.aspx">
+      <publishTime>08/21/2019 11:02:33</publishTime>
+    </File>
+    <File Include="StAnManage/CertFacePhotoCheck.aspx">
+      <publishTime>08/30/2020 02:31:15</publishTime>
+    </File>
+    <File Include="StAnManage/CertifApplyResultQuery.aspx">
+      <publishTime>09/09/2022 20:00:52</publishTime>
+    </File>
+    <File Include="StAnManage/CertifBB.aspx">
+      <publishTime>08/13/2021 13:59:17</publishTime>
+    </File>
+    <File Include="StAnManage/CertifCAReport.aspx">
+      <publishTime>08/13/2021 13:59:34</publishTime>
+    </File>
+    <File Include="StAnManage/CertifChangeAutoCheckTJ.aspx">
+      <publishTime>08/13/2021 13:59:43</publishTime>
+    </File>
+    <File Include="StAnManage/CertifDueWarning.aspx">
+      <publishTime>03/22/2020 05:14:47</publishTime>
+    </File>
+    <File Include="StAnManage/CertificateBaseInfo.aspx">
+      <publishTime>08/30/2020 02:37:46</publishTime>
+    </File>
+    <File Include="StAnManage/CertifManageQuery.aspx">
+      <publishTime>11/22/2021 16:33:44</publishTime>
+    </File>
+    <File Include="StAnManage/CertifUpdateQuery.aspx">
+      <publishTime>08/13/2021 14:00:09</publishTime>
+    </File>
+    <File Include="StAnManage/CertSkillLevelQuery.aspx">
+      <publishTime>02/02/2024 13:48:29</publishTime>
+    </File>
+    <File Include="StAnManage/ChaiQianUnitLimit.aspx">
+      <publishTime>08/30/2020 01:20:19</publishTime>
+    </File>
+    <File Include="StAnManage/CompareJZS.aspx">
+      <publishTime>08/13/2021 14:00:27</publishTime>
+    </File>
+    <File Include="StAnManage/default.aspx">
+      <publishTime>10/23/2019 14:04:37</publishTime>
+    </File>
+    <File Include="StAnManage/ExamBB.aspx">
+      <publishTime>08/30/2020 02:33:54</publishTime>
+    </File>
+    <File Include="StAnManage/ExamManageQuery.aspx">
+      <publishTime>08/13/2021 14:00:37</publishTime>
+    </File>
+    <File Include="StAnManage/GetHighchartsDataHandler.ashx">
+      <publishTime>10/14/2019 17:47:35</publishTime>
+    </File>
+    <File Include="StAnManage/LearnRecordManage.aspx">
+      <publishTime>08/30/2020 01:20:20</publishTime>
+    </File>
+    <File Include="StAnManage/MissExamDetail.aspx">
+      <publishTime>07/11/2024 03:29:10</publishTime>
+    </File>
+    <File Include="StAnManage/MissExamLock.aspx">
+      <publishTime>08/25/2021 20:08:20</publishTime>
+    </File>
+    <File Include="StAnManage/OperateLogDetailList.aspx">
+      <publishTime>08/13/2021 14:00:46</publishTime>
+    </File>
+    <File Include="StAnManage/OperateLogList.aspx">
+      <publishTime>08/13/2021 14:00:54</publishTime>
+    </File>
+    <File Include="StAnManage/PersonWarning.aspx">
+      <publishTime>03/22/2020 05:14:48</publishTime>
+    </File>
+    <File Include="StAnManage/ProjectHavingCt.aspx">
+      <publishTime>09/07/2021 16:54:05</publishTime>
+    </File>
+    <File Include="StAnManage/QYBWDZZZS.aspx">
+      <publishTime>06/21/2023 19:40:00</publishTime>
+    </File>
+    <File Include="StAnManage/QYGSXX.aspx">
+      <publishTime>06/21/2023 18:55:44</publishTime>
+    </File>
+    <File Include="StAnManage/QYHavingCt.aspx">
+      <publishTime>08/13/2021 14:01:03</publishTime>
+    </File>
+    <File Include="StAnManage/QYZZCheck.aspx">
+      <publishTime>11/27/2019 03:53:55</publishTime>
+    </File>
+    <File Include="StAnManage/ThreeClassCertifLSGXTJ.aspx">
+      <publishTime>11/27/2019 05:09:56</publishTime>
+    </File>
+    <File Include="StAnManage/ThreeClassCertifRenewalList.aspx">
+      <publishTime>08/30/2020 02:46:28</publishTime>
+    </File>
+    <File Include="StAnManage/TjMessageSend.aspx">
+      <publishTime>11/15/2022 19:28:26</publishTime>
+    </File>
+    <File Include="StAnManage/TrainUnitSignupStat.aspx">
+      <publishTime>08/13/2021 14:01:33</publishTime>
+    </File>
+    <File Include="StAnManage/WuYeCertLockSearch.aspx">
+      <publishTime>08/30/2020 01:20:21</publishTime>
+    </File>
+    <File Include="StAnManage/ZCJZSList.aspx">
+      <publishTime>08/30/2020 01:20:22</publishTime>
+    </File>
+    <File Include="SystemManage/AddUser.aspx">
+      <publishTime>07/11/2024 03:29:10</publishTime>
+    </File>
+    <File Include="SystemManage/AddUserRole.aspx">
+      <publishTime>08/07/2023 18:04:29</publishTime>
+    </File>
+    <File Include="SystemManage/BusinessHelp.aspx">
+      <publishTime>11/19/2024 17:53:16</publishTime>
+    </File>
+    <File Include="SystemManage/CashManage.aspx">
+      <publishTime>09/25/2024 19:30:48</publishTime>
+    </File>
+    <File Include="SystemManage/CertMgr.aspx">
+      <publishTime>07/17/2025 18:52:50</publishTime>
+    </File>
+    <File Include="SystemManage/CertModify.aspx">
+      <publishTime>04/02/2024 17:43:35</publishTime>
+    </File>
+    <File Include="SystemManage/CheckResultList.aspx">
+      <publishTime>07/11/2024 03:29:11</publishTime>
+    </File>
+    <File Include="SystemManage/ConnetMonitor.aspx">
+      <publishTime>07/11/2024 03:29:11</publishTime>
+    </File>
+    <File Include="SystemManage/ConnetMonitorDetail.aspx">
+      <publishTime>07/11/2024 03:29:12</publishTime>
+    </File>
+    <File Include="SystemManage/DepartmentManage.aspx">
+      <publishTime>11/25/2025 15:43:31</publishTime>
+    </File>
+    <File Include="SystemManage/DepartmentTree.aspx">
+      <publishTime>08/20/2019 16:13:03</publishTime>
+    </File>
+    <File Include="SystemManage/EleCertErrorList.aspx">
+      <publishTime>07/11/2024 03:29:12</publishTime>
+    </File>
+    <File Include="SystemManage/main.aspx">
+      <publishTime>03/29/2020 04:15:23</publishTime>
+    </File>
+    <File Include="SystemManage/MainDepartment.aspx">
+      <publishTime>08/20/2019 16:29:58</publishTime>
+    </File>
+    <File Include="SystemManage/MainRole.aspx">
+      <publishTime>06/25/2019 17:01:06</publishTime>
+    </File>
+    <File Include="SystemManage/MainUser.aspx">
+      <publishTime>08/20/2019 16:29:29</publishTime>
+    </File>
+    <File Include="SystemManage/OperateLogList.aspx">
+      <publishTime>07/11/2024 03:29:12</publishTime>
+    </File>
+    <File Include="SystemManage/OperateLogView.aspx">
+      <publishTime>08/07/2023 18:04:32</publishTime>
+    </File>
+    <File Include="SystemManage/pingjiaresult.aspx">
+      <publishTime>11/11/2025 11:45:53</publishTime>
+    </File>
+    <File Include="SystemManage/PingJiaSend.aspx">
+      <publishTime>11/11/2025 14:44:25</publishTime>
+    </File>
+    <File Include="SystemManage/RenewSetting.aspx">
+      <publishTime>12/31/2020 18:29:19</publishTime>
+    </File>
+    <File Include="SystemManage/RoleManage.aspx">
+      <publishTime>08/22/2024 11:10:24</publishTime>
+    </File>
+    <File Include="SystemManage/SheBaoQuery.aspx">
+      <publishTime>07/11/2024 03:29:13</publishTime>
+    </File>
+    <File Include="SystemManage/ShebaoResend.aspx">
+      <publishTime>08/07/2023 18:04:32</publishTime>
+    </File>
+    <File Include="SystemManage/SysUpdate.aspx">
+      <publishTime>08/30/2020 01:25:16</publishTime>
+    </File>
+    <File Include="SystemManage/UnitLevelEdit.aspx">
+      <publishTime>02/27/2024 11:13:19</publishTime>
+    </File>
+    <File Include="SystemManage/UnitLevelSet.aspx">
+      <publishTime>03/22/2020 05:26:53</publishTime>
+    </File>
+    <File Include="SystemManage/UnitRegionModify.aspx">
+      <publishTime>01/12/2024 16:26:19</publishTime>
+    </File>
+    <File Include="SystemManage/UnitWatchInput.aspx">
+      <publishTime>04/12/2021 12:11:38</publishTime>
+    </File>
+    <File Include="SystemManage/UnitWatchList.aspx">
+      <publishTime>07/11/2024 03:29:53</publishTime>
+    </File>
+    <File Include="SystemManage/UserMaintain.aspx">
+      <publishTime>08/02/2023 15:48:04</publishTime>
+    </File>
+    <File Include="SystemManage/UserManage.aspx">
+      <publishTime>08/02/2023 15:48:05</publishTime>
+    </File>
+    <File Include="SystemManage/UserResourceList.aspx">
+      <publishTime>08/24/2020 22:08:56</publishTime>
+    </File>
+    <File Include="temp.aspx">
+      <publishTime>11/28/2025 14:43:16</publishTime>
+    </File>
+    <File Include="Template/2格证书打印.doc">
+      <publishTime>11/05/2015 12:06:13</publishTime>
+    </File>
+    <File Include="Template/360浏览器设置极速模式.docx">
+      <publishTime>07/10/2020 17:06:12</publishTime>
+    </File>
+    <File Include="Template/4格证书打印.doc">
+      <publishTime>08/03/2015 16:54:33</publishTime>
+    </File>
+    <File Include="Template/8格证书打印.doc">
+      <publishTime>10/30/2014 07:36:28</publishTime>
+    </File>
+    <File Include="Template/A本增发申请表.doc">
+      <publishTime>12/10/2019 11:57:56</publishTime>
+    </File>
+    <File Include="Template/test2022.zip">
+      <publishTime>07/20/2022 15:15:05</publishTime>
+    </File>
+    <File Include="Template/三类人A.pdf">
+      <publishTime>09/04/2019 14:01:41</publishTime>
+    </File>
+    <File Include="Template/三类人B.pdf">
+      <publishTime>11/25/2019 17:55:40</publishTime>
+    </File>
+    <File Include="Template/三类人C.pdf">
+      <publishTime>09/04/2019 14:01:41</publishTime>
+    </File>
+    <File Include="Template/三类人C1.pdf">
+      <publishTime>11/25/2019 17:55:40</publishTime>
+    </File>
+    <File Include="Template/三类人C2.pdf">
+      <publishTime>11/25/2019 17:55:40</publishTime>
+    </File>
+    <File Include="Template/三类人C3.pdf">
+      <publishTime>11/25/2019 17:55:40</publishTime>
+    </File>
+    <File Include="Template/三类人员证书打印.doc">
+      <publishTime>06/30/2017 09:56:07</publishTime>
+    </File>
+    <File Include="Template/三类人员证书打印_喷墨.doc">
+      <publishTime>03/20/2018 14:35:51</publishTime>
+    </File>
+    <File Include="Template/专业员证书打印_喷墨.doc">
+      <publishTime>03/15/2018 10:45:32</publishTime>
+    </File>
+    <File Include="Template/专业管理人员.doc">
+      <publishTime>11/09/2015 11:18:08</publishTime>
+    </File>
+    <File Include="Template/专业管理人员新版证书.doc">
+      <publishTime>11/09/2015 10:37:26</publishTime>
+    </File>
+    <File Include="Template/专业管理人员新版证书小字.doc">
+      <publishTime>11/09/2015 10:38:10</publishTime>
+    </File>
+    <File Include="Template/业务办理须知.docx">
+      <publishTime>08/19/2021 10:47:24</publishTime>
+    </File>
+    <File Include="Template/个人信息变更.docx">
+      <publishTime>07/28/2025 03:05:52</publishTime>
+    </File>
+    <File Include="Template/个人健康承诺.docx">
+      <publishTime>03/31/2021 16:54:54</publishTime>
+    </File>
+    <File Include="Template/二建继续教育承诺书.docx">
+      <publishTime>07/19/2021 19:32:27</publishTime>
+    </File>
+    <File Include="Template/二级建造师注册证书.pdf">
+      <publishTime>11/30/2019 17:07:41</publishTime>
+    </File>
+    <File Include="Template/二级申请资格.xlsx">
+      <publishTime>06/07/2017 14:14:31</publishTime>
+    </File>
+    <File Include="Template/二级证书打印.doc">
+      <publishTime>09/12/2017 16:10:57</publishTime>
+    </File>
+    <File Include="Template/二级证书打印_TAB.doc">
+      <publishTime>07/13/2018 15:12:17</publishTime>
+    </File>
+    <File Include="Template/二级造价工程师资格.xlsx">
+      <publishTime>06/07/2017 14:14:31</publishTime>
+    </File>
+    <File Include="Template/二级造价师注册证书.pdf">
+      <publishTime>04/04/2024 00:29:26</publishTime>
+    </File>
+    <File Include="Template/京建发〔2019〕151号 附件1.xlsx">
+      <publishTime>04/10/2019 11:33:17</publishTime>
+    </File>
+    <File Include="Template/人员版使用手册.docx">
+      <publishTime>10/08/2024 09:03:11</publishTime>
+    </File>
+    <File Include="Template/人员行政受理通知书.doc">
+      <publishTime>11/19/2010 11:41:09</publishTime>
+    </File>
+    <File Include="Template/企业使用手册V1.0.0.docx">
+      <publishTime>10/12/2017 14:56:30</publishTime>
+    </File>
+    <File Include="Template/企业信息变更区县受理通知书.docx">
+      <publishTime>09/14/2017 17:44:57</publishTime>
+    </File>
+    <File Include="Template/企业版使用手册.docx">
+      <publishTime>11/18/2020 20:20:30</publishTime>
+    </File>
+    <File Include="Template/公益教育试题导入模版.xls">
+      <publishTime>04/25/2023 15:53:50</publishTime>
+    </File>
+    <File Include="Template/准考证.doc">
+      <publishTime>07/07/2022 20:11:01</publishTime>
+    </File>
+    <File Include="Template/准考证.docx">
+      <publishTime>10/10/2024 15:49:04</publishTime>
+    </File>
+    <File Include="Template/准考证_实操.doc">
+      <publishTime>06/30/2022 16:58:57</publishTime>
+    </File>
+    <File Include="Template/准考证_实操.docx">
+      <publishTime>10/10/2024 15:50:31</publishTime>
+    </File>
+    <File Include="Template/准考证_网考.docx">
+      <publishTime>10/14/2024 11:46:37</publishTime>
+    </File>
+    <File Include="Template/北京市二级建造师临时执业证书个人信息变更注册申请表.docx">
+      <publishTime>01/31/2019 10:38:19</publishTime>
+    </File>
+    <File Include="Template/北京市二级建造师临时执业证书延续注册申请表.docx">
+      <publishTime>01/31/2019 10:38:19</publishTime>
+    </File>
+    <File Include="Template/北京市二级建造师临时执业证书执业企业变更注册申请表.docx">
+      <publishTime>01/31/2019 10:38:19</publishTime>
+    </File>
+    <File Include="Template/北京市二级建造师临时执业证书注销注册申请表.docx">
+      <publishTime>01/31/2019 10:38:19</publishTime>
+    </File>
+    <File Include="Template/北京市二级建造师临时执业证书遗失补办或污损更换申请表.docx">
+      <publishTime>01/31/2019 10:38:19</publishTime>
+    </File>
+    <File Include="Template/北京市二级建造师初始注册申请表.docx">
+      <publishTime>08/14/2025 02:45:26</publishTime>
+    </File>
+    <File Include="Template/北京市二级建造师重新注册申请表.docx">
+      <publishTime>07/28/2025 03:11:26</publishTime>
+    </File>
+    <File Include="Template/北京市二级注册建造师个人信息变更.docx">
+      <publishTime>12/03/2025 00:51:49</publishTime>
+    </File>
+    <File Include="Template/北京市二级注册建造师企业信息变更注册申请表.docx">
+      <publishTime>11/30/2019 17:07:41</publishTime>
+    </File>
+    <File Include="Template/北京市二级注册建造师增项注册申请表.docx">
+      <publishTime>07/28/2025 03:18:55</publishTime>
+    </File>
+    <File Include="Template/北京市二级注册建造师延续注册申请表.docx">
+      <publishTime>07/28/2025 03:10:26</publishTime>
+    </File>
+    <File Include="Template/北京市二级注册建造师执业企业变更注册申请表.docx">
+      <publishTime>07/28/2025 03:16:01</publishTime>
+    </File>
+    <File Include="Template/北京市二级注册建造师注销注册申请表.docx">
+      <publishTime>08/13/2025 12:55:45</publishTime>
+    </File>
+    <File Include="Template/北京市二级注册建造师注销注册申请表_个人强制.docx">
+      <publishTime>08/13/2025 13:09:52</publishTime>
+    </File>
+    <File Include="Template/北京市二级注册建造师注销注册申请表_企业强制.docx">
+      <publishTime>08/13/2025 13:12:41</publishTime>
+    </File>
+    <File Include="Template/北京市建设行业从业人员考务和证书管理系统使用说明.doc">
+      <publishTime>08/25/2011 16:40:29</publishTime>
+    </File>
+    <File Include="Template/区县受理通知书.docx">
+      <publishTime>09/11/2017 14:43:03</publishTime>
+    </File>
+    <File Include="Template/卷标.doc">
+      <publishTime>05/15/2014 16:47:00</publishTime>
+    </File>
+    <File Include="Template/反馈填报须知.doc">
+      <publishTime>03/27/2025 10:36:19</publishTime>
+    </File>
+    <File Include="Template/变更办理结果通知书.doc">
+      <publishTime>08/09/2019 17:26:52</publishTime>
+    </File>
+    <File Include="Template/变更办理结果通知书2.doc">
+      <publishTime>08/09/2019 17:28:29</publishTime>
+    </File>
+    <File Include="Template/变更受理通知书.doc">
+      <publishTime>09/12/2019 14:44:20</publishTime>
+    </File>
+    <File Include="Template/变更受理通知书2.doc">
+      <publishTime>02/19/2011 05:24:33</publishTime>
+    </File>
+    <File Include="Template/变更申请表-三类人京内.docx">
+      <publishTime>07/25/2025 17:13:33</publishTime>
+    </File>
+    <File Include="Template/变更申请表-京内.doc">
+      <publishTime>12/25/2019 15:45:15</publishTime>
+    </File>
+    <File Include="Template/变更申请表-京内.docx">
+      <publishTime>02/27/2023 22:56:30</publishTime>
+    </File>
+    <File Include="Template/变更申请表-企业信息变更.docx">
+      <publishTime>09/02/2021 02:35:15</publishTime>
+    </File>
+    <File Include="Template/变更申请表-强制注销.docx">
+      <publishTime>06/12/2025 08:21:25</publishTime>
+    </File>
+    <File Include="Template/变更申请表-强制离京.docx">
+      <publishTime>06/11/2025 11:33:30</publishTime>
+    </File>
+    <File Include="Template/变更申请表-注销.doc">
+      <publishTime>12/25/2019 15:41:18</publishTime>
+    </File>
+    <File Include="Template/变更申请表-注销.docx">
+      <publishTime>07/30/2023 11:25:06</publishTime>
+    </File>
+    <File Include="Template/变更申请表-注销不从事安全工作.docx">
+      <publishTime>06/12/2025 09:24:09</publishTime>
+    </File>
+    <File Include="Template/变更申请表-特种作业京内.docx">
+      <publishTime>11/06/2023 10:19:48</publishTime>
+    </File>
+    <File Include="Template/变更申请表-特种作业注销.docx">
+      <publishTime>11/06/2023 09:31:32</publishTime>
+    </File>
+    <File Include="Template/变更申请表-离京.doc">
+      <publishTime>04/21/2021 22:44:52</publishTime>
+    </File>
+    <File Include="Template/变更申请表-离京.docx">
+      <publishTime>02/06/2024 10:41:30</publishTime>
+    </File>
+    <File Include="Template/变更离京证明.doc">
+      <publishTime>04/20/2021 14:30:32</publishTime>
+    </File>
+    <File Include="Template/变更离京证明.docx">
+      <publishTime>01/17/2024 10:16:54</publishTime>
+    </File>
+    <File Include="Template/变更贴打印.doc">
+      <publishTime>09/15/2017 18:00:37</publishTime>
+    </File>
+    <File Include="Template/各区县对外办公电话.docx">
+      <publishTime>10/11/2022 10:20:23</publishTime>
+    </File>
+    <File Include="Template/各区县对外办公电话.htm">
+      <publishTime>10/11/2022 10:20:57</publishTime>
+    </File>
+    <File Include="Template/外阜证书申报表.doc">
+      <publishTime>10/30/2011 23:20:43</publishTime>
+    </File>
+    <File Include="Template/外阜证书申报须知.doc">
+      <publishTime>10/24/2011 16:01:48</publishTime>
+    </File>
+    <File Include="Template/常见问题及处理方法.docx">
+      <publishTime>04/18/2019 16:55:21</publishTime>
+    </File>
+    <File Include="Template/常见问题及处理方法最终版.docx">
+      <publishTime>01/02/2020 16:21:14</publishTime>
+    </File>
+    <File Include="Template/常见问题及统一解释.doc">
+      <publishTime>10/31/2024 16:24:14</publishTime>
+    </File>
+    <File Include="Template/建筑业从业人员全年考试工作计划.doc">
+      <publishTime>12/14/2016 15:09:40</publishTime>
+    </File>
+    <File Include="Template/强制注销（离京）申请.docx">
+      <publishTime>08/02/2023 15:42:27</publishTime>
+    </File>
+    <File Include="Template/成绩导入模版.xls">
+      <publishTime>08/05/2024 10:26:06</publishTime>
+    </File>
+    <File Include="Template/打击职业资格“挂证”等违法违规行为常见问题及统一解释.docx">
+      <publishTime>04/15/2019 10:16:55</publishTime>
+    </File>
+    <File Include="Template/报名表.doc">
+      <publishTime>04/19/2022 15:40:24</publishTime>
+    </File>
+    <File Include="Template/报名表_承诺.docx">
+      <publishTime>07/24/2025 15:27:44</publishTime>
+    </File>
+    <File Include="Template/报名表_特种作业.docx">
+      <publishTime>07/24/2025 15:30:51</publishTime>
+    </File>
+    <File Include="Template/报名表_职业技能.docx">
+      <publishTime>12/20/2023 10:39:48</publishTime>
+    </File>
+    <File Include="Template/报名表_非承诺.docx">
+      <publishTime>07/24/2025 15:29:09</publishTime>
+    </File>
+    <File Include="Template/报名表导入模版.xls">
+      <publishTime>05/04/2011 11:13:11</publishTime>
+    </File>
+    <File Include="Template/报考条件证明告知承诺书.docx">
+      <publishTime>08/17/2022 17:00:58</publishTime>
+    </File>
+    <File Include="Template/报考须知.doc">
+      <publishTime>04/07/2017 11:29:34</publishTime>
+    </File>
+    <File Include="Template/新设立企业建造师注册承诺书.docx">
+      <publishTime>07/13/2018 15:12:20</publishTime>
+    </File>
+    <File Include="Template/村镇建筑工匠.doc">
+      <publishTime>12/22/2015 14:42:08</publishTime>
+    </File>
+    <File Include="Template/桌标.doc">
+      <publishTime>05/16/2014 00:36:23</publishTime>
+    </File>
+    <File Include="Template/注销注册.docx">
+      <publishTime>07/28/2025 03:06:51</publishTime>
+    </File>
+    <File Include="Template/特种作业.pdf">
+      <publishTime>03/18/2021 10:32:32</publishTime>
+    </File>
+    <File Include="Template/特种作业报名表.doc">
+      <publishTime>03/22/2021 21:07:32</publishTime>
+    </File>
+    <File Include="Template/特种作业证书副本打印.doc">
+      <publishTime>11/09/2015 11:39:46</publishTime>
+    </File>
+    <File Include="Template/特种作业证书打印_喷墨.doc">
+      <publishTime>04/23/2018 17:35:47</publishTime>
+    </File>
+    <File Include="Template/特种作业证书正本打印.doc">
+      <publishTime>11/09/2015 11:39:08</publishTime>
+    </File>
+    <File Include="Template/申请须知.doc">
+      <publishTime>01/05/2017 12:04:59</publishTime>
+    </File>
+    <File Include="Template/电子证书模板.pdf">
+      <publishTime>11/25/2019 17:55:40</publishTime>
+    </File>
+    <File Include="Template/电子证书模板.rar">
+      <publishTime>06/21/2022 11:35:41</publishTime>
+    </File>
+    <File Include="Template/监管任务导入模板.xlsx">
+      <publishTime>10/31/2024 20:40:07</publishTime>
+    </File>
+    <File Include="Template/监管反馈承诺书.doc">
+      <publishTime>10/18/2024 17:45:14</publishTime>
+    </File>
+    <File Include="Template/知识大纲导入模版.xls">
+      <publishTime>07/25/2014 15:06:16</publishTime>
+    </File>
+    <File Include="Template/社保数据核查导入模板.xls">
+      <publishTime>03/26/2019 02:53:17</publishTime>
+    </File>
+    <File Include="Template/续期汇总上报.doc">
+      <publishTime>09/20/2018 15:49:52</publishTime>
+    </File>
+    <File Include="Template/续期须知.doc">
+      <publishTime>09/18/2017 14:30:38</publishTime>
+    </File>
+    <File Include="Template/综合监管汇总表.xls">
+      <publishTime>11/29/2024 18:01:09</publishTime>
+    </File>
+    <File Include="Template/缴费通知单.doc">
+      <publishTime>02/19/2011 12:24:29</publishTime>
+    </File>
+    <File Include="Template/网络打印IE浏览器安全设置说明.doc">
+      <publishTime>09/20/2012 11:15:17</publishTime>
+    </File>
+    <File Include="Template/考场照片阵列.doc">
+      <publishTime>03/15/2011 17:40:38</publishTime>
+    </File>
+    <File Include="Template/考场照片阵列.docx">
+      <publishTime>01/26/2021 02:25:36</publishTime>
+    </File>
+    <File Include="Template/考试报名须知.docx">
+      <publishTime>08/19/2021 10:47:30</publishTime>
+    </File>
+    <File Include="Template/职业技能.pdf">
+      <publishTime>03/18/2021 10:32:32</publishTime>
+    </File>
+    <File Include="Template/职业技能证书打印.doc">
+      <publishTime>11/09/2015 13:39:18</publishTime>
+    </File>
+    <File Include="Template/证书变更申请表.doc">
+      <publishTime>11/20/2018 15:47:47</publishTime>
+    </File>
+    <File Include="Template/证书变更须知.docx">
+      <publishTime>08/19/2021 10:47:18</publishTime>
+    </File>
+    <File Include="Template/证书照片阵列.doc">
+      <publishTime>05/03/2011 18:37:39</publishTime>
+    </File>
+    <File Include="Template/证书续期申请表.doc">
+      <publishTime>11/04/2021 10:52:19</publishTime>
+    </File>
+    <File Include="Template/证书续期申请表.docx">
+      <publishTime>11/14/2025 12:45:07</publishTime>
+    </File>
+    <File Include="Template/证书续期申请表_含变更.doc">
+      <publishTime>11/04/2021 10:54:24</publishTime>
+    </File>
+    <File Include="Template/证书续期申请表_特种作业.doc">
+      <publishTime>03/28/2022 15:06:57</publishTime>
+    </File>
+    <File Include="Template/证书续期申请表_特种作业.docx">
+      <publishTime>05/14/2025 11:44:20</publishTime>
+    </File>
+    <File Include="Template/证书续期须知.docx">
+      <publishTime>08/19/2021 10:47:13</publishTime>
+    </File>
+    <File Include="Template/证书进京申请表.doc">
+      <publishTime>12/25/2019 16:00:42</publishTime>
+    </File>
+    <File Include="Template/证书进京申请表.docx">
+      <publishTime>07/25/2025 20:00:04</publishTime>
+    </File>
+    <File Include="Template/试卷打印.doc">
+      <publishTime>05/20/2016 20:21:41</publishTime>
+    </File>
+    <File Include="Template/试卷答案.doc">
+      <publishTime>09/08/2015 15:15:22</publishTime>
+    </File>
+    <File Include="Template/试题导入模版.doc">
+      <publishTime>09/25/2014 04:17:48</publishTime>
+    </File>
+    <File Include="Template/试题导入模版.xls">
+      <publishTime>09/02/2014 11:59:03</publishTime>
+    </File>
+    <File Include="Template/课程导入模版.xls">
+      <publishTime>01/02/2024 12:17:19</publishTime>
+    </File>
+    <File Include="Template/造价员证书打印.doc">
+      <publishTime>11/09/2015 15:54:22</publishTime>
+    </File>
+    <File Include="Template/造价师个人信息变更申请表.docx">
+      <publishTime>10/11/2025 20:28:11</publishTime>
+    </File>
+    <File Include="Template/造价师初始注册申请表.docx">
+      <publishTime>10/11/2025 20:21:23</publishTime>
+    </File>
+    <File Include="Template/造价师延续注册申请表.docx">
+      <publishTime>11/16/2025 09:19:41</publishTime>
+    </File>
+    <File Include="Template/造价师执业企业变更注册多专业申请表.docx">
+      <publishTime>10/11/2025 20:24:52</publishTime>
+    </File>
+    <File Include="Template/造价师执业企业变更注册申请表.docx">
+      <publishTime>10/11/2025 20:23:45</publishTime>
+    </File>
+    <File Include="Template/造价师注销注册申请表.docx">
+      <publishTime>08/14/2025 04:30:06</publishTime>
+    </File>
+    <File Include="Template/造价师注销注册申请表_个人强制.docx">
+      <publishTime>08/18/2025 08:51:32</publishTime>
+    </File>
+    <File Include="Template/造价师注销注册申请表_企业强制.docx">
+      <publishTime>08/18/2025 08:55:33</publishTime>
+    </File>
+    <File Include="Template/造价师表企业信息变更注册申请表.docx">
+      <publishTime>08/14/2025 03:16:00</publishTime>
+    </File>
+    <File Include="Template/遗失补办.docx">
+      <publishTime>01/31/2019 10:38:19</publishTime>
+    </File>
+    <File Include="Template/重复注册核查导入模板.xls">
+      <publishTime>03/26/2019 02:57:21</publishTime>
+    </File>
+    <File Include="Template/重点核查企业导入模板.xls">
+      <publishTime>04/19/2021 00:07:55</publishTime>
+    </File>
+    <File Include="Template/门标.doc">
+      <publishTime>05/15/2014 16:26:18</publishTime>
+    </File>
+    <File Include="Train/TrainCert.aspx">
+      <publishTime>01/18/2024 00:39:42</publishTime>
+    </File>
+    <File Include="Train/TrainCheckSign.aspx">
+      <publishTime>07/11/2024 03:29:14</publishTime>
+    </File>
+    <File Include="Train/TrainExamPlan.aspx">
+      <publishTime>07/11/2024 03:29:15</publishTime>
+    </File>
+    <File Include="Train/TrainExamRoomAllot.aspx">
+      <publishTime>01/18/2024 00:09:02</publishTime>
+    </File>
+    <File Include="Train/TrainReadManage.aspx">
+      <publishTime>01/18/2024 00:55:18</publishTime>
+    </File>
+    <File Include="Train/TrainUnitSet.aspx">
+      <publishTime>01/12/2024 17:10:30</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/anchor/anchor.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/attachment.css">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/attachment.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/attachment.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/fileTypeImages/icon_default.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/fileTypeImages/icon_jpg.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/images/alignicon.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/images/alignicon.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/images/bg.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/images/file-icons.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/images/file-icons.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/images/icons.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/images/icons.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/images/image.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/images/progress.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/images/success.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/attachment/images/success.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/background/background.css">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/background/background.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/background/background.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/background/images/bg.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/background/images/success.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/charts/chart.config.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/charts/charts.css">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/charts/charts.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/charts/charts.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/charts/images/charts0.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/charts/images/charts1.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/charts/images/charts2.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/charts/images/charts3.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/charts/images/charts4.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/charts/images/charts5.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/emotion/emotion.css">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/emotion/emotion.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/emotion/emotion.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/emotion/images/0.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/emotion/images/bface.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/emotion/images/cface.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/emotion/images/fface.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/emotion/images/jxface2.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/emotion/images/neweditor-tab-bg.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/emotion/images/tface.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/emotion/images/wface.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/emotion/images/yface.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/gmap/gmap.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/help/help.css">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/help/help.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/help/help.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/image/image.css">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/image/image.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/image/image.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/image/images/alignicon.jpg">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/image/images/bg.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/image/images/icons.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/image/images/icons.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/image/images/image.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/image/images/progress.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/image/images/success.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/image/images/success.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/insertframe/insertframe.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/internal.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/link/link.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/map/map.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/map/show.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/music/music.css">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/music/music.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/music/music.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/preview/preview.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/scrawl/images/addimg.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/scrawl/images/brush.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/scrawl/images/delimg.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/scrawl/images/delimgH.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/scrawl/images/empty.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/scrawl/images/emptyH.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/scrawl/images/eraser.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/scrawl/images/redo.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/scrawl/images/redoH.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/scrawl/images/scale.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/scrawl/images/scaleH.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/scrawl/images/size.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/scrawl/images/undo.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/scrawl/images/undoH.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/scrawl/scrawl.css">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/scrawl/scrawl.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/scrawl/scrawl.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/searchreplace/searchreplace.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/searchreplace/searchreplace.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/snapscreen/snapscreen.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/spechars/spechars.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/spechars/spechars.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/table/dragicon.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/table/edittable.css">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/table/edittable.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/table/edittable.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/table/edittd.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/table/edittip.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/template/config.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/template/images/bg.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/template/images/pre0.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/template/images/pre1.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/template/images/pre2.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/template/images/pre3.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/template/images/pre4.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/template/template.css">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/template/template.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/template/template.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/video/images/bg.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/video/images/center_focus.jpg">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/video/images/file-icons.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/video/images/file-icons.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/video/images/icons.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/video/images/icons.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/video/images/image.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/video/images/left_focus.jpg">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/video/images/none_focus.jpg">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/video/images/progress.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/video/images/right_focus.jpg">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/video/images/success.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/video/images/success.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/video/video.css">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/video/video.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/video/video.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/webapp/webapp.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/wordimage/fClipboard_ueditor.swf">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/wordimage/imageUploader.swf">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/wordimage/tangram.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/wordimage/wordimage.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/dialogs/wordimage/wordimage.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/index.html">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/en/en.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/en/images/addimage.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/en/images/alldeletebtnhoverskin.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/en/images/alldeletebtnupskin.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/en/images/background.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/en/images/button.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/en/images/copy.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/en/images/deletedisable.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/en/images/deleteenable.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/en/images/listbackground.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/en/images/localimage.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/en/images/music.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/en/images/rotateleftdisable.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/en/images/rotateleftenable.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/en/images/rotaterightdisable.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/en/images/rotaterightenable.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/en/images/upload.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/zh-cn/images/copy.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/zh-cn/images/localimage.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/zh-cn/images/music.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/zh-cn/images/upload.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/lang/zh-cn/zh-cn.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/css/ueditor.css">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/css/ueditor.min.css">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/dialogbase.css">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/anchor.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/arrow.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/arrow_down.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/arrow_up.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/button-bg.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/cancelbutton.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/charts.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/cursor_h.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/cursor_h.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/cursor_v.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/cursor_v.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/dialog-title-bg.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/filescan.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/highlighted.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/icons-all.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/icons.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/icons.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/loaderror.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/loading.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/lock.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/neweditor-tab-bg.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/pagebreak.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/scale.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/sortable.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/spacer.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/sparator_v.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/table-cell-align.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/tangram-colorpicker.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/toolbar_bg.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/unhighlighted.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/upload.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/videologo.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/word.gif">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/default/images/wordpaste.png">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/themes/iframe.css">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/codemirror/codemirror.css">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/codemirror/codemirror.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/adapters/mootools-adapter.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/adapters/mootools-adapter.src.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/adapters/prototype-adapter.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/adapters/prototype-adapter.src.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/adapters/standalone-framework.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/adapters/standalone-framework.src.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/highcharts-more.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/highcharts-more.src.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/highcharts.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/highcharts.src.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/modules/annotations.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/modules/annotations.src.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/modules/canvas-tools.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/modules/canvas-tools.src.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/modules/data.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/modules/data.src.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/modules/drilldown.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/modules/drilldown.src.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/modules/exporting.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/modules/exporting.src.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/modules/funnel.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/modules/funnel.src.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/modules/heatmap.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/modules/heatmap.src.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/modules/map.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/modules/map.src.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/modules/no-data-to-display.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/modules/no-data-to-display.src.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/themes/dark-blue.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/themes/dark-green.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/themes/gray.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/themes/grid.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/highcharts/themes/skies.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/jquery-1.10.2.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/jquery-1.10.2.min.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/jquery-1.10.2.min.map">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/snapscreen/UEditorSnapscreen.exe">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/SyntaxHighlighter/shCore.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/SyntaxHighlighter/shCoreDefault.css">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/video-js/font/vjs.eot">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/video-js/font/vjs.svg">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/video-js/font/vjs.ttf">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/video-js/font/vjs.woff">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/video-js/video-js.css">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/video-js/video-js.min.css">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/video-js/video-js.swf">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/video-js/video.dev.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/video-js/video.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/webuploader/Uploader.swf">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/webuploader/webuploader.css">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/webuploader/webuploader.custom.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/webuploader/webuploader.custom.min.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/webuploader/webuploader.flashonly.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/webuploader/webuploader.flashonly.min.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/webuploader/webuploader.html5only.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/webuploader/webuploader.html5only.min.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/webuploader/webuploader.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/webuploader/webuploader.min.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/webuploader/webuploader.withoutimage.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/webuploader/webuploader.withoutimage.min.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/xss.min.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/zeroclipboard/ZeroClipboard.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/zeroclipboard/ZeroClipboard.min.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/third-party/zeroclipboard/ZeroClipboard.swf">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/ueditor.all.js">
+      <publishTime>03/17/2020 18:15:19</publishTime>
+    </File>
+    <File Include="ueditor/ueditor.all.min.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/ueditor.config.js">
+      <publishTime>05/17/2018 09:55:16</publishTime>
+    </File>
+    <File Include="ueditor/ueditor.parse.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="ueditor/ueditor.parse.min.js">
+      <publishTime>12/20/2016 14:58:06</publishTime>
+    </File>
+    <File Include="Unit/AlreadyMatter.aspx">
+      <publishTime>08/21/2024 09:22:08</publishTime>
+    </File>
+    <File Include="Unit/ApplyAddItem.aspx">
+      <publishTime>12/31/2025 17:19:19</publishTime>
+    </File>
+    <File Include="Unit/ApplyCancel.aspx">
+      <publishTime>01/21/2026 14:53:40</publishTime>
+    </File>
+    <File Include="Unit/ApplyChange.aspx">
+      <publishTime>12/03/2025 02:03:31</publishTime>
+    </File>
+    <File Include="Unit/ApplyChangeEnterprise.aspx">
+      <publishTime>04/15/2025 20:46:54</publishTime>
+    </File>
+    <File Include="Unit/ApplyChangePerson.aspx">
+      <publishTime>07/11/2024 03:29:16</publishTime>
+    </File>
+    <File Include="Unit/ApplyChangePersonnel.aspx">
+      <publishTime>10/13/2025 19:25:26</publishTime>
+    </File>
+    <File Include="Unit/ApplyContinue.aspx">
+      <publishTime>10/13/2025 19:26:21</publishTime>
+    </File>
+    <File Include="Unit/ApplyFirst.aspx">
+      <publishTime>07/01/2025 15:19:30</publishTime>
+    </File>
+    <File Include="Unit/ApplyFirstAdd.aspx">
+      <publishTime>10/13/2025 19:27:14</publishTime>
+    </File>
+    <File Include="Unit/ApplyHistory.aspx">
+      <publishTime>07/11/2024 03:29:16</publishTime>
+    </File>
+    <File Include="Unit/ApplyList.aspx">
+      <publishTime>07/01/2025 15:20:47</publishTime>
+    </File>
+    <File Include="Unit/ApplyListUnitCancel.aspx">
+      <publishTime>08/13/2025 16:47:19</publishTime>
+    </File>
+    <File Include="Unit/ApplyRenew.aspx">
+      <publishTime>10/13/2025 19:27:53</publishTime>
+    </File>
+    <File Include="Unit/ApplyReplace.aspx">
+      <publishTime>08/07/2023 18:04:38</publishTime>
+    </File>
+    <File Include="Unit/ApplyTypeList.aspx">
+      <publishTime>08/07/2023 18:04:38</publishTime>
+    </File>
+    <File Include="Unit/CheckPerson.aspx">
+      <publishTime>07/11/2024 03:29:17</publishTime>
+    </File>
+    <File Include="Unit/EJZJS.aspx">
+      <publishTime>12/16/2025 18:45:26</publishTime>
+    </File>
+    <File Include="Unit/EJZJSDetail.aspx">
+      <publishTime>04/22/2025 03:29:50</publishTime>
+    </File>
+    <File Include="Unit/EJZJS_LS.aspx">
+      <publishTime>07/11/2024 03:29:18</publishTime>
+    </File>
+    <File Include="Unit/FilialeInfo.aspx">
+      <publishTime>07/11/2024 03:29:18</publishTime>
+    </File>
+    <File Include="Unit/JZSChangeUnitHis.aspx">
+      <publishTime>07/11/2024 03:29:18</publishTime>
+    </File>
+    <File Include="Unit/PeopleList.aspx">
+      <publishTime>08/07/2023 18:04:41</publishTime>
+    </File>
+    <File Include="Unit/UnitDetail.aspx">
+      <publishTime>08/07/2023 18:04:41</publishTime>
+    </File>
+    <File Include="Unit/UnitList.aspx">
+      <publishTime>07/11/2024 03:29:18</publishTime>
+    </File>
+    <File Include="Unit/UnitMgr.aspx">
+      <publishTime>08/02/2023 15:48:17</publishTime>
+    </File>
+    <File Include="Unit/YJZJS.aspx">
+      <publishTime>07/11/2024 03:29:19</publishTime>
+    </File>
+    <File Include="Unit/YJZJSDetail.aspx">
+      <publishTime>03/19/2024 11:27:43</publishTime>
+    </File>
+    <File Include="Unit/YJZJS_LS.aspx">
+      <publishTime>07/11/2024 03:29:19</publishTime>
+    </File>
+    <File Include="Unit/YJZJS_LSDetail.aspx">
+      <publishTime>03/19/2024 11:27:25</publishTime>
+    </File>
+    <File Include="Unit/ZCJLS.aspx">
+      <publishTime>07/11/2024 03:29:19</publishTime>
+    </File>
+    <File Include="Unit/ZCJLSDetail.aspx">
+      <publishTime>03/19/2024 11:26:11</publishTime>
+    </File>
+    <File Include="Unit/ZCZJS.aspx">
+      <publishTime>07/11/2024 03:29:20</publishTime>
+    </File>
+    <File Include="Unit/ZCZJSDetail.aspx">
+      <publishTime>03/19/2024 11:35:52</publishTime>
+    </File>
+    <File Include="uploader/DenyFileAccessHandler.ashx">
+      <publishTime>02/03/2023 11:33:07</publishTime>
+    </File>
+    <File Include="uploader/images/icons.png">
+      <publishTime>02/23/2017 16:55:16</publishTime>
+    </File>
+    <File Include="uploader/style.css">
+      <publishTime>04/01/2017 10:22:46</publishTime>
+    </File>
+    <File Include="uploader/Upload.aspx">
+      <publishTime>09/13/2024 11:34:39</publishTime>
+    </File>
+    <File Include="uploader/upload.js">
+      <publishTime>09/13/2024 11:34:26</publishTime>
+    </File>
+    <File Include="uploader/Uploader.swf">
+      <publishTime>11/03/2014 10:31:51</publishTime>
+    </File>
+    <File Include="uploader/UploadHandler.ashx">
+      <publishTime>03/22/2017 16:08:45</publishTime>
+    </File>
+    <File Include="uploader/webuploader.css">
+      <publishTime>05/31/2017 17:39:44</publishTime>
+    </File>
+    <File Include="uploader/webuploader.js">
+      <publishTime>09/13/2024 11:28:00</publishTime>
+    </File>
+    <File Include="ValidateCode.aspx">
+      <publishTime>06/25/2019 17:01:04</publishTime>
+    </File>
+    <File Include="Web References/BaseDataService/Reference.map">
+      <publishTime>07/04/2019 16:28:56</publishTime>
+    </File>
+    <File Include="Web References/BaseDataService/Sys_User.datasource">
+      <publishTime>07/04/2019 16:29:06</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/28/2025 15:15:54</publishTime>
+    </File>
+    <File Include="zjs/zjsAgency.aspx">
+      <publishTime>08/19/2025 15:33:28</publishTime>
+    </File>
+    <File Include="zjs/zjsApplyCancel.aspx">
+      <publishTime>10/11/2025 11:47:49</publishTime>
+    </File>
+    <File Include="zjs/zjsApplyChange.aspx">
+      <publishTime>04/15/2025 20:49:36</publishTime>
+    </File>
+    <File Include="zjs/zjsApplyChangeUnit.aspx">
+      <publishTime>08/19/2025 15:22:05</publishTime>
+    </File>
+    <File Include="zjs/zjsApplyChangeUnitName.aspx">
+      <publishTime>08/19/2025 15:15:07</publishTime>
+    </File>
+    <File Include="zjs/zjsApplyContinue.aspx">
+      <publishTime>11/16/2025 09:39:28</publishTime>
+    </File>
+    <File Include="zjs/zjsApplyFirst.aspx">
+      <publishTime>07/11/2024 03:29:21</publishTime>
+    </File>
+    <File Include="zjs/zjsApplyFirstAdd.aspx">
+      <publishTime>08/19/2025 15:31:50</publishTime>
+    </File>
+    <File Include="zjs/zjsApplyHistory.aspx">
+      <publishTime>08/19/2025 15:26:44</publishTime>
+    </File>
+    <File Include="zjs/zjsApplyList.aspx">
+      <publishTime>08/19/2025 15:23:41</publishTime>
+    </File>
+    <File Include="zjs/zjsApplyListUnitCancel.aspx">
+      <publishTime>08/18/2025 11:32:18</publishTime>
+    </File>
+    <File Include="zjs/zjsApplyRenew.aspx">
+      <publishTime>03/10/2022 13:13:03</publishTime>
+    </File>
+    <File Include="zjs/zjsBusinessList.aspx">
+      <publishTime>01/03/2026 20:21:17</publishTime>
+    </File>
+    <File Include="zjs/zjsBusinessQuery.aspx">
+      <publishTime>08/19/2025 15:34:33</publishTime>
+    </File>
+    <File Include="zjs/zjsCertInfo.aspx">
+      <publishTime>04/22/2025 03:34:55</publishTime>
+    </File>
+    <File Include="zjs/zjsCertList.aspx">
+      <publishTime>12/16/2025 18:45:46</publishTime>
+    </File>
+    <File Include="zjs/zjsCertMgr.aspx">
+      <publishTime>08/19/2025 15:38:14</publishTime>
+    </File>
+    <File Include="zjs/zjsCertModify.aspx">
+      <publishTime>04/03/2024 10:39:33</publishTime>
+    </File>
+    <File Include="zjs/zjsExamine.aspx">
+      <publishTime>08/19/2025 15:35:53</publishTime>
+    </File>
+    <File Include="zjs/zjsNoticeChoice.aspx">
+      <publishTime>08/07/2023 18:04:49</publishTime>
+    </File>
+    <File Include="zjs/zjsNoticeLook.aspx">
+      <publishTime>07/11/2024 03:29:23</publishTime>
+    </File>
+    <File Include="zjs/zjsNumberIssue.aspx">
+      <publishTime>07/11/2024 03:29:24</publishTime>
+    </File>
+    <File Include="zjs/zjsNumberIssueChoice.aspx">
+      <publishTime>07/11/2024 03:29:24</publishTime>
+    </File>
+    <File Include="zjs/zjsQualification.aspx">
+      <publishTime>11/25/2025 06:01:37</publishTime>
+    </File>
+    <File Include="zjs/zjsReportList.aspx">
+      <publishTime>07/11/2024 03:29:25</publishTime>
+    </File>
+    <File Include="zjs/zjsReportNew.aspx">
+      <publishTime>07/11/2024 03:29:25</publishTime>
+    </File>
+    <File Include="zjs/zjsReportSend.aspx">
+      <publishTime>07/11/2024 03:29:25</publishTime>
+    </File>
+    <File Include="zjs/zjsTjRegister.aspx">
+      <publishTime>08/07/2023 18:04:51</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

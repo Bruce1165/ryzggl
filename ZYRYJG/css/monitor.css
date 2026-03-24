@@ -1,0 +1,41 @@
+﻿
+
+.tb {
+    border: solid;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tb td {
+    text-align: center;
+    background-color: #ffffee;
+    line-height: 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    border-collapse: collapse;
+    font: normal 14px/26px Microsoft YaHei,sans-serif;
+}
+.tjbar{
+    text-align: left;
+    background-color: #E6E6FA;
+    color: #404040; 
+    margin:0;
+    width: auto; 
+    clear: both; 
+    line-height: 40px;
+    padding-left:40px;
+    border: 0; 
+    font: bold 16px/40px Microsoft YaHei,sans-serif;
+
+}
+.tjbarw
+{
+    border: 1px solid #ddd; 
+    border-top:5px solid #ccc; 
+    border-radius: 4px 4px;
+    width: 100%;
+    border-collapse: collapse;
+}

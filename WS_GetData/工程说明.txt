@@ -1,0 +1,24 @@
+﻿//********************************************
+//** 人员考务系统定时作业服务 windows Service（人员资格定时服务：建委内网服务）
+//** 每天执行时间 Upload_SBData社保比对上传服务，Upload_SBData,22:10|Get_RY_SBJFXXCJ社保比对结果,6:35||Upload_SBDataOfExam,12:00|Get_RY_SBJFXXCJ,9:08|Upload_EJJZS_File,21:30|GetQYZZ,1:15|DeleteTimeOutApply,1:10|InsertInterFaceLog,4:15|jxjy,5:05|AgeLimit,5:30|Upload_FiletoDFS,20:00|TJ_WLH,1:30|GuiWeiData,00:30
+//** "CreateEJJZS_CA,1|ApplyCA,1|SendCA,1|WriteJHKCA,1|ReturnCA,1|UpdateFacePhoto,5" 
+//** 部署位置 192.168.5.21  D:\WebRoot\WS_GetDate
+//********************************************
+
+
+
+
+//********************************************
+//** 人员考务系统定时作业服务 windows Service（电子证书签章服务:文件交换）
+//** "市级电子证书签章服务IssueCA_JZS,5|市级电子证书签章服务IssueCA_beijing,5" 
+//** 部署位置 192.168.150.175 D:\WebRoot\PDFCAService
+//********************************************
+
+
+
+
+//********************************************
+//** 人员考务系统定时作业服务 windows Service（二建上传建设部服务：建委外网服务）
+//** "Upload_JZS_New,5" 上传二级建造师到建设部(新接口)
+//** 部署位置 192.168.5.49  D:\WebRoot\WS_GetDate
+//********************************************

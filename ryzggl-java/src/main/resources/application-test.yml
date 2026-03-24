@@ -1,0 +1,17 @@
+# Test profile configuration
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: test
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+---
+logging:
+  level:
+    com.ryzggl: debug
+    com.baomidou.mybatisplus: debug
