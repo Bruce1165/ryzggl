@@ -348,6 +348,36 @@ const routes = [
     meta: { requiresAuth: true, title: '人员锁定管理' }
   },
   {
+    path: '/learn-record/list',
+    name: 'LearnRecordList',
+    component: () => import('../views/learnRecord/List.vue'),
+    meta: { requiresAuth: true, title: '学习记录管理' }
+  },
+  {
+    path: '/study-plan/list',
+    name: 'StudyPlanList',
+    component: () => import('../views/studyPlan/List.vue'),
+    meta: { requiresAuth: true, title: '学习计划管理' }
+  },
+  {
+    path: '/train-unit/list',
+    name: 'TrainUnitList',
+    component: () => import('../views/trainUnit/List.vue'),
+    meta: { requiresAuth: true, title: '培训单位管理' }
+  },
+  {
+    path: '/operate-log/list',
+    name: 'OperateLogList',
+    component: () => import('../views/operateLog/List.vue'),
+    meta: { requiresAuth: true, title: '操作日志', roles: ['admin', 'manager'] }
+  },
+  {
+    path: '/user-role/list',
+    name: 'UserRoleList',
+    component: () => import('../views/userRole/List.vue'),
+    meta: { requiresAuth: true, title: '用户角色管理', roles: ['admin'] }
+  },
+  {
     // 404 redirect
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
