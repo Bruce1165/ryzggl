@@ -330,6 +330,12 @@ const routes = [
     meta: { requiresAuth: true, title: '证书锁定管理' }
   },
   {
+    path: '/dictionary/list',
+    name: 'DictionaryList',
+    component: () => import('../views/Dictionary.vue'),
+    meta: { requiresAuth: true, title: '数据字典管理' }
+  },
+  {
     // 404 redirect
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
